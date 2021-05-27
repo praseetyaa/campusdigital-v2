@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+// Letakkan fungsi ini pada route paling atas
+\Ajifatur\FaturCMS\FaturCMS::routes();
+
+// Home
+Route::get('/', 'HomeController@index')->name('site.home');
+
+// Artikel
+Route::get('/artikel', 'ArtikelController@index')->name('site.artikel.index');
+Route::get('/artikel/{permalink}', 'ArtikelController@detail')->name('site.artikel.detail');
+Route::get('/artikel/author/{username}', 'ArtikelController@byAuthor')->name('site.artikel.by-author');
+Route::get('/artikel/contributor/{username}', 'ArtikelController@byContributor')->name('site.artikel.by-contributor');
+
+// Cabang
+Route::get('/cabang', 'CabangController@index')->name('site.cabang.index');
+
+// Halaman
+Route::get('/{permalink}', 'HalamanController@detail')->name('site.halaman.detail');
