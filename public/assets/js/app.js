@@ -1,6 +1,6 @@
 // #1
 var one = new Vue({
-  el: '#pelatihan-digital-marketing-reguler',
+  el: '#program-pelatihan-digital-marketing-reguler',
   data: {
     title: 'Pelatihan Digital Marketing Reguler',
     items1: [
@@ -52,7 +52,7 @@ var one = new Vue({
 
 // #2
 var two = new Vue({
-  el: '#paket-pelatihan-dan-sertifikasi-digital-marketing',
+  el: '#program-paket-pelatihan-dan-sertifikasi-digital-marketing',
   data: {
     title: 'Paket Pelatihan dan Sertifikasi Digital Marketing',
     items1: [
@@ -106,7 +106,7 @@ var two = new Vue({
 
 // #3
 var three = new Vue({
-  el: '#pelatihan-pkdm-program-kerjasama',
+  el: '#program-pelatihan-pkdm-program-kerjasama',
   data: {
     title: 'Pelatihan PKDM (Program Kerjasama)',
     items1: [
@@ -147,7 +147,7 @@ var three = new Vue({
 
 // #4
 var four = new Vue({
-  el: '#praktek-kerja-industri-pkl-online',
+  el: '#program-praktek-kerja-industri-prakerin-online',
   data: {
     title: 'Praktek Kerja Industri (PRAKERIN Online)',
     items1: [
@@ -197,7 +197,7 @@ var four = new Vue({
 
 // #5
 var five = new Vue({
-  el: '#kelas-industri-digital-marketing',
+  el: '#program-kelas-industri-digital-marketing',
   data: {
     title: 'Kelas Industri Digital Marketing',
     items1: [
@@ -247,7 +247,7 @@ var five = new Vue({
 
 // #6
 var six = new Vue({
-  el: '#training-of-trainer',
+  el: '#program-training-of-trainer',
   data: {
     title: 'Training Of Trainer',
     items1: [
@@ -295,7 +295,7 @@ var six = new Vue({
 
 // #7
 var seven = new Vue({
-  el: '#uji-kompetensi-keahlian-digital-marketing-ukk-smk',
+  el: '#program-uji-kompetensi-keahlian-digital-marketing-ukk-smk',
   data: {
     title: 'Uji Kompetensi Keahlian Digital Marketing (UKK SMK)',
     items1: [
@@ -344,7 +344,7 @@ var seven = new Vue({
 
 // #8
 var seven = new Vue({
-  el: '#beasiswa',
+  el: '#program-beasiswa',
   data: {
     title: 'Beasiswa',
     items1: [
