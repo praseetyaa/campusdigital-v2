@@ -33,14 +33,14 @@
 								  <div class="form-row">
 									<div class="form-group col-md-12">
 										<label>Nama Lengkap <span class="text-danger">*</span></label>
-										<input type="text" name="nama_lengkap" class="form-control form-control-sm {{ $errors->has('nama_lengkap') ? 'border-danger' : '' }}" value="{{ old('nama_lengkap') }}" placeholder="Masukkan Nama Lengkap">
+										<input type="text" name="nama_lengkap" class="form-control {{ $errors->has('nama_lengkap') ? 'border-danger' : '' }}" value="{{ old('nama_lengkap') }}" placeholder="Masukkan Nama Lengkap">
 										@if($errors->has('nama_lengkap'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('nama_lengkap')) }}</div>
 										@endif
 									</div>
 									<div class="form-group col-md-12">
 										<label>Tanggal Lahir <span class="text-danger">*</span></label>
-										<input type="text" name="tanggal_lahirs" class="form-control form-control-sm {{ $errors->has('tanggal_lahir') ? 'border-danger' : '' }}" value="{{ old('tanggal_lahir') }}" placeholder="Masukkan Tanggal Lahir (Format: dd/mm/yyyy)" autocomplete="off">
+										<input type="text" name="tanggal_lahir" class="form-control {{ $errors->has('tanggal_lahir') ? 'border-danger' : '' }}" value="{{ old('tanggal_lahir') }}" placeholder="Masukkan Tanggal Lahir (Format: dd/mm/yyyy)" autocomplete="off">
 										@if($errors->has('tanggal_lahir'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('tanggal_lahir')) }}</div>
 										@endif
@@ -69,7 +69,7 @@
 									</div>
 									<div class="form-group col-md-12">
 										<label>Nomor HP <span class="text-danger">*</span></label>
-										<input type="text" name="nomor_hp" class="form-control form-control-sm {{ $errors->has('nomor_hp') ? 'border-danger' : '' }}" value="{{ old('nomor_hp') }}" placeholder="Masukkan Nomor HP">
+										<input type="text" name="nomor_hp" class="form-control {{ $errors->has('nomor_hp') ? 'border-danger' : '' }}" value="{{ old('nomor_hp') }}" placeholder="Masukkan Nomor HP">
 										@if($errors->has('nomor_hp'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('nomor_hp')) }}</div>
 										@endif
@@ -79,14 +79,14 @@
 								  <div class="form-row">
 									<div class="form-group col-md-12">
 										<label>Email <span class="text-danger">*</span></label>
-										<input type="email" name="email" class="form-control form-control-sm {{ $errors->has('email') ? 'border-danger' : '' }}" value="{{ old('email') }}" placeholder="Masukkan Email">
+										<input type="email" name="email" class="form-control {{ $errors->has('email') ? 'border-danger' : '' }}" value="{{ old('email') }}" placeholder="Masukkan Email">
 										@if($errors->has('email'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('email')) }}</div>
 										@endif
 									</div>
 									<div class="form-group col-md-12">
 										<label>Username <span class="text-danger">*</span></label>
-										<input type="text" name="username" class="form-control form-control-sm {{ $errors->has('username') ? 'border-danger' : '' }}" value="{{ old('username') }}" placeholder="Masukkan Username">
+										<input type="text" name="username" class="form-control {{ $errors->has('username') ? 'border-danger' : '' }}" value="{{ old('username') }}" placeholder="Masukkan Username">
 										@if($errors->has('username'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('username')) }}</div>
 										@endif
@@ -94,7 +94,7 @@
 									<div class="form-group col-md-12">
 										<label>Password <span class="text-danger">*</span></label>
 					                          <div class="input-group">
-										  	<input type="password" name="password" class="form-control form-control-sm {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Masukkan Password">
+										  	<input type="password" name="password" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Masukkan Password">
 					                              <div class="input-group-append">
 					                                  <a href="#" class="input-group-text btn btn-toggle-password {{ $errors->has('password') ? 'bg-danger' : 'btn-theme-1' }}"><i class="fa fa-eye"></i></a>
 					                              </div>
@@ -106,7 +106,7 @@
 									<div class="form-group col-md-12">
 										<label>Ulangi Password <span class="text-danger">*</span></label>
 					                          <div class="input-group">
-									  		<input type="password" name="password_confirmation" class="form-control form-control-sm {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Ulangi Password">
+									  		<input type="password" name="password_confirmation" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Ulangi Password">
 					                              <div class="input-group-append">
 					                                  <a href="#" class="input-group-text btn btn-toggle-password {{ $errors->has('password') ? 'bg-danger' : 'btn-theme-1' }}"><i class="fa fa-eye"></i></a>
 					                              </div>
@@ -140,7 +140,7 @@
 <script>
 	// Datepicker
 	$(document).ready(function(){
-		$("input[name=tanggal_lahirs]").datepicker({
+		$("input[name=tanggal_lahir]").datepicker({
 			format: 'dd/mm/yyyy',
 			todayHighlight: true,
 			autoclose: true,
@@ -174,12 +174,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style type="text/css">
   .header-section {background: #340369!important;}
-  .info-section {margin-top: 126px!important;}
+  .info-section {padding-top: 126px!important}
   #registration-form .h6:before, #registration-form .h6:after {content: '---';}
   label {font-size: .875rem;}
- .info-section {
-    margin-top: 86px!important;
-  }
 </style>
 
 @endsection
