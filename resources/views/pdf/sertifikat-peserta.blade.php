@@ -102,6 +102,7 @@
 	<hr id="line-2">
 	<div id="line-bg-2"></div>
 	<div id="line-bg-1"></div>
+	@if(count($pelatihan->materi_pelatihan) > 0)
 	<div id="page-break"></div>
 	<!-- <div class="pattern"><img src="{{ asset('assets/images/others/bg-pattern.png') }}" width="100%"></div> -->
 	<div id="nomor-seri">Nomor Seri: {{ $member->kode_sertifikat }}</div>
@@ -144,5 +145,6 @@
 	<div id="div-line"><hr id="line"></div>
 	<div id="line-bg-2"></div>
 	<div id="line-bg-1"></div>
+	@endif
 </body>
 </html>
