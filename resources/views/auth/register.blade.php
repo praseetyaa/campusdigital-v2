@@ -79,7 +79,7 @@
 								  <div class="form-row">
 									<div class="form-group col-md-12">
 										<label>Email <span class="text-danger">*</span></label>
-										<input type="email" name="email" class="form-control {{ $errors->has('email') ? 'border-danger' : '' }}" value="{{ old('email') }}" placeholder="Masukkan Email">
+										<input type="email" name="email" class="form-control {{ $errors->has('email') ? 'border-danger' : '' }}" value="{{ old('email') }}" placeholder="Contoh: sirpobon8@gmail.com">
 										@if($errors->has('email'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('email')) }}</div>
 										@endif
@@ -101,6 +101,8 @@
 					                          </div>
 										@if($errors->has('password'))
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('password')) }}</div>
+										@else
+										<div class="small text-muted mt-1">Diisi minimal 6 karakter</div>
 										@endif
 									</div>
 									<div class="form-group col-md-12">
