@@ -33,7 +33,7 @@
           <hr>
           <div style="overflow: auto;">
             @foreach($blog_tags as $tag)
-            <span class="badge badge-primary">{{ $tag->tag }}</span>
+            <span class="badge badge-primary">{{ substr($tag->tag,0,1) == '#' ? $tag->tag : '#'.$tag->tag }}</span>
             @endforeach
           </div>
         </div>
@@ -63,7 +63,7 @@
         </div>
         <div class="last-post">
           <div class="heading">
-            <h5 class="m-0">Artikel Lainya</h5>
+            <h5 class="m-0">Artikel Lainnya</h5>
             <hr>
           </div>
           <div class="card border-0">
