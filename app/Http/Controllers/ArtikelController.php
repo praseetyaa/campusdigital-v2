@@ -85,6 +85,31 @@ class ArtikelController extends Controller
     }
 
     /**
+     * Menampilkan artikel berdasarkan kategori
+     *
+     * string $category
+     * @return \Illuminate\Http\Request
+     * @return \Illuminate\Http\Response
+     */
+    public function byCategory(Request $request, $category)
+    {
+        // Referral
+        referral($request->query('ref'), 'site.artikel.by-category', ['permalink' => $category]);
+
+        // Get kategori
+        $kategori = KategoriArtikel::where('slug','=',$category)->firstOrFail();
+
+        // Data artikel
+        $artikel = Blog::join('users','blog.author','=','users.id_user')->join('kontributor','blog.blog_kontributor','=','kontributor.id_kontributor')->where('blog_kategori','=',$kategori->id_ka)->orderBy('blog_at','desc')->paginate(12);
+
+        // View
+        return view('front.artikel.by-category', [
+            'kategori' => $kategori,
+            'artikel' => $artikel,
+        ]);
+    }
+
+    /**
      * Menampilkan artikel berdasarkan author
      *
      * string $author
