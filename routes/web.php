@@ -22,6 +22,7 @@ Route::get('/', 'HomeController@index')->name('site.home');
 // Artikel
 Route::get('/artikel', 'ArtikelController@index')->name('site.artikel.index');
 Route::get('/artikel/{permalink}', 'ArtikelController@detail')->name('site.artikel.detail');
+Route::get('/artikel/kategori/{permalink}', 'ArtikelController@byCategory')->name('site.artikel.by-category');
 Route::get('/artikel/author/{username}', 'ArtikelController@byAuthor')->name('site.artikel.by-author');
 Route::get('/artikel/contributor/{username}', 'ArtikelController@byContributor')->name('site.artikel.by-contributor');
 
