@@ -183,7 +183,13 @@ fill: #FFF;
     .account.dropdown-toggle:after{display: inline-block;}
     .sticky-sidebar{position: unset; top: unset; height: unset;}
 }
-
+@keyframes fab{
+    0% {transform: scale(1);}
+    25% {transform: scale(1);}
+    50% {transform: scale(.9);}
+    75% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
 </style>
 <!-- <style type="text/css">
 .hero-section {border-top: none!important;}

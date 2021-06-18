@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 	<div class="container ">
 		<a class="navbar-brand" href="{{ route('site.home') }}">
-			<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" height="60" alt="">
+			<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" height="60" alt="logo-campusdigital">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

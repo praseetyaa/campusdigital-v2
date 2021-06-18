@@ -5,7 +5,7 @@
 @section('content')
 
 <!-- Page top Section end -->
-<section class="page-top-section set-bg" data-setbg="{{ asset('templates/loans2go/img/page-top-bg/2.jpg') }}">
+<!-- <section class="page-top-section set-bg" data-setbg="{{ asset('templates/loans2go/img/page-top-bg/2.jpg') }}">
   <div class="container">
     <h2>Artikel</h2>
     <nav class="site-breadcrumb">
@@ -14,15 +14,20 @@
       <span class="sb-item active">{{ $blog->blog_title }}</span>
     </nav>
   </div>
-</section>
+</section> -->
+<!-- <section class="page-top-section py-3">
+  <div class="container">
+
+  </div>
+</section> -->
 <!-- Page top Section end -->
 
 <!-- Info Section -->
 <section class="info-section spad">
   <div class="container">
     <div class="row">
-      <div class="col-lg-2">
-        <div class="sticky-top border-right" style="top: 8em">
+      <div class="col-lg-2 order-2 order-lg-1 mb-3 mb-lg-0">
+        <div class="left-side">
           <div class="bg-light rounded-circle mb-2 d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px"><i class="fa fa-user" style="font-size: 1.7rem"></i></div>
           <div class="text-center">
             <p class="text-body font-weight-bold m-0">{{ $blog->blog_kontributor != 0 ? $blog->kontributor : $blog->nama_user }}</p>
@@ -38,43 +43,48 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-7"> 
+      <div class="col-lg-7 order-1 order-lg-2"> 
+
+        <div class="rounded-2 bg-light py-2 px-4 mb-3">
+          <nav class="site-breadcrumb">
+            <a class="sb-item text-" href="{{ route('site.home') }}">Home</a>
+            <a class="sb-item text-" href="{{ route('site.artikel.index') }}">Artikel</a>
+          </nav>
+        </div>
+
         <article>
-          <h2 class="mb-3">{{ $blog->blog_title }}</h2>
+          <h2 class="mb-lg-3">{{ $blog->blog_title }}</h2>
+          <p class="d-block d-lg-none"><small>{{ generate_time_elapsed($blog->blog_at) }} - By {{ $blog->blog_kontributor != 0 ? $blog->kontributor : $blog->nama_user }}</small></p>
     			<img src="{{ image('assets/images/blog/'.$blog->blog_gambar, 'blog') }}" class="img-fluid rounded">
           <div class="ql-snow mt-2"><div class="ql-editor">{!! html_entity_decode($blog->konten) !!}</div></div>
         </article>
       </div>
-      <div class="col-lg-3">
-        <div class="kategori mb-3">
+      <div class="col-lg-3 order-3 order-lg-3">
+        <div class="kategori mb-4">
           <div class="heading">
             <h5 class="m-0">Kategori</h5>
             <hr>
           </div>
-          <div class="card border-0">
-            <div class="card-body">
-              @foreach($kategori as $data)
-              <ul class="list-unstyled">
-                <li class="mb-2">{{$data->kategori}}</li>
-              </ul>
-              @endforeach
-            </div>  
-          </div>
+          @foreach($kategori as $data)
+          <ul class="list-unstyled">
+            <li class="mb-2">{{$data->kategori}}</li>
+          </ul>
+          @endforeach
         </div>
         <div class="last-post">
           <div class="heading">
             <h5 class="m-0">Artikel Lainnya</h5>
             <hr>
           </div>
-          <div class="card border-0">
-            <div class="card-body">
-              @foreach($recents as $data)
+          <div class="row">
+            @foreach($recents as $data)
+            <div class="col-12 col-md-6 col-lg-12 mb-3">
               <a href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">
-                <img src="{{ image('assets/images/blog/'.$data->blog_gambar, 'blog') }}" class="img-fluid rounded">   
-                <p>{{$data->blog_title}}</p>
+                <img src="{{ image('assets/images/blog/'.$data->blog_gambar, 'blog') }}" class="img-fluid rounded mb-2">   
+                <p class="m-0" style="line-height: 1.5">{{$data->blog_title}}</p>
               </a>
-              @endforeach
-            </div>  
+            </div>
+            @endforeach
           </div>
         </div>
       </div>
@@ -91,7 +101,13 @@
 <style type="text/css">
   article {padding-top: 0;}
   article p {margin-bottom: 1rem!important;}
-
+  .site-breadcrumb .sb-item,
+  .site-breadcrumb .sb-item:after{color: #000;}
+  .site-breadcrumb .sb-item:hover{color: var(--primary); text-decoration: underline;}
+  .left-side{position: sticky; top: 7rem; border-right: 1px solid #dee2e6}
+  @media (max-width: 991.98px) {
+    .left-side{border-right: unset; border-top: 1px solid #dee2e6;}
+  }
   /* Quill */
   .ql-editor h2 {margin-bottom: 1rem!important; font-weight: 600!important;}
   .ql-editor h3 {margin-bottom: 1rem!important; font-weight: 600!important;}

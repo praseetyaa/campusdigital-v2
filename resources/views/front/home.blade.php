@@ -142,12 +142,12 @@
 <section class="feature-section spad bg-light">
   <div class="container">
     <div class="text-center mb-5">
-      <h2  data-aos="fade-down">Mentor Kami</h2>
+      <h2 data-aos="fade-down">Mentor Kami</h2>
     </div>
-    <div class="feature-item">
+    <div class="feature-item" data-aos="fade-down">
       <div class="owl-carousel owl-theme" id="mentor">
 			  @foreach($mentor as $data)
-				<div class="text-center" data-aos="fade-down">
+				<div class="text-center">
 				  <img src="{{ asset('assets/images/mentor/'.$data->foto_mentor) }}" class="mb-3 mx-auto" alt="Mentor Campusdigital" style="width: 150px!important; border-radius: 50%!important; border: 2px solid #340369;">
 				  <div class="h5">{{ $data->nama_mentor }}</div>
 				  <p>{{ $data->profesi_mentor }}</p>

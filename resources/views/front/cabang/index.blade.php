@@ -5,13 +5,30 @@
 @section('content')
 
 <!-- Page top Section end -->
-<section class="page-top-section set-bg" data-setbg="{{ asset('templates/loans2go/img/page-top-bg/2.jpg') }}">
+<!-- <section class="page-top-section set-bg" data-setbg="{{ asset('templates/loans2go/img/page-top-bg/2.jpg') }}">
   <div class="container">
     <h2>Cabang</h2>
     <nav class="site-breadcrumb">
       <a class="sb-item" href="{{ route('site.home') }}">Home</a>
       <span class="sb-item active">Cabang</span>
     </nav>
+  </div>
+</section> -->
+<section class="page-top-section set-bg">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-left">
+        <h1>Cabang</h1>
+        <h4 class="font-weight-normal">Lorem ipsum dolor sit, amet<br>consecteturadipisicing elit. Voluptates</h4>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0">
+        <img class="d-none d-lg-block" src="{{asset('assets/images/illustration/5469.png')}}" alt="banner">
+      </div>
+    </div>
+
+    <div class="card rounded-2 shadow border-0" style="top: -3rem">
+      <div class="card-body">Semarang Kedungmundu</div>
+    </div>
   </div>
 </section>
 <!-- Page top Section end -->
