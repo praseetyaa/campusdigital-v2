@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Ajifatur\FaturCMS\Models\Halaman;
+use Ajifatur\FaturCMS\Models\Mentor;
 
 class HalamanController extends Controller
 {
@@ -22,6 +23,9 @@ class HalamanController extends Controller
     	// Data halaman
     	$halaman = Halaman::where('halaman_permalink','=',$permalink)->firstOrFail();
 
+        // Data mentor
+        $mentor = Mentor::orderBy('order_mentor','asc')->get();
+
         if($halaman->halaman_tipe == 1){
             // View
             return view('front.halaman.detail', [
@@ -32,6 +36,7 @@ class HalamanController extends Controller
             // View
             return view('page.'.$halaman->konten, [
                 'halaman' => $halaman,
+                'mentor' => $mentor,
             ]);
         }
     }

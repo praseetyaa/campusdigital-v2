@@ -42,7 +42,8 @@ p {font-size: 1rem;}
 .btn-register-2:hover {background-color: transparent; color: #fdd100;}
 .navbar-light .navbar-toggler {background-color: #fdd100; border-width: 2px; border-color: #fdd100;}
 .navbar-light .navbar-toggler:hover {background-color: transparent; border-radius: 0;}
-
+.map .shadow{box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;}
+.map iframe{height: 200px;}
 /*.page-top-section {border-top: 5px solid #fdd100!important;}*/
 
 .footer-section {background-color: #46157a;}

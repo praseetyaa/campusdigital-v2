@@ -5,15 +5,6 @@
 @section('content')
 
 <!-- Page top Section end -->
-<!-- <section class="page-top-section set-bg" data-setbg="{{ asset('templates/loans2go/img/page-top-bg/2.jpg') }}">
-  <div class="container">
-    <h2>Cabang</h2>
-    <nav class="site-breadcrumb">
-      <a class="sb-item" href="{{ route('site.home') }}">Home</a>
-      <span class="sb-item active">Cabang</span>
-    </nav>
-  </div>
-</section> -->
 <section class="page-top-section set-bg ">
   <div class="container">
     <div class="row align-items-center">
@@ -22,7 +13,7 @@
         <h4 class="font-weight-normal">Cabang kami yang tersebar<br>di seluruh Kota Semarang</h4>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0">
-        <img class="d-none d-lg-block" src="{{asset('assets/images/illustration/5469.png')}}" alt="banner">
+        <img class="d-none d-lg-block mx-auto" src="{{asset('assets/images/illustration/min/5469.png')}}" alt="banner" style="max-width: 400px">
       </div>
     </div>
   </div>
