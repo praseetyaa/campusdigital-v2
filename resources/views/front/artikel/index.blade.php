@@ -23,7 +23,7 @@
 <div class="container my-5">
   <div class="kategori d-flex align-items-center" id="elem">
     @foreach($kategori as $data)
-    <span class="badge bg-white px-3 shadow-sm mr-2"><p class="m-0">{{ $data->kategori }}</p></span>
+    <span class="badge bg-white px-3 shadow-sm mr-2"><p class="m-0"><a href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a></p></span>
     @endforeach
   </div>
 </div>
