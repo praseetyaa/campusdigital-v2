@@ -65,11 +65,15 @@
             <h5 class="m-0">Kategori</h5>
             <hr>
           </div>
-          @foreach($kategori as $data)
-          <ul class="list-unstyled">
-            <li class="mb-2">{{$data->kategori}}</li>
-          </ul>
-          @endforeach
+          <div class="card border-0">
+            <div class="card-body">
+              @foreach($kategori as $data)
+              <ul class="list-unstyled">
+				  <li class="mb-2"><a href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{$data->kategori}}</a></li>
+              </ul>
+              @endforeach
+            </div>  
+          </div>
         </div>
         <div class="last-post">
           <div class="heading">
