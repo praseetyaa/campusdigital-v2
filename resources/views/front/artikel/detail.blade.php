@@ -55,7 +55,7 @@
             <div class="card-body">
               @foreach($kategori as $data)
               <ul class="list-unstyled">
-                <li class="mb-2">{{$data->kategori}}</li>
+				  <li class="mb-2"><a href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{$data->kategori}}</a></li>
               </ul>
               @endforeach
             </div>  
