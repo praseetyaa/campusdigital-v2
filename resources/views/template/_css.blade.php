@@ -28,6 +28,7 @@ p {font-size: 1rem;}
 .icon-box-item:hover .ib-icon {color: #fdd100; background-color: #46157a;}
 .sb-whatsapp {color: #333; background-color: #25D366; border-color: #25D366;}
 .sb-whatsapp:hover {color: #25D366; background-color: transparent;}
+.transition{transition: var(--transition);}
 
 .navbar-light .navbar-nav .nav-item {margin-left: .5rem; margin-right: .5rem;}
 .navbar-light .navbar-nav .nav-link {color: #333; font-size: 17px; font-weight: 600;}
@@ -176,7 +177,12 @@ height: 150px;
 fill: #FFF;
 }
 [v-cloak] { display: none; }
+.img-header{max-width: 400px;}
+@media (max-width: 767.98px) {
+	.img-header{max-width: 100%;}
+}
 @media (max-width: 991.98px){
+	h1{font-size: 40px;}
     .icon-box-item .ib-icon {width: 76px; margin: 0 auto;}
     .icon-box-item:hover .ib-icon{color: #340369; background-color: transparent;}
     .ib-text{text-align: center}

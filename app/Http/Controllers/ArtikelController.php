@@ -102,10 +102,13 @@ class ArtikelController extends Controller
         // Data artikel
         $artikel = Blog::join('users','blog.author','=','users.id_user')->join('kontributor','blog.blog_kontributor','=','kontributor.id_kontributor')->where('blog_kategori','=',$kategori->id_ka)->orderBy('blog_at','desc')->paginate(12);
 
+        $kategori_head = KategoriArtikel::limit(12)->get();
+
         // View
         return view('front.artikel.by-category', [
             'kategori' => $kategori,
             'artikel' => $artikel,
+            'kategori_head' => $kategori_head,
         ]);
     }
 

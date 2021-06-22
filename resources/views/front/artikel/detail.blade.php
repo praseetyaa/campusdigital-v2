@@ -4,30 +4,11 @@
 
 @section('content')
 
-<!-- Page top Section end -->
-<!-- <section class="page-top-section set-bg" data-setbg="{{ asset('templates/loans2go/img/page-top-bg/2.jpg') }}">
-  <div class="container">
-    <h2>Artikel</h2>
-    <nav class="site-breadcrumb">
-      <a class="sb-item" href="{{ route('site.home') }}">Home</a>
-      <a class="sb-item" href="{{ route('site.artikel.index') }}">Artikel</a>
-      <span class="sb-item active">{{ $blog->blog_title }}</span>
-    </nav>
-  </div>
-</section> -->
-<!-- <section class="page-top-section py-3">
-  <div class="container">
-
-  </div>
-</section> -->
-<!-- Page top Section end -->
-
-<!-- Info Section -->
 <section class="info-section spad">
   <div class="container">
     <div class="row">
       <div class="col-lg-2 order-2 order-lg-1 mb-3 mb-lg-0">
-        <div class="left-side">
+        <div class="left-side pt-3 pt-lg-0">
           <div class="bg-light rounded-circle mb-2 d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px"><i class="fa fa-user" style="font-size: 1.7rem"></i></div>
           <div class="text-center">
             <p class="text-body font-weight-bold m-0">{{ $blog->blog_kontributor != 0 ? $blog->kontributor : $blog->nama_user }}</p>
@@ -65,15 +46,11 @@
             <h5 class="m-0">Kategori</h5>
             <hr>
           </div>
-          <div class="card border-0">
-            <div class="card-body">
-              @foreach($kategori as $data)
-              <ul class="list-unstyled">
-				  <li class="mb-2"><a href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{$data->kategori}}</a></li>
-              </ul>
-              @endforeach
-            </div>  
-          </div>
+          @foreach($kategori as $data)
+          <ul class="list-unstyled">
+		        <li class="mb-2"><i class="fa fa-angle-right"></i> <a class="text-body" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{$data->kategori}}</a></li>
+          </ul>
+          @endforeach
         </div>
         <div class="last-post">
           <div class="heading">
@@ -95,7 +72,6 @@
     </div>
   </div>
 </section>
-<!-- Info Section end -->
 
 @endsection
 

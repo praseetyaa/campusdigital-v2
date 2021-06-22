@@ -4,7 +4,6 @@
 
 @section('content')
 
-<!-- Page top Section end -->
 <section class="page-top-section set-bg">
   <div class="container">
     <div class="row align-items-center">
@@ -12,19 +11,18 @@
         <h1>Artikel</h1>
         <h4 class="font-weight-normal">Artikel, tips, dan checklist<br>menarik yang disiapkan bagi bisnis Anda</h4>
       </div>
-      <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0">
-        <img class="d-none d-lg-block mx-auto" src="{{asset('assets/images/illustration/min/8778.png')}}" alt="banner" style="max-width: 400px">
+      <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">
+        <img class="h-auto img-header" src="{{asset('assets/images/illustration/min/8778.png')}}" alt="banner">
       </div>
     </div>
   </div>
 </section>
-<!-- Page top Section end -->
 
-<!-- Info Section -->
 <div class="container my-5">
   <div class="kategori d-flex align-items-center" id="elem">
+    <span class="badge bg-white {{ strpos(Request::url(), '/artikel') ? 'active' : '' }} px-3 shadow-sm mr-2"><p class="m-0"><a class="text-body" href="/artikel">Semua Kategori</a></p></span>
     @foreach($kategori as $data)
-    <span class="badge bg-white px-3 shadow-sm mr-2"><p class="m-0"><a href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a></p></span>
+    <span class="badge {{ strpos(Request::url(), '/ $data->kategori ') ? 'active' : '' }} bg-white px-3 shadow-sm mr-2"><p class="m-0"><a class="text-body" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a></p></span>
     @endforeach
   </div>
 </div>
@@ -38,7 +36,7 @@
           <img class="card-img-top" src="{{ image('assets/images/blog/'.$data->blog_gambar, 'blog') }}" alt="Card image cap">
           </a>
           <div class="card-body">
-            <h5 class="card-title"><a href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">{{ $data->blog_title }}</a></h5>
+            <p class="card-title font-weight-bold"><a class="text-body" href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">{{ $data->blog_title }}</a></p>
           </div>
           <div class="card-footer bg-white d-flex justify-content-between align-items-center">
             <div>
@@ -55,7 +53,6 @@
     </div>
   </div>
 </section>
-<!-- Info Section end -->
 
 @endsection
 
@@ -78,8 +75,8 @@
        var items = elem.children();
 
        // Inserting Buttons
-       elem.prepend('<a href="#"><div class="shadow-sm" id="right-button"><i class="fa fa-chevron-left"></i></div></a>');
-       elem.append('<a href="#"><div class="shadow-sm" id="left-button"><i class="fa fa-chevron-right"></i></div></a>');
+       elem.prepend('<a href="#" class="text-body"><div class="shadow-sm" id="right-button"><i class="fa fa-chevron-left"></i></div></a>');
+       elem.append('<a href="#" class="text-body"><div class="shadow-sm" id="left-button"><i class="fa fa-chevron-right"></i></div></a>');
 
        // Inserting Inner
        items.wrapAll('<div id="inner" />');
@@ -152,6 +149,8 @@ p{line-height: 1.5}
   border-color: #46157a;}
 .page-link{color: #46157a}
 .page-link:hover{color: #46157a}
+.badge.active{background-color: var(--primary)!important;}
+.badge.active a{color: var(--white)!important;}
 
 .card-body {padding-top: 1rem; padding-bottom: 1rem;}
 .card-title {margin-bottom: 0; line-height: 22px; height: 44px; display: -webkit-box !important; -webkit-line-clamp: 2; -moz-line-clamp: 2; -ms-line-clamp: 2; -o-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; -ms-box-orient: vertical; -o-box-orient: vertical; box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
