@@ -11,7 +11,7 @@
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 				<li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}">
-					<a class="nav-link" href="{{ route('site.home') }}">Home</a>
+					<a class="nav-link" href="{{ route('site.home') }}">Beranda</a>
 				</li>
 				<li class="nav-item dropdown {{ strpos(Request::url(), '/program-') ? 'active' : '' }}">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
