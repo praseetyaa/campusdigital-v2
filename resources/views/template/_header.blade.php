@@ -1,15 +1,16 @@
-<!-- Header Section -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+Header Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
 	<div class="container ">
-		<a class="navbar-brand" href="{{ route('site.home') }}">
-			<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" height="60" alt="logo-campusdigital">
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+		
+		<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars py-2 px-1"></i>
 		</button>
+		<a class="navbar-brand mr-auto" href="{{ route('site.home') }}">
+			<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" alt="logo-campusdigital">
+		</a>
 
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}">
 					<a class="nav-link" href="{{ route('site.home') }}">Beranda</a>
 				</li>
@@ -19,49 +20,44 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-digital-marketing-reguler']) }}">Pelatihan Digital Marketing Reguler</a>
-					  <div class="dropdown-divider"></div>
+					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-paket-pelatihan-dan-sertifikasi-digital-marketing']) }}">Paket Pelatihan dan Sertifikasi Digital Marketing</a>
-					  <div class="dropdown-divider"></div>
+					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-pkdm-program-kerjasama') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-pkdm-program-kerjasama']) }}">Pelatihan PKDM (Program Kerjasama)</a>
-					  <div class="dropdown-divider"></div>
+					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-praktek-kerja-industri-prakerin-online') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-praktek-kerja-industri-prakerin-online']) }}">Praktek Kerja Industri (PRAKERIN Online)</a>
-					  <div class="dropdown-divider"></div>
+					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-kelas-industri-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-kelas-industri-digital-marketing']) }}">Kelas Industri Digital Marketing</a>
-					  <div class="dropdown-divider"></div>
+					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-training-of-trainer') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-training-of-trainer']) }}">Training Of Trainer</a>
-					  <div class="dropdown-divider"></div>
+					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-uji-kompetensi-keahlian-digital-marketing-ukk-smk') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => '/program-uji-kompetensi-keahlian-digital-marketing-ukk-smk']) }}">Uji Kompetensi Keahlian Digital Marketing (UKK SMK)</a>
-					  <div class="dropdown-divider"></div>
+					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-beasiswa') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-beasiswa']) }}">Beasiswa</a>
 					</div>
 				</li>
-<!-- 				<li class="nav-item {{ strpos(Request::url(), '/beasiswa') ? 'active' : '' }}">
-					<a class="nav-link" href="/beasiswa{{ Session::get('ref') != null ? '?ref='.Session::get('ref') : '' }}">Beasiswa</a>
-				</li> -->
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'afiliasi']))) ? 'active' : '' }}">
 					<a class="nav-link" href="{{ route('site.halaman.detail', ['permalink' => 'afiliasi']) }}">Afiliasi</a>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.artikel.index'))) ? 'active' : '' }}">
 					<a class="nav-link" href="/artikel{{ Session::get('ref') != null ? '?ref='.Session::get('ref') : '' }}">Artikel</a>
 				</li>
-				<li class="nav-item mb-2 mb-lg-0 {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'tentang-kami']))) ? 'active' : '' }}">
+				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'tentang-kami']))) ? 'active' : '' }}">
 					<a class="nav-link" href="{{ route('site.halaman.detail', ['permalink' => 'tentang-kami']) }}">Tentang Kami</a>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.cabang.index'))) ? 'active' : '' }}">
 					<a class="nav-link" href="{{ route('site.cabang.index') }}">Cabang</a>
 				</li>
-
+			</ul>
+			<ul class="navbar-nav mt-2 mt-lg-0">
 		        @if(Auth::guest())
 				<li class="nav-item">
-		          <a class="btn btn-theme-1 rounded-2 btn-block mb-3 mb-lg-0" href="{{ route('auth.login') }}">Masuk</a>
+		          <a class="nav-link font-weight-bold mb-3 mb-lg-0" href="{{ route('auth.login') }}" style="color: var(--primary);">Masuk</a>
 		        </li>
 				<li class="nav-item">
-		          <a class="btn btn-theme-2 rounded-2 btn-block mb-3 mb-lg-0" href="{{ route('auth.register') }}">Daftar</a>
+		          <a class="btn btn-s font-weight-bold rounded-15 btn-block mb-3 mb-lg-0" href="{{ route('auth.register') }}">Daftar</a>
 		        </li>
 				@else
-				<!-- <li class="nav-item d-lg-none {{ strpos(Request::url(), '/register') ? 'active' : '' }}">
-					<a class="nav-link" href="{{ route('auth.register') }}">Daftar</a>
-				</li> -->
 
 
 				<li class="nav-item dropdown">
@@ -98,4 +94,4 @@
 		</div>
 	</div>
 </nav>
-<!-- Header Section end -->
+<!-- Header Section end

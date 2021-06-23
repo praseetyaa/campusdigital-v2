@@ -3,27 +3,27 @@
 @section('content')
 
 <!-- Hero Section end -->
-<section class="hero-section" style="background-image: url('{{ asset('assets/images/slider/1600318024.jpg') }}'); background-repeat: no-repeat; background-size: cover;">
+<section class="hero-section" style="background: #F6F3FE">
   <div class="container text-left h-100">
     <div class="row h-100">
       <div class="col-lg-12 my-auto">
-        <div class="hs-text" data-aos="fade-right">
+        <div class="" data-aos="fade-right">
           <div class="text-center text-md-left">
-          	<h2>Let's Join Us!</h2>
-		  	    <h3><span class="text-warning">Digital Technology & Business Class</span></h3>
+          	<h1 style="color: var(--primary);">Let's Join Us!</h1>
+		  	    <h2 class="mb-3" style="color: var(--primary);"><span class="">Digital Technology<br>& Business Class</span></h2>
           </div>
-    			<div class="row d-none d-md-flex">
-    				<div class="col-6"><p><i class="fa fa-check mr-2"></i>Digital Marketing</p></div>
-    				<div class="col-6"><p><i class="fa fa-check mr-2"></i>Programmer</p></div>
-    				<div class="col-6"><p><i class="fa fa-check mr-2"></i>Web Developer</p></div>
-    				<div class="col-6"><p><i class="fa fa-check mr-2"></i>Game Developer</p></div>
-    				<div class="col-6"><p><i class="fa fa-check mr-2"></i>Operator Komputer</p></div>
-    				<div class="col-6"><p><i class="fa fa-check mr-2"></i>Multimedia</p></div>
-    				<div class="col-6"><p><i class="fa fa-check mr-2"></i>Graphic Designer</p></div>
-    			</div>
+<!--     			<div class="row d-none d-md-flex">
+    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Digital Marketing</p></div>
+    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Programmer</p></div>
+    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Web Developer</p></div>
+    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Game Developer</p></div>
+    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Operator Komputer</p></div>
+    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Multimedia</p></div>
+    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Graphic Designer</p></div>
+    			</div> -->
           <div class="text-center text-md-left">
-      			<p style="margin-bottom: 20px">Mari bergabung bersama kami untuk mendapatkan ilmunya!</p>
-      			<p><a href="{{ route('auth.register') }}" class="btn-register-2 rounded-2">Daftar</a></p>
+      			<p class="mb-3">Mari bergabung bersama kami untuk<br>mendapatkan ilmunya!</p>
+      			<p><a href="{{ route('auth.register') }}" class="btn btn-primary px-5 shadow-sm font-weight-bold" style="background-color: var(--primary-s); color: var(--primary); border-color: var(--primary-s); border-radius: .5rem;">Daftar</a></p>
           </div>
         </div>
       </div>
@@ -108,17 +108,17 @@
 <!-- Why Section end -->
 
 <!-- CTA Section end -->
-<section class="cta-section set-bg" data-setbg="{{ asset('templates/loans2go/img/cta-bg.jpg') }}">
+<!-- <section class="cta-section set-bg" data-setbg="{{ asset('templates/campusdigital/img/cta-bg.jpg') }}">
   <div class="container" data-aos="fade-down">
     <h2>Materi yang Diajarkan</h2>
     <h5>Materi Internet Marketing disampaikan oleh Praktisi Bisnis Online dan Trainer di Campus Digital.</h5>
     <a href="{{ route('site.halaman.detail', ['permalink' => 'beasiswa']) }}" class="site-btn sb-big">Lihat Selengkapnya</a>
   </div>
 </section>
-<!-- CTA Section end -->
+ --><!-- CTA Section end -->
 
 <!-- Help Section -->
-<section class="help-section spad">
+<!-- <section class="help-section spad">
   <div class="container">
     <div class="feature-item">
       <div class="row">
@@ -135,7 +135,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- Help Section end -->
 
 <!-- Feature Section -->
@@ -243,7 +243,7 @@
 
 
 <!-- CTA Section end -->
-<section class="cta-section set-bg" data-setbg="{{ asset('templates/loans2go/img/score-bg.jpg') }}">
+<section class="cta-section set-bg" data-setbg="{{ asset('templates/campusdigital/img/score-bg.jpg') }}">
   <div class="container">
     <h2 class="text-white"  data-aos="fade-down">Hubungi Kami</h2>
     <h5  data-aos="fade-down" style="color: #9e9fa5;">Daftar privat kursus internet marketing sekarang, atau hubungi kami untuk info lebih lanjut.</h5>

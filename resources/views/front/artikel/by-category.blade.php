@@ -19,10 +19,10 @@
 </section>
 
 <div class="container my-5">
-  <div class="kategori d-flex align-items-center" id="elem">
-    <span class="badge bg-white px-3 shadow-sm mr-2"><p class="m-0"><a class="text-body" href="/artikel">Semua Kategori</a></p></span>
+  <div class="kategori d-flex align-items-center nav-cat" id="elem">
+    <a class="text-body badge bg-white px-3 shadow-sm mr-2" href="/artikel">Semua Kategori</a>
     @foreach($kategori_head as $data)
-    <span class="badge bg-white px-3 shadow-sm mr-2"><p class="m-0"><a class="text-body" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a></p></span>
+    <a class="text-body badge bg-white px-3 shadow-sm mr-2" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a>
     @endforeach
   </div>
 </div>
@@ -30,7 +30,6 @@
   <div class="container">
     <div class="row">
       @foreach($artikel as $data)
-      @if($data<1)
       <div class="col-lg-3 col-md-6 mb-3">
         <div class="card border-0 shadow-sm">
           <a href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">
@@ -47,9 +46,6 @@
           </div>
         </div>
       </div>
-      @else
-      <h1>Hehe</h1>
-      @endif
       @endforeach
     </div>
     <div class="row mt-3" id="pagination">
@@ -130,7 +126,18 @@
          updateUI();
        });
      });
-
+</script>
+<script type="text/javascript">
+(function () {
+    var current = location.pathname;
+    if (current === "") return;
+    var menuItems = document.querySelectorAll('.nav-cat a');
+    for (var i = 0, len = menuItems.length; i < len; i++) {
+        if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
+            menuItems[i].className += " active";
+        }
+    }
+})();
 </script>
 
 @endsection
@@ -153,8 +160,8 @@ p{line-height: 1.5}
   border-color: #46157a;}
 .page-link{color: #46157a}
 .page-link:hover{color: #46157a}
-.badge.active{background-color: var(--primary)!important;}
-.badge.active a{color: var(--white)!important;}
+.badge{font-size: 1rem; padding-top: .5rem; padding-bottom: .5rem;}
+.badge.active{background-color: var(--primary)!important; color: var(--white)!important;}
 
 .card-body {padding-top: 1rem; padding-bottom: 1rem;}
 .card-title {margin-bottom: 0; line-height: 22px; height: 44px; display: -webkit-box !important; -webkit-line-clamp: 2; -moz-line-clamp: 2; -ms-line-clamp: 2; -o-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; -ms-box-orient: vertical; -o-box-orient: vertical; box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}

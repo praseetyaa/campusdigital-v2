@@ -48,82 +48,6 @@
 
 @endsection
 
-@section('js-extra')
-
-<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-<script type="text/javascript">
-     $(function() {
-       var print = function(msg) {
-         alert(msg);
-       };
-
-       var setInvisible = function(elem) {
-         elem.css('visibility', 'hidden');
-       };
-       var setVisible = function(elem) {
-         elem.css('visibility', 'visible');
-       };
-
-       var elem = $("#elem");
-       var items = elem.children();
-
-       // Inserting Buttons
-       elem.prepend('<a href="#"><div class="shadow-sm" id="right-button" style="visibility: hidden;"><i class="fa fa-chevron-left"></i></div></a>');
-       elem.append('<a href="#"><div class="shadow-sm" id="left-button"><i class="fa fa-chevron-right"></i></div></a>');
-
-       // Inserting Inner
-       items.wrapAll('<div id="inner" />');
-
-       // Inserting Outer
-       debugger;
-       elem.find('#inner').wrap('<div id="outer"/>');
-
-       var outer = $('#outer');
-
-       var updateUI = function() {
-         var maxWidth = outer.outerWidth(true);
-         var actualWidth = 0;
-         $.each($('#inner >'), function(i, item) {
-           actualWidth += $(item).outerWidth(true);
-         });
-
-         if (actualWidth <= maxWidth) {
-           setVisible($('#left-button'));
-         }
-       };
-       updateUI();
-
-
-
-       $('#right-button').click(function() {
-         var leftPos = outer.scrollLeft();
-         outer.animate({
-           scrollLeft: leftPos - 200
-         }, 800, function() {
-           debugger;
-           if ($('#outer').scrollLeft() <= 0) {
-             setInvisible($('#right-button'));
-           }
-         });
-       });
-
-       $('#left-button').click(function() {
-         setVisible($('#right-button'));
-         var leftPos = outer.scrollLeft();
-         outer.animate({
-           scrollLeft: leftPos + 200
-         }, 800);
-       });
-
-       $(window).resize(function() {
-         updateUI();
-       });
-     });
-
-</script>
-
-@endsection
-
 @section('css-extra')
 
 <style type="text/css">
@@ -137,46 +61,6 @@ p{line-height: 1.5}
 .ql-align-right {text-align: right!important;}
 .ql-align-center {text-align: center!important;}
 .ql-align-justify {text-align: justify!important;}
-.page-item.active .page-link {
-  color: #fff;
-  background-color: #46157a;
-  border-color: #46157a;}
-.page-link{color: #46157a}
-.page-link:hover{color: #46157a}
-
-.card-body {padding-top: 1rem; padding-bottom: 1rem;}
-.card-title {margin-bottom: 0; line-height: 22px; height: 44px; display: -webkit-box !important; -webkit-line-clamp: 2; -moz-line-clamp: 2; -ms-line-clamp: 2; -o-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; -ms-box-orient: vertical; -o-box-orient: vertical; box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
-#outer {float: left; width: 100%; overflow: hidden; white-space: nowrap; display: inline-block; padding: .5em;}
-.hide {display: none;}
-#left-button, #right-button {
-    display: flex;
-    width: 30px;
-    text-align: center;
-    background-color: var(--white);
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-}
-.custom-shape-divider-top-1619270856 {
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1619270856 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1619270856 .shape-fill {
-    fill: #46157A;
-}
 </style>
 
 @endsection

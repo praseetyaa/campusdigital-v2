@@ -12,8 +12,8 @@
         <h1>Cabang</h1>
         <h4 class="font-weight-normal">Cabang kami yang tersebar<br>di seluruh Kota Semarang</h4>
       </div>
-      <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0">
-        <img class="d-none d-lg-block mx-auto" src="{{asset('assets/images/illustration/min/5469.png')}}" alt="banner" style="max-width: 400px">
+      <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">
+        <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/5469.png')}}" alt="banner">
       </div>
     </div>
   </div>

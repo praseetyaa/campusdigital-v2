@@ -20,9 +20,9 @@
 
 <div class="container my-5">
   <div class="kategori d-flex align-items-center" id="elem">
-    <span class="badge bg-white {{ strpos(Request::url(), '/artikel') ? 'active' : '' }} px-3 shadow-sm mr-2"><p class="m-0"><a class="text-body" href="/artikel">Semua Kategori</a></p></span>
+    <a class="text-body badge bg-white {{ strpos(Request::url(), '/artikel') ? 'active' : '' }} px-3 shadow-sm mr-2" href="/artikel">Semua Kategori</a>
     @foreach($kategori as $data)
-    <span class="badge {{ strpos(Request::url(), '/ $data->kategori ') ? 'active' : '' }} bg-white px-3 shadow-sm mr-2"><p class="m-0"><a class="text-body" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a></p></span>
+    <a class="text-body badge bg-white px-3 shadow-sm mr-2" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a>
     @endforeach
   </div>
 </div>
@@ -149,8 +149,8 @@ p{line-height: 1.5}
   border-color: #46157a;}
 .page-link{color: #46157a}
 .page-link:hover{color: #46157a}
-.badge.active{background-color: var(--primary)!important;}
-.badge.active a{color: var(--white)!important;}
+.badge{font-size: 1rem; padding-top: .5rem; padding-bottom: .5rem;}
+.badge.active{background-color: var(--primary)!important; color: var(--white)!important;}
 
 .card-body {padding-top: 1rem; padding-bottom: 1rem;}
 .card-title {margin-bottom: 0; line-height: 22px; height: 44px; display: -webkit-box !important; -webkit-line-clamp: 2; -moz-line-clamp: 2; -ms-line-clamp: 2; -o-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; -ms-box-orient: vertical; -o-box-orient: vertical; box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}

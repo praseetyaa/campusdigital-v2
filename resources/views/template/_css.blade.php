@@ -2,6 +2,7 @@
 :root{ 
 	--primary: #46157a;
 	--primary-s: #e1c7fd;
+	--primary-ss: #F2E9FB;
 	--secondary: #fdd100; 
 	--secondary-s: #FFF6C8;
 	--shadow: 0 .125rem .25rem rgba(0,0,0,.075);
@@ -15,7 +16,7 @@
 	--yellow: #ffc107;
 	--yellow-s: #FFFBED;
 }
-html, body {font-family: Lato;}
+html, body {}
 html{scroll-behavior: smooth;}
 p {font-size: 1rem;}
 .btn-link-primary {color: #46157a;}
@@ -29,11 +30,20 @@ p {font-size: 1rem;}
 .sb-whatsapp {color: #333; background-color: #25D366; border-color: #25D366;}
 .sb-whatsapp:hover {color: #25D366; background-color: transparent;}
 .transition{transition: var(--transition);}
+.card{border-radius: .5rem!important;}
+.card .card-img-top{border-radius: .5rem .5rem 0 0!important;}
+.card .card-footer{border-radius: 0 0 .5rem .5rem!important;}
 
-.navbar-light .navbar-nav .nav-item {margin-left: .5rem; margin-right: .5rem;}
+.pagination{box-shadow: var(--shadow);}
+.page-link,
+.page-item.disabled .page-link,
+.page-item.active .page-link{border: unset;}
+
+.navbar-light .navbar-nav .nav-item {margin-left: .3rem; margin-right: .3rem;}
 .navbar-light .navbar-nav .nav-link {color: #333; font-size: 17px; font-weight: 600;}
 .navbar-light .navbar-nav .nav-link:hover {color: #46157a;}
 .navbar-light .navbar-nav .active > .nav-link {color: #46157a;}
+.collapse.show{height: calc(100vh - 5rem)!important; overflow-y: auto;}
 .btn-navbar {font-size: 17px; font-weight: 600; margin-left: .5rem; margin-right: .5rem;}
 .btn-login {background-color: #46157a; border: 2px solid #46157a; color: #fff; padding: 1rem; border-radius: 0;}
 .btn-login:hover {background-color: transparent; color: #46157a;}
@@ -41,8 +51,9 @@ p {font-size: 1rem;}
 .btn-register:hover {background-color: transparent; color: #46157a;}
 .btn-register-2 {font-size: 1rem; text-transform: uppercase; font-weight: 600; background-color: #fdd100; border: 2px solid #fdd100; color: #46157a; padding: 1rem 2rem; border-radius: 0; transition: .2s ease;}
 .btn-register-2:hover {background-color: transparent; color: #fdd100;}
-.navbar-light .navbar-toggler {background-color: #fdd100; border-width: 2px; border-color: #fdd100;}
-.navbar-light .navbar-toggler:hover {background-color: transparent; border-radius: 0;}
+.navbar-light .navbar-toggler {background-color: transparent; border-width: 2px; border-color: transparent; color: var(--dark); font-size: 1.5rem;}
+.navbar-light .navbar-toggler:hover {background-color: transparent; color: var(--dark); border-color: var(--primary-s);}
+.navbar-light .navbar-brand img{height: 60px;}
 .map .shadow{box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;}
 .map iframe{height: 200px;}
 /*.page-top-section {border-top: 5px solid #fdd100!important;}*/
@@ -61,6 +72,9 @@ p {font-size: 1rem;}
 .btn-theme-2:hover{color: #fdd100!important; background-color: #ffffff!important; border: 2px solid #fdd100!important}
 .color-theme-1{color: #46157a;}
 
+.btn-s{background-color: var(--primary-s); color: var(--primary); border: 1px solid var(--primary-s);}
+.btn-s:hover{color: var(--white); background-color: var(--primary); border: 1px solid var(--primary);}
+
 .bg-theme-1{background-color: #46157a;}
 .bg-theme-2{background-color: #fdd100;}
 
@@ -68,6 +82,7 @@ p {font-size: 1rem;}
 .border-theme-2{border-color: #fdd100;}
 
 /* style own */
+.rounded-15{border-radius: .5rem!important}
 .rounded-1{border-radius: 1em!important}
 .rounded-2{border-radius: 2em!important}
 .rounded-3{border-radius: 3em!important}
@@ -89,6 +104,8 @@ p {font-size: 1rem;}
 }
 .account.dropdown-toggle:after{display: none;}
 .dropdown-item.active, .dropdown-item:active {text-decoration: none; color: #fff; background: #46157a}
+.dropdown-menu{border: unset; box-shadow: var(--shadow); border-radius: .5rem;}
+.dropdown-item{padding: .75rem 1.5rem;}
 .owl-carousel .owl-item img{margin: auto; width: 80%}
 .sticky-sidebar{position: sticky; top: 6em; height: fit-content}
 .package .list-group-item{background: unset; border: unset;}
@@ -180,6 +197,7 @@ fill: #FFF;
 .img-header{max-width: 400px;}
 @media (max-width: 767.98px) {
 	.img-header{max-width: 100%;}
+	.navbar-light .navbar-brand img{height: 40px;}
 }
 @media (max-width: 991.98px){
 	h1{font-size: 40px;}

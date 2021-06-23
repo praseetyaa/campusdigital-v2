@@ -12,7 +12,7 @@
         <p class="mb-0">Era digital telah berkembang pesat, kebutuhan terhadap tenaga digital marketing semakin tinggi dalam melaksanakan marketing di dunia online dan digital. Oleh karena itu kami hadir untuk melahirkan SDM yang memiliki kompetensi di bidang digital marketing.</p>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">
-        <img class="h-auto img-header" src="{{asset('assets/images/illustration/min/7747.png')}}" alt="banner">
+        <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/7747.png')}}" alt="banner">
       </div>
     </div>
     <div class="row align-items-center">
@@ -21,7 +21,7 @@
         <p class="mb-0">Dengan memiliki mentor yang ahli di bidangnya, lulusan Campus Digital kami harap akan menjadi tenaga kerja baru di bidang teknologi digital marketing atau menjadi wirausaha yang memiliki marketing online yang handal.</p>
       </div>
       <div class="col-lg-6 order-1 text-center">
-        <img class="h-auto img-header" src="{{asset('assets/images/illustration/min/5237.png')}}" alt="banner">
+        <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/5237.png')}}" alt="banner">
       </div>
     </div>
   </div>
@@ -50,11 +50,11 @@
 <section class="contact-section spad pt-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 mb-4">
-        <h1>Kontak Kami</h1>
+      <div class="col-lg-6 mb-4 text-center">
+        <h1 class="mb-3 mb-lg-0">Kontak Kami</h1>
         <div class="card py-2 px-3">
           <div class="card-body">
-            <div class="row align-items-center">
+            <div class="row align-items-center text-center text-md-left">
               <div class="col-md-6">
                 <a href="/"><img class="mb-3" src="{{ asset('assets/images/logo/logo-dark.png')}}" width="200" alt="logo-campusdigital"></a>
               </div>

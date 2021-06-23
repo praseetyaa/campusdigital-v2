@@ -13,7 +13,7 @@
         <h4 class="font-weight-normal">Dapatkan komisi sebesar Rp.{{ number_format(setting('site.komisi_student'),0,',','.') }}<br>Setiap pendaftaran melalui kode referral</h4>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">
-        <img class="h-auto" src="{{asset('assets/images/illustration/min/6617.png')}}" alt="banner" style="max-width: 400px">
+        <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/6617.png')}}" alt="banner">
       </div>
     </div>
   </div>

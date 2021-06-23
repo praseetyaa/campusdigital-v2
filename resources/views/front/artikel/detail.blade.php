@@ -11,7 +11,7 @@
         <div class="left-side pt-3 pt-lg-0">
           <div class="bg-light rounded-circle mb-2 d-flex align-items-center justify-content-center mx-auto" style="width: 70px; height: 70px"><i class="fa fa-user" style="font-size: 1.7rem"></i></div>
           <div class="text-center">
-            <p class="text-body font-weight-bold m-0">{{ $blog->blog_kontributor != 0 ? $blog->kontributor : $blog->nama_user }}</p>
+            <p class="m-0"><a class="text-body font-weight-bold" href="{{ $blog->blog_kontributor != 0 ? route('site.artikel.by-contributor', ['username' => $blog->slug]) : route('site.artikel.by-author', ['username' => $blog->username]) }}">{{ $blog->blog_kontributor != 0 ? $blog->kontributor : $blog->nama_user }}</a></p>
             <p class="m-0"><small><i class="fa fa-bookmark"></i> {{ $blog->blog_kontributor != 0 ? 'Kontributor' : role($blog->role) }}</small></p>
             <p class="m-0"><small> {{$blog->kategori}}</small></p>
             <p class="m-0"><small><i class="fa fa-clock-o"></i> {{ generate_time_elapsed($blog->blog_at) }}</small></p>
