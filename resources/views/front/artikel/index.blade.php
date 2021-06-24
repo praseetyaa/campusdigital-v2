@@ -143,16 +143,9 @@ p{line-height: 1.5}
 .ql-align-right {text-align: right!important;}
 .ql-align-center {text-align: center!important;}
 .ql-align-justify {text-align: justify!important;}
-.page-item.active .page-link {
-  color: #fff;
-  background-color: #46157a;
-  border-color: #46157a;}
-.page-link{color: #46157a}
-.page-link:hover{color: #46157a}
 .badge{font-size: 1rem; padding-top: .5rem; padding-bottom: .5rem;}
 .badge.active{background-color: var(--primary)!important; color: var(--white)!important;}
 
-.card-body {padding-top: 1rem; padding-bottom: 1rem;}
 .card-title {margin-bottom: 0; line-height: 22px; height: 44px; display: -webkit-box !important; -webkit-line-clamp: 2; -moz-line-clamp: 2; -ms-line-clamp: 2; -o-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; -ms-box-orient: vertical; -o-box-orient: vertical; box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
 #outer {float: left; width: 100%; overflow: hidden; white-space: nowrap; display: inline-block; padding: .5em;}
 .hide {display: none;}

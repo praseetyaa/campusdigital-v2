@@ -24,12 +24,6 @@ $(document).ready(function() {
          $(".navbar").removeClass("shrink");
        }
 
-      if ($(".navbar").hasClass("shrink")) {
-         $("._logo").attr("src", "{{ asset('assets/images/logo/logo-dark.png') }}");
-      } else {
-         $("._logo").attr("src", "{{ asset('assets/images/logo/logo-light.png') }}");
-      }
-
    });
 });
 </script> -->

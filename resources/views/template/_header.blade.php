@@ -1,11 +1,11 @@
-Header Section -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<!-- Header Section -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 	<div class="container ">
 		
 		<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fa fa-bars py-2 px-1"></i>
 		</button>
-		<a class="navbar-brand mr-auto" href="{{ route('site.home') }}">
+		<a class="navbar-brand mr-auto mr-lg-3" href="{{ route('site.home') }}">
 			<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" alt="logo-campusdigital">
 		</a>
 
@@ -43,7 +43,7 @@ Header Section -->
 					<a class="nav-link" href="/artikel{{ Session::get('ref') != null ? '?ref='.Session::get('ref') : '' }}">Artikel</a>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'tentang-kami']))) ? 'active' : '' }}">
-					<a class="nav-link" href="{{ route('site.halaman.detail', ['permalink' => 'tentang-kami']) }}">Tentang Kami</a>
+					<a class="nav-link" href="{{ route('site.halaman.detail', ['permalink' => 'tentang-kami']) }}">Tentang</a>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.cabang.index'))) ? 'active' : '' }}">
 					<a class="nav-link" href="{{ route('site.cabang.index') }}">Cabang</a>
@@ -55,7 +55,7 @@ Header Section -->
 		          <a class="nav-link font-weight-bold mb-3 mb-lg-0" href="{{ route('auth.login') }}" style="color: var(--primary);">Masuk</a>
 		        </li>
 				<li class="nav-item">
-		          <a class="btn btn-s font-weight-bold rounded-15 btn-block mb-3 mb-lg-0" href="{{ route('auth.register') }}">Daftar</a>
+		          <a class="btn btn-primary font-weight-bold rounded-15 btn-block mb-3 mb-lg-0 px-4" href="{{ route('auth.register') }}">Daftar</a>
 		        </li>
 				@else
 
@@ -94,4 +94,4 @@ Header Section -->
 		</div>
 	</div>
 </nav>
-<!-- Header Section end
+<!-- Header Section end -->

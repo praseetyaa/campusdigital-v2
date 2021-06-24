@@ -3,14 +3,14 @@
 @section('content')
 
 <!-- Hero Section end -->
-<section class="hero-section" style="background: #F6F3FE">
+<section class="hero-section">
   <div class="container text-left h-100">
-    <div class="row h-100">
-      <div class="col-lg-12 my-auto">
+    <div class="row align-items-center h-100">
+      <div class="col-lg-5">
         <div class="" data-aos="fade-right">
           <div class="text-center text-md-left">
-          	<h1 style="color: var(--primary);">Let's Join Us!</h1>
-		  	    <h2 class="mb-3" style="color: var(--primary);"><span class="">Digital Technology<br>& Business Class</span></h2>
+          	<h1>Let's Join Us!</h1>
+		  	    <h2 class="mb-3"><span style="color: var(--primary);">Digital</span> Technology<br>& Business Class</h2>
           </div>
 <!--     			<div class="row d-none d-md-flex">
     				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Digital Marketing</p></div>
@@ -23,10 +23,12 @@
     			</div> -->
           <div class="text-center text-md-left">
       			<p class="mb-3">Mari bergabung bersama kami untuk<br>mendapatkan ilmunya!</p>
-      			<p><a href="{{ route('auth.register') }}" class="btn btn-primary px-5 shadow-sm font-weight-bold" style="background-color: var(--primary-s); color: var(--primary); border-color: var(--primary-s); border-radius: .5rem;">Daftar</a></p>
+      			<p><a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm font-weight-bold">Daftar</a></p>
           </div>
         </div>
-      </div>
+    </div>
+    <div class="col-lg-7">
+      <img class="img-fluid" src="{{asset('assets/images/illustration/695.png')}}" alt="img">
     </div>
   </div>
 </section>
@@ -35,6 +37,106 @@
 <!-- Why Section end -->
 <section class="why-section spad">
   <div class="container">
+    <div class="floating">
+      <div class="row">
+        <div class="col-lg-3 text-center text-lg-left">
+          <h2>Lorem ipsum dolor</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Magni praesentiumm</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="">
+            <div class="">
+              <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                  <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                      <div class="p-2 rounded-15 mb-2" style="width: fit-content; background-color: var(--primary-s);">
+                        <img style="filter: var(--primary-f);" src="https://image.flaticon.com/icons/svg/945/945465.svg" width="40" alt="icon">
+                      </div>
+                      <h5 class="m-0">Digital Marketing</h5>
+                      <p class="m-0" style="line-height: 20px">Lorem ipsum dolor, sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                      <div class="p-2 rounded-15 mb-2" style="width: fit-content; background-color: var(--red-s);">
+                        <img style="filter: var(--red-f);" src="https://image.flaticon.com/icons/svg/945/945465.svg" width="40" alt="icon">
+                      </div>
+                      <h5 class="m-0">Programmer</h5>
+                      <p class="m-0" style="line-height: 20px">Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                      <div class="p-2 rounded-15 mb-2" style="width: fit-content; background-color: var(--green-s);">
+                        <img style="filter: var(--green-f);" src="https://image.flaticon.com/icons/svg/945/945465.svg" width="40" alt="icon">
+                      </div>
+                      <h5 class="m-0">Web Developer</h5>
+                      <p class="m-0" style="line-height: 20px">Lorem, ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                      <div class="p-2 rounded-15 mb-2" style="width: fit-content; background-color: var(--blue-s);">
+                        <img style="filter: var(--blue-f);" src="https://image.flaticon.com/icons/svg/945/945465.svg" width="40" alt="icon">
+                      </div>
+                      <h5 class="m-0">Game Developer</h5>
+                      <p class="m-0" style="line-height: 20px">Lorem ipsum dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                      <div class="p-2 rounded-15 mb-2" style="width: fit-content; background-color: var(--yellow-s);">
+                        <img style="filter: var(--yellow-f);" src="https://image.flaticon.com/icons/svg/945/945465.svg" width="40" alt="icon">
+                      </div>
+                      <h5 class="m-0">OP Komputer</h5>
+                      <p class="m-0" style="line-height: 20px">Lorem ipsum dolor, sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                      <div class="p-2 rounded-15 mb-2" style="width: fit-content; background-color: var(--primary-s);">
+                        <img style="filter: var(--primary-f);" src="https://image.flaticon.com/icons/svg/945/945465.svg" width="40" alt="icon">
+                      </div>
+                      <h5 class="m-0">Multimedia</h5>
+                      <p class="m-0" style="line-height: 20px">Lorem ipsum, dolor sit amet</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                      <div class="p-2 rounded-15 mb-2" style="width: fit-content; background-color: var(--red-s);">
+                        <img style="filter: var(--red-f);" src="https://image.flaticon.com/icons/svg/945/945465.svg" width="40" alt="icon">
+                      </div>
+                      <h5 class="m-0">Graphic Designer</h5>
+                      <p class="m-0" style="line-height: 20px">Lorem ipsum, dolor sit, amet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="why-section spad">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 data-aos="fade-down">Materi yang Diajarkan</h2>
+    </div>
     <div class="row">
       <div class="col-md-4"  data-aos="fade-down">
         <div class="icon-box-item text-center text-sm-left">
