@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="info-text">
-					<div class="card shadow border-0">
+					<div class="card shadow-sm border-0">
 						<div class="card-header text-center border-0 bg-white pb-0">
 							<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" height="100" alt="logo" /></a>
 							<h3 class="mb-0 mt-4">Form Registrasi</h3>
@@ -21,7 +21,7 @@
 								  {{ csrf_field() }}
 								  <input type="hidden" name="ref" value="{{ $_GET['ref'] }}">
 								  <div class="mb-3 text-center">
-										<a href="{{ asset('assets/docs/TUTORIAL PENDAFTARAN MEMBER CAMPUS DIGITAL.pdf') }}" target="_blank" class="btn btn-theme-1 btn-block"><i class="fa fa-download mr-2"></i>Download Tutorial Pendaftaran Member Campus Digital</a>
+										<a href="{{ asset('assets/docs/TUTORIAL PENDAFTARAN MEMBER CAMPUS DIGITAL.pdf') }}" target="_blank" class="btn btn-primary btn-block"><i class="fa fa-download mr-2"></i>Download Tutorial Pendaftaran Member Campus Digital</a>
 								  </div>
 								  <div class="alert alert-success text-center">
 									<strong>Biaya Aktivasi:</strong><br><del class="h5 text-danger">Rp {{ number_format(setting('site.harga_dicoret'),0,'.','.') }}</del><br><span class="h4">Rp {{ number_format(setting('site.biaya_aktivasi'),0,'.','.') }}</span>
@@ -96,7 +96,7 @@
 					                          <div class="input-group">
 										  	<input type="password" name="password" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Masukkan Password">
 					                              <div class="input-group-append">
-					                                  <a href="#" class="input-group-text btn btn-toggle-password {{ $errors->has('password') ? 'bg-danger' : 'btn-theme-1' }}"><i class="fa fa-eye"></i></a>
+					                                  <a href="#" class="input-group-text btn btn-toggle-password {{ $errors->has('password') ? 'bg-danger' : 'btn-primary' }}"><i class="fa fa-eye"></i></a>
 					                              </div>
 					                          </div>
 										@if($errors->has('password'))
@@ -110,7 +110,7 @@
 					                          <div class="input-group">
 									  		<input type="password" name="password_confirmation" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Ulangi Password">
 					                              <div class="input-group-append">
-					                                  <a href="#" class="input-group-text btn btn-toggle-password {{ $errors->has('password') ? 'bg-danger' : 'btn-theme-1' }}"><i class="fa fa-eye"></i></a>
+					                                  <a href="#" class="input-group-text btn btn-toggle-password {{ $errors->has('password') ? 'bg-danger' : 'btn-primary' }}"><i class="fa fa-eye"></i></a>
 					                              </div>
 					                          </div>
 									</div>
@@ -118,7 +118,7 @@
 								  <hr>
 							</div>
 							<div class="card-footer bg-white border-0 pt-0 pb-3">
-								<button type="submit" id="btn-submit" class="btn btn-sm btn-theme-1"><i class="fa fa-check mr-1"></i> Submit</button>
+								<button type="submit" id="btn-submit" class="btn btn-primary"><i class="fa fa-check mr-1"></i> Submit</button>
 							</div>
 						</form>
 					</div>

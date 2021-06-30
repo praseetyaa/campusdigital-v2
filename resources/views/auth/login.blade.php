@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="auth-wrapper w-100 my-4">
-                        <div class="auth-box border-0 border-secondary rounded shadow">
+                        <div class="auth-box border-0 border-secondary rounded shadow-sm">
                             <div id="loginform">
                                 <div class="text-center p-b-20">
                                     <span class="db"><a href="{{ route('site.home') }}"><img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" height="100" alt="logo" /></a></span>
@@ -91,7 +91,7 @@
                                                 </div>
                                                 <input type="password" name="password" class="form-control rounded-start {{ $errors->has('password') ? 'border-danger' : '' }}" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
                                                 <div class="input-group-append">
-                                                    <a href="#" class="input-group-text bg-theme-1 border-0 text-white {{ $errors->has('password') ? 'border-danger bg-danger' : 'bg-theme-1' }}" id="btn-toggle-password"><i class="fa fa-eye"></i></a>
+                                                    <a href="#" class="input-group-text btn-primary border-0 {{ $errors->has('password') ? 'border-danger bg-danger' : 'bg-theme-1' }}" id="btn-toggle-password"><i class="fa fa-eye"></i></a>
                                                 </div>
                                                 @if($errors->has('password'))
                                                 <small class="form-row col-12 mt-1 text-danger">{{ ucfirst($errors->first('password')) }}</small>
@@ -106,7 +106,7 @@
                                         <div class="col-12">
                                             <div class="form-group">
                                                 <div class="p-t-20">
-                                                    <button class="btn btn-theme-1 btn-block mb-3" type="submit">Masuk</button>
+                                                    <button class="btn btn-primary font-weight-bold btn-block mb-3" type="submit">Masuk</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -116,7 +116,7 @@
                                             <div class="form-group mb-0">
                                                 <div class="">
                                                     <p class="text-center border-or mb-0">Belum punya akun?</p>
-                                                    <a class="btn btn-block btn-theme-2" href="{{ route('auth.register') }}">Daftar</a>
+                                                    <a class="btn btn-block btn-secondary font-weight-bold" href="{{ route('auth.register') }}">Daftar</a>
                                                 </div>
                                             </div>
                                         </div>
