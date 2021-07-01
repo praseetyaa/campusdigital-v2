@@ -110,16 +110,7 @@ body{background-color: var(--light);}
 @endsection
 
 @section('js-extra')
-<script type="text/javascript" src="{{ asset('templates/vali-admin/js/jquery-3.2.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('templates/vali-admin/js/popper.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('templates/vali-admin/js/bootstrap.min.js') }}"></script>
-
-<!-- ============================================================== -->
-<!-- This page plugin js -->
-<!-- ============================================================== -->
 <script>
-
-// Button toggle password
 $(document).on("click", "#btn-toggle-password", function(e){
     e.preventDefault();
     if(!$(this).hasClass("show")){
@@ -133,14 +124,5 @@ $(document).on("click", "#btn-toggle-password", function(e){
         $(this).removeClass("show");
     }
 });
-</script>
-<script type="text/javascript">
-     $(document).on("click", ".navbar-toggler", function(e){
-        e.preventDefault();
-        if($(".navbar-collapse").hasClass('show'))
-            $(".navbar-collapse").removeClass('show')
-        else
-            $(".navbar-collapse").addClass('show')
-     });
 </script>
 @endsection
