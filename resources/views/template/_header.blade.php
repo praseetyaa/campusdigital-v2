@@ -5,10 +5,12 @@
 		<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fa fa-bars py-2 px-1"></i>
 		</button>
-		<a class="navbar-brand mr-auto mr-lg-3" href="{{ route('site.home') }}">
+		<a class="navbar-brand mx-auto mr-lg-3" href="{{ route('site.home') }}">
 			<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" alt="logo-campusdigital">
 		</a>
-
+		<button class="navbar-toggler" type="button" style="opacity: 0;">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}">

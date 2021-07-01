@@ -4,12 +4,12 @@
 <script src="{{ asset('templates/campusdigital/js/jquery.slicknav.min.js') }}"></script>
 <script src="{{ asset('templates/campusdigital/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('templates/campusdigital/js/jquery-ui.min.js') }}"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 AOS.init({
    once: true
 })
-</script>
+</script> -->
 <script src="{{ asset('templates/campusdigital/js/main.js') }}"></script>
 <!-- <script type="text/javascript">
 $(document).ready(function() {

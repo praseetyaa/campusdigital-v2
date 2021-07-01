@@ -5,13 +5,13 @@
 @section('content')
 
 <!-- Info Section -->
-<section class="info-section spad pt-0">
+<section class="main-wrapper">
   <div class="container">
-    <div class="row">
+    <div class="row my-4">
       <div class="col-lg-6">
         <div class="info-text">
-					<div class="card shadow-sm border-0">
-						<div class="card-header text-center border-0 bg-white pb-0">
+					<div class="card rounded-15 shadow-sm border-0">
+						<div class="card-header text-center border-0 bg-white pb-0 mt-2">
 							<img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" height="100" alt="logo" /></a>
 							<h3 class="mb-0 mt-4">Form Registrasi</h3>
 						</div>
@@ -118,7 +118,7 @@
 								  <hr>
 							</div>
 							<div class="card-footer bg-white border-0 pt-0 pb-3">
-								<button type="submit" id="btn-submit" class="btn btn-primary"><i class="fa fa-check mr-1"></i> Submit</button>
+								<button type="submit" id="btn-submit" class="btn btn-success"><i class="fa fa-check mr-1"></i> Kirim</button>
 							</div>
 						</form>
 					</div>
@@ -175,10 +175,11 @@
 @section('css-extra')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style type="text/css">
-  .header-section {background: #340369!important;}
-  .info-section {padding-top: 126px!important}
-  #registration-form .h6:before, #registration-form .h6:after {content: '---';}
-  label {font-size: .875rem;}
+body{background-color: var(--light);}
+.header-section {background: #340369!important;}
+.main-wrapper{margin-top: 86px}
+#registration-form .h6:before, #registration-form .h6:after {content: '---';}
+label {font-size: .875rem;}
 </style>
 
 @endsection

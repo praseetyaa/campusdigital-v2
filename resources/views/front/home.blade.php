@@ -3,12 +3,12 @@
 @section('content')
 
 <!-- Hero Section end -->
-<section class="hero-section set-bg">
+<section class="hero-section">
   <div class="container text-left h-100">
     <div class="row align-items-center h-100">
-      <div class="col-12">
-        <div class="" data-aos="fade-right">
-          <div class="text-center text-md-left">
+      <div class="col-lg-5">
+        <div class="">
+          <div class="text-center text-lg-left">
           	<h1>Let's Join Us!</h1>
 		  	    <h2 class="mb-3"><span style="color: var(--primary);">Digital</span> Technology<br>& Business Class</h2>
           </div>
@@ -21,83 +21,155 @@
     				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Multimedia</p></div>
     				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Graphic Designer</p></div>
     			</div> -->
-          <div class="text-center text-md-left">
+          <div class="text-center text-lg-left">
       			<p class="mb-3">Mari bergabung bersama kami untuk<br>mendapatkan ilmunya!</p>
       			<p><a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm font-weight-bold">Daftar</a></p>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-7 text-center">
+        <div class="card shadow border-0 front-card-zoom">
+          <div class="card-header d-flex align-items-center justify-content-end">
+            <i class="fa fa-circle px-1 text-success"></i>
+            <i class="fa fa-circle px-1 text-warning"></i>
+            <i class="fa fa-circle px-1 text-danger"></i>
+          </div>
+          <div class="overflow-hidden">
+            <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
+              <div class="banner-video" style="background-image: url(https://i.ytimg.com/an_webp/AfGz0Z9HGfU/mqdefault_6s.webp?du=3000&sqp=CLns9IYG&rs=AOn4CLBT8jHZsmNDQkfG7rx5bHBEZBAvIA)">
+                <div class="overlay-banner text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
+              </div>
+            </a>
           </div>
         </div>
     </div>
   </div>
 </section>
 
-<section class="why-section">
+<section class="mt-3 mt-lg-0">
+  <div class="container">
+    <div class="d-flex" style="overflow-x: auto;">
+      <div class="mr-2" style="white-space: nowrap;">
+        <i class="fa fa-check p-1 rounded" style="
+        color: var(--green);
+        background-color: var(--green-s);">
+        </i> 
+        <span>Digital Marketing</span>
+      </div>
+      <div class="mr-2" style="white-space: nowrap;">
+        <i class="fa fa-check p-1 rounded" style="
+        color: var(--green);
+        background-color: var(--green-s);">
+        </i> 
+        <span>Programmer</span>
+      </div>
+      <div class="mr-2" style="white-space: nowrap;">
+        <i class="fa fa-check p-1 rounded" style="
+        color: var(--green);
+        background-color: var(--green-s);">
+        </i> 
+        <span>Web Developer</span>
+      </div>
+      <div class="mr-2" style="white-space: nowrap;">
+        <i class="fa fa-check p-1 rounded" style="
+        color: var(--green);
+        background-color: var(--green-s);">
+        </i> 
+        <span>Game Developer</span>
+      </div>
+      <div class="mr-2" style="white-space: nowrap;">
+        <i class="fa fa-check p-1 rounded" style="
+        color: var(--green);
+        background-color: var(--green-s);">
+        </i> 
+        <span>Operator Komputer</span>
+      </div>
+      <div class="mr-2" style="white-space: nowrap;">
+        <i class="fa fa-check p-1 rounded" style="
+        color: var(--green);
+        background-color: var(--green-s);">
+        </i> 
+        <span>Multimedia</span>
+      </div>
+      <div class="mr-2" style="white-space: nowrap;">
+        <i class="fa fa-check p-1 rounded" style="
+        color: var(--green);
+        background-color: var(--green-s);">
+        </i> 
+        <span>Graphic Designer</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-section spad pb-0">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 data-aos="fade-down">Materi yang Diajarkan</h2>
+      <h2 >Materi yang Diajarkan</h2>
     </div>
     <div class="row">
-      <div class="col-6 col-md-4"  data-aos="fade-down">
+      <div class="col-6 col-md-4"  >
         <div class="icon-box-item text-center text-sm-left">
-          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4" style="background: var(--primary-s)">
-            <i class="flaticon-004-assistance" style="color: var(--primary);"></i>
+          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4">
+           <img src="{{asset('assets/images/icon/analyze.svg')}}" alt="icon">
           </div>
           <div class="ib-text">
-            <h5>Riset</h5>
+            <h5 class="m-0">Riset</h5>
             <p>Bagaimana cara untuk melakukan riset pasar dan produk.</p>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-4"  data-aos="fade-down">
+      <div class="col-6 col-md-4"  >
         <div class="icon-box-item text-center text-sm-left">
-          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4" style="background: var(--primary-s)">
-            <i class="flaticon-024-laptop" style="color: var(--primary);"></i>
+          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4">
+            <img src="{{asset('assets/images/icon/online-shop.svg')}}" alt="icon">
           </div>
           <div class="ib-text">
-            <h5>Social Media Marketing</h5>
+            <h5 class="m-0">Social Media Marketing</h5>
             <p>Bagaimana menggunakan social media untuk aktivitas marketing.</p>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-4"  data-aos="fade-down">
+      <div class="col-6 col-md-4"  >
         <div class="icon-box-item text-center text-sm-left">
-          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4" style="background: var(--primary-s)">
-            <i class="flaticon-032-placeholder" style="color: var(--primary);"></i>
+          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4">
+            <img src="{{asset('assets/images/icon/merchant.svg')}}" alt="icon">
           </div>
           <div class="ib-text">
-            <h5>Marketplace</h5>
+            <h5 class="m-0">Marketplace</h5>
             <p>Bagaimana berjualan menggunakan marketplace.</p>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-4"  data-aos="fade-down">
+      <div class="col-6 col-md-4"  >
         <div class="icon-box-item text-center text-sm-left">
-          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4" style="background: var(--primary-s)">
-            <i class="flaticon-006-smartphone-2" style="color: var(--primary);"></i>
+          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4">
+            <img src="{{asset('assets/images/icon/marketing.svg')}}" alt="icon">
           </div>
           <div class="ib-text">
-            <h5>FB/IG Ads</h5>
+            <h5 class="m-0">FB/IG Ads</h5>
             <p>Bagaimana beriklan di Facebook dan Instagram.</p>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-4"  data-aos="fade-down">
+      <div class="col-6 col-md-4"  >
         <div class="icon-box-item text-center text-sm-left">
-          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4" style="background: var(--primary-s)">
-            <i class="flaticon-016-smartphone" style="color: var(--primary);"></i>
+          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4">
+            <img src="{{asset('assets/images/icon/analysis.svg')}}" alt="icon">
           </div>
           <div class="ib-text">
-            <h5>SEO Dasar</h5>
+            <h5 class="m-0">SEO Dasar</h5>
             <p>Bagaimana agar website nomor satu di halaman Search Engine.</p>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-4"  data-aos="fade-down">
+      <div class="col-6 col-md-4"  >
         <div class="icon-box-item text-center text-sm-left">
-          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4" style="background: var(--primary-s)">
-            <i class="flaticon-037-responsive" style="color: var(--primary);"></i>
+          <div class="ib-icon rounded-15 mx-auto ml-lg-0 mr-lg-4">
+            <img src="{{asset('assets/images/icon/arts.svg')}}" alt="icon">
           </div>
           <div class="ib-text">
-            <h5>Desain Web</h5>
+            <h5 class="m-0">Desain Web</h5>
             <p>Bagaimana membuat website dan landing page untuk promosi.</p>
           </div>
         </div>
@@ -109,7 +181,7 @@
 <section class="why-section spad">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 data-aos="fade-down">Program Kami</h2>
+      <h2 >Program Kami</h2>
       <p>Program yang disediakan oleh Campus Digital</p>
     </div>
     <div>
@@ -118,9 +190,9 @@
           <div class="card border-0 shadow-sm mb-3">
             <img src="{{asset('assets/images/program/1.jpg')}}" class="card-img-top">
             <div class="card-body">
-              <p class="font-weight-bold m-0 text-truncate">Pelatihan Digital Marketing Reguler</p>
+              <p class="font-weight-bold m-0 text-truncate d-block">Pelatihan Digital Marketing Reguler</p>
               <p class="text-truncate-3 d-none d-md-box">Digital Marketing menjadi hal yang sangat dibutuhkan dalam perkembangan bisnis di era teknologi</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-pelatihan-digital-marketing-reguler" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -130,7 +202,7 @@
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Paket Pelatihan dan Sertifikasi Digital Marketing</p>
               <p class="text-truncate-3 d-none d-md-box">Bekerjasama dengan LSP Teknologi Digital mengadakan Program Pelatihan dan Sertifikasi Digital Marketing BNSP</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-paket-pelatihan-dan-sertifikasi-digital-marketing" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -140,7 +212,7 @@
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Pelatihan PKDM (Program Kerjasama)</p>
               <p class="text-truncate-3 d-none d-md-box">Peningkatan Kompetensi Digital Marketing bagi tenaga pendidik untuk bekal dalam kegiatan belajar mengajar</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-pelatihan-pkdm-program-kerjasama" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -150,7 +222,7 @@
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Praktek Kerja Industri (PRAKERIN Online)</p>
               <p class="text-truncate-3 d-none d-md-box">Peserta yang mengikuti paktek kerja industri Digital Marketing akan diajarkan dan praktek materi Digital Marketing</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-praktek-kerja-industri-prakerin-online" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -160,7 +232,7 @@
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Kelas Industri Digital Marketing</p>
               <p class="text-truncate-3 d-none d-md-box">Peserta yang mengikuti kelas industri Digital Marketing akan diajarkan materi sesuai dengan standar dari BNSP</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-kelas-industri-digital-marketing" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -170,7 +242,7 @@
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Training Of Trainer</p>
               <p class="text-truncate-3 d-none d-md-box">Pelatihan yang dirancang untuk melatih peserta menjadi trainer Digital Marketing yang handal</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-training-of-trainer" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -180,7 +252,7 @@
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Uji Kompetensi Keahlian Digital Marketing (UKK SMK)</p>
               <p class="text-truncate-3 d-none d-md-box">Peserta yang mengikuti Uji Kompetensi Keahlian Digital Marketing akan diuji sesuai dengan standar BNSP</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-uji-kompetensi-keahlian-digital-marketing-ukk-smk" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -190,7 +262,7 @@
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Beasiswa</p>
               <p class="text-truncate-3 d-none d-md-box">Mau belajar strategi marketing secara digital? Cara membuat konten digital, menganalisa data digital, mengetahui pemasaran berbasis website? Semua akan dikupas di Campus Digital</p>
-              <button class="btn btn-primary">Selengkapnya</button>
+              <a href="/program-beasiswa" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
@@ -199,18 +271,18 @@
   </div>
 </section>
 
-<section class="feature-section">
+<section class="feature-section bg-light pt-5">
   <div class="container">
     <div class="text-center">
-      <h2 data-aos="fade-down">Mentor Kami</h2>
+      <h2 >Mentor Kami</h2>
       <p>Campus Digital memiliki mentor yang ahli di bidangnya</p>
     </div>
-    <div class="feature-item" data-aos="fade-down">
+    <div class="feature-item" >
       <div class="owl-carousel owl-theme" id="mentor">
 			  @foreach($mentor as $data)
 				<div class="card border-0 shadow-sm text-center">
-				  <img style="max-width: 120px" src="{{ asset('assets/images/mentor/'.$data->foto_mentor) }}" class="mb-3 rounded-circle" alt="Mentor Campusdigital">
-          <div class="card-body">
+				  <img style="max-width: 120px; position: relative; top: -3rem" src="{{ asset('assets/images/mentor/'.$data->foto_mentor) }}" class="rounded-circle shadow" alt="Mentor Campusdigital">
+          <div class="card-body" style="margin-top: -2rem">
   				  <div class="h5">{{ $data->nama_mentor }}</div>
   				  <p>{{ $data->profesi_mentor }}</p>
           </div>
@@ -224,7 +296,7 @@
 <section class="info-section spad">
   <div class="container">
     <div class="heading text-center" style="margin-bottom: 6em">
-      <h2 data-aos="fade-down">Privat dan Kursus Internet Marketing</h2>
+      <h2 >Privat dan Kursus Internet Marketing</h2>
     </div>
     <div class="row justify-content-center">
       <div class="col-md-12">
@@ -233,7 +305,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="card border-0 shadow-sm mb-4">
-              <div class="card-header bg-white" id="headingOne">
+              <div class="card-header rounded-15 border-0" style="background-color: var(--primary-s);" id="headingOne">
                 <h2 class="mb-0">
                   <button class="btn btn-block text-left d-flex align-items-center justify-content-between btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Anda Pegawai, Karyawan, Pengusaha Atau Siapapun Yang Ingin Menambah Penghasilan?
@@ -250,7 +322,7 @@
           </div>
           <div class="col-lg-6">
             <div class="card border-0 shadow-sm mb-4">
-              <div class="card-header bg-white" id="headingTwo">
+              <div class="card-header rounded-15 border-0" style="background-color: var(--green-s);" id="headingTwo">
                 <h2 class="mb-0">
                   <button class="btn btn-block text-left d-flex align-items-center justify-content-between btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Anda Ingin Belajar Bisnis Online<br>Tapi Tidak Cukup Waktu?
@@ -270,7 +342,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="card border-0 shadow-sm mb-4">
-              <div class="card-header bg-white" id="headingThree">
+              <div class="card-header rounded-15 border-0" style="background-color: var(--red-s);" id="headingThree">
                 <h2 class="mb-0">
                   <button class="btn btn-block text-left d-flex align-items-center justify-content-between btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Anda Ingin Usaha Sambilan, Tapi Tidak Punya Cukup Waktu? Atau Malah Tidak Cukup Modal?
@@ -287,7 +359,7 @@
           </div>
           <div class="col-lg-6">
             <div class="card border-0 shadow-sm mb-4">
-              <div class="card-header bg-white" id="headingFour">
+              <div class="card-header rounded-15 border-0" style="background-color: var(--blue-s);" id="headingFour">
                 <h2 class="mb-0">
                   <button class="btn btn-block text-left d-flex align-items-center justify-content-between btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     Anda Bingung Kepada Siapa Belajar Online Marketing? Apakah Belajar Online Marketing Harus Mahal?
@@ -317,12 +389,12 @@
         <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
     </svg>
 </div>
-<section class="mitra-section spad bg-light" style="padding-top: 0">
+<section class="mitra-section bg-light">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="h-100 d-flex text-center" style="justify-content: center; align-items: center; width: 100%;">
-          <span data-aos="fade-down">
+          <span >
             <h2 class="mb-3">Mitra Kami</h2>
             <span>Campus Digital telah dipercaya sebagai lembaga pelatihan digital marketing<br>dengan melahirkan SDM yang memiliki kompetensi.</span>
           </span>
@@ -330,7 +402,7 @@
       </div>
       <div class="col-12">
         <div class="feature-item">
-          <div data-aos="fade-down">
+          <div >
             <div class="owl-carousel owl-theme" id="mitra">
       			  @foreach($mitra as $data)
       				<div data-toggle="tooltip" data-placement="bottom" title="{{ $data->nama_mitra }}">
@@ -350,8 +422,8 @@
 <section class="feature-section spad pb-0">
   <div class="container">
     <div class="text-center">
-      <h2 data-aos="fade-down">Testimoni</h2>
-      <p data-aos="fade-down">Apa yang mereka katakan tentang kami?</p>
+      <h2 >Testimoni</h2>
+      <p >Apa yang mereka katakan tentang kami?</p>
       <div class="bg-feature">
         <span style="position: absolute; left: 0em; font-size: 18rem; color: rgba(0,0,0,.2);">❝</span>
         <span style="position: absolute; right: 0em; font-size: 18rem; color: rgba(0,0,0,.2);">❞</span>
@@ -364,8 +436,28 @@
 
             <div class="card front-card-zoom">
               <div class="overflow-hidden">
-                <a class="popup-youtube" href="https://www.youtube.com/watch?v=sSPIU3aJ1wA">
-                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url(https://i.ytimg.com/an_webp/sSPIU3aJ1wA/mqdefault_6s.webp?du=3000&sqp=CMCy8IYG&rs=AOn4CLA8O5umKbmX_7FQ_PCvR7yOnV5sDg)">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=k-QpsCmXNX4">
+                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url(https://i.ytimg.com/an_webp/k-QpsCmXNX4/mqdefault_6s.webp?du=3000&sqp=CKy79IYG&rs=AOn4CLC7gDA6Q-9ypExGN_5iu_GyCV66fA)">
+                    <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="card front-card-zoom">
+              <div class="overflow-hidden">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=9or8bE9KxPc">
+                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url(https://i.ytimg.com/an_webp/9or8bE9KxPc/mqdefault_6s.webp?du=3000&sqp=CKu99IYG&rs=AOn4CLDKOtiZu8AUI9cl8mlO0GT6JTkTHw)">
+                    <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="card front-card-zoom">
+              <div class="overflow-hidden">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
+                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url(https://i.ytimg.com/an_webp/AfGz0Z9HGfU/mqdefault_6s.webp?du=3000&sqp=CLns9IYG&rs=AOn4CLBT8jHZsmNDQkfG7rx5bHBEZBAvIA)">
                     <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
                   </div>
                 </a>
@@ -387,8 +479,8 @@
       <img src="{{asset('assets/images/illustration/5127311.png')}}" alt="img" width="400">
     </div>
     <div class="text-center text-lg-left">
-      <h2  data-aos="fade-down">Hubungi Kami</h2>
-      <p data-aos="fade-down">Customer Service Kami Siap Membantu Anda untuk Mendapatkan Informasi Lebih Lanjut Mengenai Program-Program Campus Digital</p>
+      <h2  >Hubungi Kami</h2>
+      <p >Customer Service Kami Siap Membantu Anda untuk Mendapatkan Informasi Lebih Lanjut Mengenai Program-Program Campus Digital</p>
       <a href="#" onClick="window.open('https://api.whatsapp.com/send?phone={{ setting('site.whatsapp') }}&text=Halo Campus Digital, saya butuh informasi tentang layanan Campus Digital...', '_blank')" class="btn btn-lg btn-success px-4"><i class="fa fa-whatsapp mr-2" style="font-size: 20px;"></i> Hubungi Kami via WhatsApp</a>
     </div>
   </div>

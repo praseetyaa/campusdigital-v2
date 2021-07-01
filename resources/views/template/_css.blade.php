@@ -85,7 +85,9 @@ p {font-size: 1rem;}
 .front-card-zoom .img-hover{transition: 0.2s; display: block;}
 .front-card-zoom:hover img{transform: scale(1.1)}
 .overlay-galery{opacity: 1; position: absolute; width: 100%; height: 200px; background-color: rgba(2,48,71,0.5); transition: 0.2s}
+.overlay-banner{opacity: 1; position: absolute; width: 100%; height: 300px; background-color: rgba(2,48,71,0.5); transition: 0.2s}
 .overlay-galery-content{color: #fff; font-size: 5rem; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%; transition: 0.2s}
+.banner-video{height: 300px; background-position: center; background-size: cover;}
 
 .footer-section {background-color: #46157a;}
 .footer-widget ul li {margin-bottom: 5px;}
@@ -250,12 +252,6 @@ fill: #FFF;
 }
 [v-cloak] { display: none; }
 .img-header{max-width: 400px;}
-@media (min-width: 768px) {
-	.d-md-box{display: -webkit-box!important}
-}
-@media (max-width: 767.98px) {
-
-}
 @media (max-width: 991.98px){
 	h1{font-size: 40px;}
     .icon-box-item .ib-icon {width: 76px; margin: 0 auto;}
@@ -266,6 +262,15 @@ fill: #FFF;
     .sticky-sidebar{position: unset; top: unset; height: unset;}
 	.img-header{max-width: 100%;}
 	.navbar .navbar-brand img{height: 40px;}
+	.overlay-banner,
+	.banner-video{height: 180px;}
+}
+@media (min-width: 768px) {
+	.d-md-box{display: -webkit-box!important}
+}
+@media (max-width: 767.98px) {
+	.overlay-banner,
+	.banner-video{height: 180px;}
 }
 @keyframes fab{
     0% {transform: scale(1);}
