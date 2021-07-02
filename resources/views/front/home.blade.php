@@ -36,7 +36,7 @@
           </div>
           <div class="overflow-hidden">
             <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
-              <div class="banner-video" style="background-image: url({{asset('assets/images/background/banner.gif')}})">
+              <div class="banner-video" style="background-image: url({{asset('assets/images/background/banner-600.gif')}})">
                 <div class="overlay-banner text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
               </div>
             </a>
@@ -457,7 +457,7 @@
             <div class="card front-card-zoom">
               <div class="overflow-hidden">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
-                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/banner.gif')}})">
+                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/banner-320.gif')}})">
                     <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
                   </div>
                 </a>
