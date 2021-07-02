@@ -36,7 +36,7 @@
           </div>
           <div class="overflow-hidden">
             <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
-              <div class="banner-video" style="background-image: url(https://i.ytimg.com/an_webp/AfGz0Z9HGfU/mqdefault_6s.webp?du=3000&sqp=CLns9IYG&rs=AOn4CLBT8jHZsmNDQkfG7rx5bHBEZBAvIA)">
+              <div class="banner-video" style="background-image: url({{asset('assets/images/background/banner.gif')}})">
                 <div class="overlay-banner text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
               </div>
             </a>
@@ -437,7 +437,7 @@
             <div class="card front-card-zoom">
               <div class="overflow-hidden">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=k-QpsCmXNX4">
-                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url(https://i.ytimg.com/an_webp/k-QpsCmXNX4/mqdefault_6s.webp?du=3000&sqp=CKy79IYG&rs=AOn4CLC7gDA6Q-9ypExGN_5iu_GyCV66fA)">
+                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/testimoni1.gif')}})">
                     <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
                   </div>
                 </a>
@@ -447,7 +447,7 @@
             <div class="card front-card-zoom">
               <div class="overflow-hidden">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=9or8bE9KxPc">
-                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url(https://i.ytimg.com/an_webp/9or8bE9KxPc/mqdefault_6s.webp?du=3000&sqp=CKu99IYG&rs=AOn4CLDKOtiZu8AUI9cl8mlO0GT6JTkTHw)">
+                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/testimoni2.gif')}})">
                     <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
                   </div>
                 </a>
@@ -457,7 +457,7 @@
             <div class="card front-card-zoom">
               <div class="overflow-hidden">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
-                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url(https://i.ytimg.com/an_webp/AfGz0Z9HGfU/mqdefault_6s.webp?du=3000&sqp=CLns9IYG&rs=AOn4CLBT8jHZsmNDQkfG7rx5bHBEZBAvIA)">
+                  <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/banner.gif')}})">
                     <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
                   </div>
                 </a>
