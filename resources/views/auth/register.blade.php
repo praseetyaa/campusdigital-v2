@@ -76,15 +76,23 @@
 									</div>
 									<div class="form-group col-md-12">
 										<label>Profesi<span class="text-danger">*</span></label>
-										<select class="form-control">
-											<option value="disabled" readonly disabled selected>Pilih Profesi</option>
+										<select name="user_kategori" class="form-control {{ $errors->has('user_kategori') ? 'border-danger' : '' }}">
+											<option value="" disabled selected>Pilih Profesi</option>
+                                            @foreach($kategori as $data)
+											<option value="{{ $data->id_ku }}" {{ $data->id_ku === old('user_kategori') ? 'selected' : '' }}>Guru</option>
+                                            @endforeach
+                                            <!--
 											<option>Guru</option>
 											<option>Dosen</option>
 											<option>Mahasiswa</option>
 											<option>Pelajar</option>
 											<option>Karyawan</option>
 											<option>UMKM</option>
+                                            -->
 										</select>
+                                        @if($errors->has('user_kategori'))
+										<div class="small text-danger mt-1">{{ ucfirst($errors->first('user_kategori')) }}</div>
+										@endif
 									</div>
 								  </div>
 								  <p class="h6 text-center font-weight-bold mb-3 mt-5">Akun Pendaftar</p>
