@@ -81,9 +81,4 @@
 			</button>
 		</div>
 	</div>
-<<<<<<< HEAD
 </nav>
-=======
-</nav>
-<!-- Header Section end -->
->>>>>>> e8ea45193e6c2bb4a4a9f15ca8fbf5c8080f1836
