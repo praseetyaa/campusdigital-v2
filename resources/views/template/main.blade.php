@@ -2,7 +2,6 @@
 <html lang="zxx">
 <head>
     @include('template._head')
-    @include('template._css')
     @yield('css-extra')
 </head>
 <body>

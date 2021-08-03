@@ -4,7 +4,6 @@
 
 @section('content')
 
-<!-- Page top Section end -->
 <section class="page-top-section set-bg ">
   <div class="container">
     <div class="row align-items-center">
@@ -18,9 +17,6 @@
     </div>
   </div>
 </section>
-<!-- Page top Section end -->
-
-<!-- Info Section -->
 <section class="info-section spad pt-5">
   <div class="container">
     <div class="row">
@@ -41,7 +37,6 @@
     </div>
   </div>
 </section>
-<!-- Info Section end -->
 
 @endsection
 

@@ -1,8 +1,6 @@
 @extends('template.main')
 
 @section('content')
-
-<!-- Hero Section end -->
 <section class="hero-section">
   <div class="container text-left h-100">
     <div class="row align-items-center h-100">
@@ -12,15 +10,6 @@
           	<h1>Let's Join Us!</h1>
 		  	    <h2 class="mb-3"><span style="color: var(--primary);">Digital</span> Technology<br>& Business Class</h2>
           </div>
-<!--     			<div class="row d-none d-md-flex">
-    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Digital Marketing</p></div>
-    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Programmer</p></div>
-    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Web Developer</p></div>
-    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Game Developer</p></div>
-    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Operator Komputer</p></div>
-    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Multimedia</p></div>
-    				<div class="col-6"><p class="text-body"><i class="fa fa-check mr-2"></i>Graphic Designer</p></div>
-    			</div> -->
           <div class="text-center text-lg-left">
       			<p class="mb-3">Mari bergabung bersama kami untuk<br>mendapatkan ilmunya!</p>
       			<p><a href="{{ route('auth.register') }}" class="btn btn-primary rounded-15 px-5 shadow-sm font-weight-bold">Daftar</a></p>
@@ -45,7 +34,6 @@
     </div>
   </div>
 </section>
-
 <section class="mt-3 mt-lg-0">
   <div class="container">
     <div class="d-flex" style="overflow-x: auto;">
@@ -381,9 +369,7 @@
     </div>
   </div>
 </section>
-<!-- Info Section end -->
 
-<!-- Feature Section -->
 <div class="custom-shape-divider-bottom-1619236286">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
@@ -416,9 +402,7 @@
     </div>
   </div>
 </section>
-<!-- Feature Section end -->
 
-<!-- Feature Section -->
 <section class="feature-section spad pb-0">
   <div class="container">
     <div class="text-center">
@@ -470,9 +454,7 @@
     </div>
   </div>
 </section>
-<!-- Feature Section end -->
 
-<!-- CTA Section end -->
 <section class="cta-section set-bg">
   <div class="container d-block d-lg-flex">
     <div class="mr-0 mr-lg-4 mb-3 mb-lg-0 text-center text-lg-left">
@@ -485,7 +467,7 @@
     </div>
   </div>
 </section>
-<!-- CTA Section end -->
+
 @endsection
 
 @section('js-extra')

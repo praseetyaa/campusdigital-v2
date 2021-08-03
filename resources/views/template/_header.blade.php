@@ -1,4 +1,3 @@
-<!-- Header Section -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 	<div class="container ">
 		
@@ -22,19 +21,12 @@
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-digital-marketing-reguler']) }}">Pelatihan Digital Marketing Reguler</a>
-					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-paket-pelatihan-dan-sertifikasi-digital-marketing']) }}">Paket Pelatihan dan Sertifikasi Digital Marketing</a>
-					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-pkdm-program-kerjasama') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-pkdm-program-kerjasama']) }}">Pelatihan PKDM (Program Kerjasama)</a>
-					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-praktek-kerja-industri-prakerin-online') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-praktek-kerja-industri-prakerin-online']) }}">Praktek Kerja Industri (PRAKERIN Online)</a>
-					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-kelas-industri-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-kelas-industri-digital-marketing']) }}">Kelas Industri Digital Marketing</a>
-					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-training-of-trainer') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-training-of-trainer']) }}">Training Of Trainer</a>
-					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-uji-kompetensi-keahlian-digital-marketing-ukk-smk') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => '/program-uji-kompetensi-keahlian-digital-marketing-ukk-smk']) }}">Uji Kompetensi Keahlian Digital Marketing (UKK SMK)</a>
-					  <!-- <div class="dropdown-divider"></div> -->
 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-beasiswa') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-beasiswa']) }}">Beasiswa</a>
 					</div>
 				</li>
@@ -61,7 +53,6 @@
 		        </li>
 				@else
 
-
 				<li class="nav-item dropdown">
 					<a class="nav-link account dropdown-toggle d-flex align-items-center p-0 pb-2 pb-lg-0" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
 					  <img src="{{ Auth::user()->foto != '' ? asset('assets/images/users/'.Auth::user()->foto) : asset('assets/images/default/user.jpg') }}" alt="user" class="rounded-circle pt-lg-1 mr-2" width="31">
@@ -83,17 +74,11 @@
 				@endif
 
 			</ul>
-			<!-- <a class="btn btn-navbar btn-login d-lg-inline-block d-none" href="{{ route('auth.login') }}">Login</a>
-			<a class="btn btn-navbar btn-register d-lg-inline-block d-none" href="{{ route('auth.register') }}">Daftar</a> -->
-			<!-- <li class="nav-item"> -->
 			<button class="btn btn-theme-1 rounded-2 ms-2 d-none">
 				<a class="content-btn-nav" href="{{ route('auth.login') }}">Masuk</a>
 				<span class="content-btn-nav" >|</span>
 				<a class="content-btn-nav" href="{{ route('auth.register') }}">Daftar</a>
 			</button>
-
-	        <!-- </li> -->
 		</div>
 	</div>
 </nav>
-<!-- Header Section end -->

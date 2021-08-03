@@ -4,7 +4,6 @@
 
 @section('content')
 
-<!-- Page top Section end -->
 <section class="page-top-section set-bg" data-setbg="{{ asset('templates/loans2go/img/page-top-bg/2.jpg') }}">
 	<div class="container">
 		<h2>Beasiswa</h2>
@@ -14,9 +13,7 @@
 		</nav>
 	</div>
 </section>
-<!-- Page top Section end -->
 
-<!-- Loans Section end -->
 <section class="loans-section spad">
 	<div class="container">
 	    <div class="text-center mb-5 pb-4">
@@ -79,14 +76,9 @@
 		</div>
 	</div>
 </section>
-<!-- Loans Section end -->
 
-<!-- Why Section end -->
 <section class="why-section bg-warning spad">
   <div class="container">
-<!--     <div class="text-center mb-5 pb-4">
-      <h2>Materi yang Diajarkan</h2>
-    </div> -->
     <div class="row">
       <div class="col-md-4">
         <div class="icon-box-item">
@@ -94,7 +86,6 @@
             <i class="fa fa-dropbox"></i>
           </div>
           <div class="ib-text">
-            <!-- <h5>Riset</h5> -->
             <p class="text-dark">Setiap peserta jalur Beasiswa telah disediakan Produk dari Campus Digital.</p>
           </div>
         </div>
@@ -105,7 +96,6 @@
             <i class="fa fa-shopping-cart"></i>
           </div>
           <div class="ib-text">
-            <!-- <h5>Social Media Marketing</h5> -->
             <p class="text-dark">Peserta jalur Beasiswa juga dapat menjual produknya sendiri atas persetujuan Campus Digital.</p>
           </div>
         </div>
@@ -116,7 +106,6 @@
             <i class="fa fa-tasks"></i>
           </div>
           <div class="ib-text">
-            <!-- <h5>Marketplace</h5> -->
             <p class="text-dark">Secara berkala, peserta akan mendapatkan tugas khusus dari supervisor pendamping yang akan di bahas saat pertemuan pertama.</p>
           </div>
         </div>
@@ -124,9 +113,6 @@
   	</div>
   </div>
 </section>
-<!-- Why Section end -->
-
-<!-- Why Section end -->
 <section class="why-section spad">
   <div class="container">
     <div class="text-center mb-5 pb-4">
@@ -205,7 +191,6 @@
     </div>
   </div>
 </section>
-<!-- Why Section end -->
 
 @endsection
 
