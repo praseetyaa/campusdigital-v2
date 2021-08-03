@@ -74,6 +74,18 @@
 										<div class="small text-danger mt-1">{{ ucfirst($errors->first('nomor_hp')) }}</div>
 										@endif
 									</div>
+									<div class="form-group col-md-12">
+										<label>Profesi<span class="text-danger">*</span></label>
+										<select class="form-control">
+											<option value="disabled" readonly disabled selected>Pilih Profesi</option>
+											<option>Guru</option>
+											<option>Dosen</option>
+											<option>Mahasiswa</option>
+											<option>Pelajar</option>
+											<option>Karyawan</option>
+											<option>UMKM</option>
+										</select>
+									</div>
 								  </div>
 								  <p class="h6 text-center font-weight-bold mb-3 mt-5">Akun Pendaftar</p>
 								  <div class="form-row">
