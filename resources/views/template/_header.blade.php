@@ -49,7 +49,7 @@
 		          <a class="nav-link font-weight-bold mb-3 mb-lg-0" href="{{ route('auth.login') }}" style="color: var(--primary);">Masuk</a>
 		        </li>
 				<li class="nav-item">
-		          <a class="btn btn-primary font-weight-bold rounded-15 btn-block mb-3 mb-lg-0 px-4" href="{{ route('auth.register') }}">Daftar</a>
+		          <a class="btn btn-primary font-weight-bold rounded-15 btn-block mb-3 mb-lg-0 px-4" href="{{ route('auth.register', ['ref' => $_GET['ref']]) }}">Daftar</a>
 		        </li>
 				@else
 
@@ -77,8 +77,13 @@
 			<button class="btn btn-theme-1 rounded-2 ms-2 d-none">
 				<a class="content-btn-nav" href="{{ route('auth.login') }}">Masuk</a>
 				<span class="content-btn-nav" >|</span>
-				<a class="content-btn-nav" href="{{ route('auth.register') }}">Daftar</a>
+				<a class="content-btn-nav" href="{{ route('auth.register', ['ref' => $_GET['ref']]) }}">Daftar</a>
 			</button>
 		</div>
 	</div>
+<<<<<<< HEAD
 </nav>
+=======
+</nav>
+<!-- Header Section end -->
+>>>>>>> e8ea45193e6c2bb4a4a9f15ca8fbf5c8080f1836
