@@ -36,7 +36,7 @@
 </section>
 <section class="mt-3 mt-lg-0">
   <div class="container">
-    <div class="d-flex" style="overflow-x: auto;">
+<!--     <div class="d-flex" style="overflow-x: auto;">
       <div class="mr-2" style="white-space: nowrap;">
         <i class="fa fa-check p-1 rounded" style="
         color: var(--green);
@@ -86,7 +86,7 @@
         </i> 
         <span>Graphic Designer</span>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -173,40 +173,41 @@
       <p>Program yang disediakan oleh Campus Digital</p>
     </div>
     <div>
-      <div class="row">
-        <div class="col-6 col-lg-3">
+
+      <div class="title mb-3">
+        <h5>Program Khusus</h5>
+      </div>
+      <div class="owl-carousel owl-theme" id="programs1">
+       
           <div class="card border-0 shadow-sm mb-3">
-            <img src="{{asset('assets/images/program/1.jpg')}}" class="card-img-top">
+            <img src="{{asset('assets/images/program/1.jpg')}}" class="card-img-top w-100">
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate d-block">Pelatihan Digital Marketing Reguler</p>
               <p class="text-truncate-3 d-none d-md-box">Digital Marketing menjadi hal yang sangat dibutuhkan dalam perkembangan bisnis di era teknologi</p>
               <a href="/program-pelatihan-digital-marketing-reguler" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-lg-3">
+
           <div class="card border-0 shadow-sm mb-3">
-            <img src="{{asset('assets/images/program/2.jpg')}}" class="card-img-top">
+            <img src="{{asset('assets/images/program/2.jpg')}}" class="card-img-top w-100">
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Paket Pelatihan dan Sertifikasi Digital Marketing</p>
               <p class="text-truncate-3 d-none d-md-box">Bekerjasama dengan LSP Teknologi Digital mengadakan Program Pelatihan dan Sertifikasi Digital Marketing BNSP</p>
               <a href="/program-paket-pelatihan-dan-sertifikasi-digital-marketing" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-lg-3">
+  
           <div class="card border-0 shadow-sm mb-3">
-            <img src="{{asset('assets/images/program/3.jpg')}}" class="card-img-top">
+            <img src="{{asset('assets/images/program/3.jpg')}}" class="card-img-top w-100">
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Pelatihan PKDM (Program Kerjasama)</p>
               <p class="text-truncate-3 d-none d-md-box">Peningkatan Kompetensi Digital Marketing bagi tenaga pendidik untuk bekal dalam kegiatan belajar mengajar</p>
               <a href="/program-pelatihan-pkdm-program-kerjasama" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-lg-3">
+
           <div class="card border-0 shadow-sm mb-3">
-            <img src="{{asset('assets/images/program/4.jpg')}}" class="card-img-top">
+            <img src="{{asset('assets/images/program/4.jpg')}}" class="card-img-top w-100">
             <div class="card-body">
               <p class="font-weight-bold m-0 text-truncate">Praktek Kerja Industri (PRAKERIN Online)</p>
               <p class="text-truncate-3 d-none d-md-box">Peserta yang mengikuti paktek kerja industri Digital Marketing akan diajarkan dan praktek materi Digital Marketing</p>
@@ -214,7 +215,8 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-lg-3">
+
+<!--         <div class="col-6 col-lg-3">
           <div class="card border-0 shadow-sm mb-3">
             <img src="{{asset('assets/images/program/5.jpg')}}" class="card-img-top">
             <div class="card-body">
@@ -253,6 +255,59 @@
               <a href="/program-beasiswa" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
+        </div> -->
+
+      </div>
+      <div class="title mb-3 mt-5">
+        <h5>Program Reguler</h5>
+      </div>
+      <div class="owl-carousel owl-theme" id="programs2">
+
+            <div class="card border-0 shadow-sm mb-3">
+              <img src="{{asset('assets/images/program/5.jpg')}}" class="card-img-top w-100">
+              <div class="card-body">
+                <p class="font-weight-bold m-0 text-truncate">Digital Marketing</p>
+                <p class="text-truncate-3 d-none d-md-box">Program pelatihan dan pembelajaran praktis pemasaran digital.</p>
+                <a href="/program-kelas-industri-digital-marketing" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-3">
+              <img src="{{asset('assets/images/program/6.jpg')}}" class="card-img-top w-100">
+              <div class="card-body">
+                <p class="font-weight-bold m-0 text-truncate">Graphic Designer</p>
+                <p class="text-truncate-3 d-none d-md-box">Program pelatihan untuk menjadi ahli dan pakar dalam menjalankan program desain grafis.</p>
+                <a href="/program-training-of-trainer" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-3">
+              <img src="{{asset('assets/images/program/7.jpg')}}" class="card-img-top w-100">
+              <div class="card-body">
+                <p class="font-weight-bold m-0 text-truncate">Komputer Perkantoran</p>
+                <p class="text-truncate-3 d-none d-md-box">Program pelatihan untuk belajar pengoperasian komputer dan aplikasi perkantoran modern.</p>
+                <a href="/program-uji-kompetensi-keahlian-digital-marketing-ukk-smk" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-3">
+              <img src="{{asset('assets/images/program/8.jpg')}}" class="card-img-top w-100">
+              <div class="card-body">
+                <p class="font-weight-bold m-0 text-truncate">Web Designer</p>
+                <p class="text-truncate-3 d-none d-md-box">Program Pelatihan untuk belajar pemrograman dan mendesain web menjadi lebih menarik dan atraktif</p>
+                <a href="/program-beasiswa" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm mb-3">
+              <img src="{{asset('assets/images/program/8.jpg')}}" class="card-img-top w-100">
+              <div class="card-body">
+                <p class="font-weight-bold m-0 text-truncate">Video Editor</p>
+                <p class="text-truncate-3 d-none d-md-box">Program pelatihan yang mempelajari teknik-teknik dalam melakukan editing video</p>
+                <a href="/program-beasiswa" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
+
         </div>
       </div>
     </div>
@@ -474,16 +529,82 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-	 $('.hero-slider').owlCarousel({
-		loop: true,
-		nav: false,
-		dots: true,
-		mouseDrag: true,
-		animateOut: 'fadeOut',
-		animateIn: 'fadeIn',
-		items: 1,
-		autoplay: false
-	});
+    $('#programs1').owlCarousel({
+      items:4,
+      nav:true,
+      loop:false,
+      center:false,
+      margin:20,
+      URLhashListener:true,
+      autoplayHoverPause:true,
+      startPosition: 'URLHash',
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              nav:true,
+              loop:true,
+          },
+          576:{
+              items:2,
+              nav:true,
+              loop:true,
+          },
+          768:{
+              items:3,
+              nav:true,
+              loop:true,
+          },
+          1024:{
+              items:4,
+              nav:true,
+              loop:false,
+          },
+          1440:{
+              items:5,
+              nav:true,
+              loop:false,
+          },
+      }
+    });
+    $('#programs2').owlCarousel({
+      items:4,
+      nav:true,
+      loop:false,
+      center:false,
+      margin:20,
+      URLhashListener:true,
+      autoplayHoverPause:true,
+      startPosition: 'URLHash',
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:2,
+              nav:true,
+              loop:true,
+          },
+          576:{
+              items:2,
+              nav:true,
+              loop:true,
+          },
+          768:{
+              items:3,
+              nav:true,
+              loop:true,
+          },
+          1024:{
+              items:4,
+              nav:true,
+              loop:false,
+          },
+          1440:{
+              items:5,
+              nav:true,
+              loop:false,
+          },
+      }
+    });
 	  
     $('#mentor').owlCarousel({
       loop:true,
@@ -593,6 +714,9 @@ $(document).ready(function() {
 @section('css-extra')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style type="text/css">
+  #programs1 .owl-nav, 
+  #programs2 .owl-nav{position: absolute; top: 50%;}
+
 	#popupModal .close {position: absolute; right: -15px; top: -15px; background-color: #340369; color: #fdd100; width: 25px; height: 25px; opacity: 1!important;}
 	.hero-section {padding-top: 5em; padding-bottom: 0; height: 600px;}
 	.hs-text {padding-top: 0; padding-right: 0;}
