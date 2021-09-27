@@ -27,9 +27,11 @@
       <div class="col-lg-7 order-1 order-lg-2"> 
 
         <div class="rounded-2 bg-light py-2 px-4 mb-3">
-          <nav class="site-breadcrumb">
-            <a class="sb-item text-" href="{{ route('site.home') }}">Home</a>
-            <a class="sb-item text-" href="{{ route('site.artikel.index') }}">Artikel</a>
+          <nav class="site-breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a class="sb-item" href="{{ route('site.home') }}">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Artikel</li>
+            </ol>
           </nav>
         </div>
 
@@ -60,7 +62,7 @@
           <div class="row">
             @foreach($recents as $data)
             <div class="col-12 col-md-6 col-lg-12 mb-3">
-              <a href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">
+              <a class="text-muted" href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">
                 <img src="{{ image('assets/images/blog/'.$data->blog_gambar, 'blog') }}" class="img-fluid rounded mb-2">   
                 <p class="m-0" style="line-height: 1.5">{{$data->blog_title}}</p>
               </a>

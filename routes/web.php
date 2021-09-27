@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 // Home
 Route::get('/', 'HomeController@index')->name('site.home');
 
+// Program
+Route::get('/program/kategori/{category}', 'ProgramController@index')->name('site.program.index');
+Route::get('/program/{permalink}', 'ProgramController@detail')->name('site.program.detail');
+
 // Artikel
 Route::get('/artikel', 'ArtikelController@index')->name('site.artikel.index');
 Route::get('/artikel/{permalink}', 'ArtikelController@detail')->name('site.artikel.detail');

@@ -7,7 +7,7 @@
 <section class="page-top-section">
   <div class="container">
     <div class="row align-items-center header-one">
-      <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-left">
+      <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
         <h1>Tentang Kami</h1>
         <p class="mb-0">Era digital telah berkembang pesat, kebutuhan terhadap tenaga digital marketing semakin tinggi dalam melaksanakan marketing di dunia online dan digital. Oleh karena itu kami hadir untuk melahirkan SDM yang memiliki kompetensi di bidang digital marketing.</p>
       </div>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="row align-items-center">
-      <div class="col-lg-6 order-2 mb3 mb-lg-0 text-center text-lg-left">
+      <div class="col-lg-6 order-2 mb3 mb-lg-0 text-center text-lg-start">
         <h1>Mengapa Kami?</h1>
         <p class="mb-0">Dengan memiliki mentor yang ahli di bidangnya, lulusan Campus Digital kami harap akan menjadi tenaga kerja baru di bidang teknologi digital marketing atau menjadi wirausaha yang memiliki marketing online yang handal.</p>
       </div>
@@ -54,20 +54,20 @@
         <h1 class="mb-3 mb-lg-0">Kontak Kami</h1>
         <div class="card py-2 px-3">
           <div class="card-body">
-            <div class="row align-items-center text-center text-md-left">
+            <div class="row align-items-center text-center text-md-start">
               <div class="col-md-6">
                 <a href="/"><img class="mb-3" src="{{ asset('assets/images/logo/logo-dark.png')}}" width="200" alt="logo-campusdigital"></a>
               </div>
               <div class="col-md-6">
                 <ul class="list-unstyled">
-                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-envelope-o mr-2" style="font-size: 20px; color: #33B6E7"></i><a class="text-body" href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a></li>
-                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-whatsapp mr-2" style="font-size: 22px; color: #1AD03F"></i><a class="text-body" href="https://wa.me/{{ setting('site.whatsapp') }}" target="_blank">{{ setting('site.whatsapp') }}</a></li>
+                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-envelope-o me-2" style="font-size: 20px; color: #33B6E7"></i><a class="text-body" href="mailto:{{ setting('site.email') }}">{{ setting('site.email') }}</a></li>
+                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-whatsapp me-2" style="font-size: 22px; color: #1AD03F"></i><a class="text-body" href="https://wa.me/{{ setting('site.whatsapp') }}" target="_blank">{{ setting('site.whatsapp') }}</a></li>
                   <li></li>
-                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-instagram mr-2" style="font-size: 22px; color: #912EB9;"></i><a class="text-body" href="https://instagram.com/campusdigital.id" target="_blank">campusdigital.id</a></li>
+                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-instagram me-2" style="font-size: 22px; color: #912EB9;"></i><a class="text-body" href="https://instagram.com/campusdigital.id" target="_blank">campusdigital.id</a></li>
                   <li></li>
-                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-facebook-square mr-2" style="font-size: 22px; color: #1773EA;"></i><a class="text-body" href="https://www.facebook.com/campusdigital.id/?ref=py_c" target="_blank">campusdigital</a></li>
+                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-facebook-square me-2" style="font-size: 22px; color: #1773EA;"></i><a class="text-body" href="https://www.facebook.com/campusdigital.id/?ref=py_c" target="_blank">campusdigital</a></li>
                   <li></li>
-                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-youtube-play mr-2" style="font-size: 22px; color: #F70000;"></i><a class="text-body" href="https://www.youtube.com/channel/UCz6opXZW_HqPU6RQlfxOS9w" target="_blank">Campus Digital</a></li>
+                  <li class="mb-2 d-flex align-items-center"><i class="fa fa-youtube-play me-2" style="font-size: 22px; color: #F70000;"></i><a class="text-body" href="https://www.youtube.com/channel/UCz6opXZW_HqPU6RQlfxOS9w" target="_blank">Campus Digital</a></li>
                   <li></li>
                 </ul>
               </div>

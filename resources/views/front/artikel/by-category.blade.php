@@ -7,9 +7,9 @@
 <section class="page-top-section set-bg">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-left">
+      <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
         <h1>Artikel</h1>
-        <h4 class="font-weight-normal">Kategori {{ $kategori->kategori }}</h4>
+        <h4 class="fw-normal">Kategori {{ $kategori->kategori }}</h4>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">
         <img class="h-auto img-header" src="{{asset('assets/images/illustration/min/8778.png')}}" alt="banner">
@@ -20,9 +20,9 @@
 
 <div class="container my-5">
   <div class="kategori d-flex align-items-center nav-cat" id="elem">
-    <a class="text-body badge bg-white px-3 shadow-sm mr-2" href="/artikel">Semua Kategori</a>
+    <a class="text-body badge bg-white px-3 shadow-sm me-2" href="/artikel">Semua Kategori</a>
     @foreach($kategori_head as $data)
-    <a class="text-body badge bg-white px-3 shadow-sm mr-2" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a>
+    <a class="text-body badge bg-white px-3 shadow-sm me-2" href="{{ route('site.artikel.by-category', ['permalink' => $data->slug]) }}">{{ $data->kategori }}</a>
     @endforeach
   </div>
 </div>
@@ -36,12 +36,12 @@
           <img class="card-img-top" src="{{ image('assets/images/blog/'.$data->blog_gambar, 'blog') }}" alt="Card image cap">
           </a>
           <div class="card-body">
-             <p class="card-title font-weight-bold"><a class="text-body" href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">{{ $data->blog_title }}</a></p>
+             <p class="card-title fw-bold"><a class="text-body" href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">{{ $data->blog_title }}</a></p>
           </div>
           <div class="card-footer bg-white d-flex justify-content-between align-items-center">
             <div>
-              <p class="m-0"><small class="text-muted"><i class="fa fa-clock-o mr-1"></i>{{ generate_time_elapsed($data->blog_at) }}</small></p>
-              <p class="m-0"><small class="text-muted"><i class="fa fa-user mr-1"></i><a class="text-link" href="{{ $data->blog_kontributor != 0 ? route('site.artikel.by-contributor', ['username' => $data->slug]) : route('site.artikel.by-author', ['username' => $data->username]) }}">{{ $data->blog_kontributor != '' ? $data->kontributor : $data->nama_user }}</a></small></p>
+              <p class="m-0"><small class="text-muted"><i class="fa fa-clock-o me-1"></i>{{ generate_time_elapsed($data->blog_at) }}</small></p>
+              <p class="m-0"><small class="text-muted"><i class="fa fa-user me-1"></i><a class="text-link" href="{{ $data->blog_kontributor != 0 ? route('site.artikel.by-contributor', ['username' => $data->slug]) : route('site.artikel.by-author', ['username' => $data->username]) }}">{{ $data->blog_kontributor != '' ? $data->kontributor : $data->nama_user }}</a></small></p>
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@
        var items = elem.children();
 
        // Inserting Buttons
-       elem.prepend('<a href="#" class="text-body"><div class="shadow-sm" id="right-button"><i class="fa fa-chevron-left"></i></div></a>');
-       elem.append('<a href="#" class="text-body"><div class="shadow-sm" id="left-button"><i class="fa fa-chevron-right"></i></div></a>');
+       elem.prepend('<a href="#" class="text-body"><div class="shadow-sm" id="right-button"><i class="fa fa-chevron-start"></i></div></a>');
+       elem.append('<a href="#" class="text-body"><div class="shadow-sm" id="start-button"><i class="fa fa-chevron-right"></i></div></a>');
 
        // Inserting Inner
        items.wrapAll('<div id="inner" />');
@@ -95,7 +95,7 @@
          });
 
          // if (actualWidth <= maxWidth) {
-         //   setVisible($('#left-button'));
+         //   setVisible($('#start-button'));
          // }
        };
        updateUI();
@@ -103,22 +103,22 @@
 
 
        $('#right-button').click(function() {
-         var leftPos = outer.scrollLeft();
+         var startPos = outer.scrollstart();
          outer.animate({
-           scrollLeft: leftPos - 200
+           scrollstart: startPos - 200
          }, 800, function() {
            // debugger;
-           // if ($('#outer').scrollLeft() <= 0) {
+           // if ($('#outer').scrollstart() <= 0) {
            //   setInvisible($('#right-button'));
            // }
          });
        });
 
-       $('#left-button').click(function() {
+       $('#start-button').click(function() {
          setVisible($('#right-button'));
-         var leftPos = outer.scrollLeft();
+         var startPos = outer.scrollstart();
          outer.animate({
-           scrollLeft: leftPos + 200
+           scrollstart: startPos + 200
          }, 800);
        });
 
@@ -148,9 +148,9 @@
 .info-text {padding-top: 0;}
 .info-text p {margin-bottom: 1rem!important;}
 p{line-height: 1.5}
-#pagination nav {margin-right: auto; margin-left: auto;}
+.pagination{justify-content: center; width: fit-content; margin-left: auto; margin-right: auto;}
 
-.ql-align-left {text-align: left!important;}
+.ql-align-start {text-align: start!important;}
 .ql-align-right {text-align: right!important;}
 .ql-align-center {text-align: center!important;}
 .ql-align-justify {text-align: justify!important;}
@@ -161,23 +161,13 @@ p{line-height: 1.5}
 .page-link{color: #46157a}
 .page-link:hover{color: #46157a}
 .badge{font-size: 1rem; padding-top: .5rem; padding-bottom: .5rem;}
-.badge.active{background-color: var(--primary)!important; color: var(--white)!important;}
+.badge.active{background-color: var(--primary)!important; color: var(--bs-white)!important;}
 
 .card-body {padding-top: 1rem; padding-bottom: 1rem;}
 .card-title {margin-bottom: 0; line-height: 22px; height: 44px; display: -webkit-box !important; -webkit-line-clamp: 2; -moz-line-clamp: 2; -ms-line-clamp: 2; -o-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; -ms-box-orient: vertical; -o-box-orient: vertical; box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
-#outer {float: left; width: 100%; overflow: hidden; white-space: nowrap; display: inline-block; padding: .5em;}
+#outer {float: start; width: 100%; overflow: hidden; white-space: nowrap; display: inline-block; padding: .5em;}
 .hide {display: none;}
-#left-button, #right-button {
-    display: flex;
-    width: 30px;
-    text-align: center;
-    background-color: var(--white);
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-}
+#start-button, #right-button{display: flex;width: 30px;text-align: center;background-color: var(--bs-white);border-radius: 100%;width: 40px;height: 40px;justify-content: center;align-items: center;
 </style>
 
 @endsection
