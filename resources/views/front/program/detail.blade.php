@@ -22,7 +22,7 @@
         <div class="col-lg-8 order-2 order-lg-1 text-white">
           <span class="badge bg-theme-1 mb-3 p-2"><a class="text-white" href="{{ route('site.program.index', ['category' => $program->slug]) }}">{{ $program->kategori }}</a></span>
           <h2 class="mb-3">{{ $program->program_title }}</h2>
-          <p class="m-0">Oleh : {{ $program->nama_user }}<br> Terakhir diperbarui {{ generate_date($program->program_at) }}</p>
+          {{-- <p class="m-0">Oleh : {{ $program->nama_user }}<br> Terakhir diperbarui {{ generate_date($program->program_at) }}</p> --}}
         </div>
         <div class="col-lg-4 order-1 order-lg-2 stick sticky-top px-0 px-md-3">
           <div class="sticky-sidebar">
@@ -30,7 +30,7 @@
               <img class="card-img-top" src="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}">
               <div class="card-body d-none d-lg-block">
                 <h5 class="mb-3">{{ $program->program_title }}</h5>
-                <p class="m-0">Oleh : {{ $program->nama_user }}<br> Terakhir diperbarui {{ generate_date($program->program_at) }}</p>
+                {{-- <p class="m-0">Oleh : {{ $program->nama_user }}<br> Terakhir diperbarui {{ generate_date($program->program_at) }}</p> --}}
                 <span class="badge bg-theme-1 mt-3 p-2"><a class="text-white" href="{{ route('site.program.index', ['category' => $program->slug]) }}">{{ $program->kategori }}</a></span>
               </div>
             </div>
