@@ -43,7 +43,7 @@
       <div class="owl-carousel owl-theme" id="programs1">
         @foreach($program_reguler as $data)
           <div class="card border-0 shadow-sm mb-3">
-            <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100">
+            <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold m-0 text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
@@ -52,13 +52,16 @@
           </div>
         @endforeach
       </div>
+      <div class="text-center">
+        <a class="btn btn-primary" href="/program/kategori/reguler">Lihat Semua</a>
+      </div>
       <div class="title mb-3 text-center mt-5">
-        <h1>Program Kursus corporate</h1>
+        <h1>Program Kursus Corporate</h1>
       </div>
       <div class="owl-carousel owl-theme" id="programs2">
         @foreach($program_corporate as $data)
           <div class="card border-0 shadow-sm mb-3">
-            <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100">
+            <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold m-0 text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
@@ -66,6 +69,9 @@
             </div>
           </div>
         @endforeach
+      </div>
+      <div class="text-center">
+        <a class="btn btn-primary" href="/program/kategori/corporate">Lihat Semua</a>
       </div>
       <div class="title mb-3 text-center mt-5">
         <h1>Program Profesi 1 Tahun</h1>
@@ -73,7 +79,7 @@
       <div class="owl-carousel owl-theme" id="programs3">
         @foreach($program_profesi as $data)
           <div class="card border-0 shadow-sm mb-3">
-            <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100">
+            <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold m-0 text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
@@ -81,6 +87,9 @@
             </div>
           </div>
         @endforeach
+      </div>
+      <div class="text-center">
+        <a class="btn btn-primary" href="/program/kategori/profesi">Lihat Semua</a>
       </div>
     </div>
   </div>
@@ -298,7 +307,7 @@
 @endsection
 
 @section('js-extra')
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{ asset('assets/js/home.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript">
