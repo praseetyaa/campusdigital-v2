@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
 	<div class="container">
 		
-		<button class="navbar-toggler me-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fa fa-bars py-2 px-1"></i>
 		</button>
 		<a class="navbar-brand mx-auto me-lg-3" href="{{ route('site.home') }}">
@@ -25,15 +25,36 @@
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					  Program&nbsp;Kursus
 					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-{{-- 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-digital-marketing-reguler']) }}">Pelatihan Digital Marketing Reguler</a>
-					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-paket-pelatihan-dan-sertifikasi-digital-marketing']) }}">Paket Pelatihan dan Sertifikasi Digital Marketing</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-pkdm-program-kerjasama') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-pkdm-program-kerjasama']) }}">Pelatihan PKDM (Program Kerjasama)</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-praktek-kerja-industri-prakerin-online') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-praktek-kerja-industri-prakerin-online']) }}">Praktek Kerja Industri (PRAKERIN Online)</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-kelas-industri-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-kelas-industri-digital-marketing']) }}">Kelas Industri Digital Marketing</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-training-of-trainer') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-training-of-trainer']) }}">Training Of Trainer</a>
-					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-uji-kompetensi-keahlian-digital-marketing-ukk-smk') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => '/program-uji-kompetensi-keahlian-digital-marketing-ukk-smk']) }}">Uji Kompetensi Keahlian Digital Marketing (UKK SMK)</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-beasiswa') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-beasiswa']) }}">Beasiswa</a> --}}
+					<div class="dropdown-menu dropdown-mega" aria-labelledby="navbarDropdown">
+						<div class="row">
+							<div class="col-lg-7">
+								<h6 class="dropdown-header">Program Kursus Corporate</h6>
+								<hr class="dropdown-divider">
+								<a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-digital-marketing-reguler']) }}">Pelatihan Digital Marketing Reguler</a>
+								<a class="dropdown-item {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-paket-pelatihan-dan-sertifikasi-digital-marketing']) }}">Paket Pelatihan dan Sertifikasi Digital Marketing</a>
+								<a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-pkdm-program-kerjasama') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-pkdm-program-kerjasama']) }}">Pelatihan PKDM (Program Kerjasama)</a>
+								<a class="dropdown-item {{ strpos(Request::url(), '/program-praktek-kerja-industri-prakerin-online') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-praktek-kerja-industri-prakerin-online']) }}">Praktek Kerja Industri (PRAKERIN Online)</a>
+								<a class="dropdown-item {{ strpos(Request::url(), '/program-kelas-industri-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-kelas-industri-digital-marketing']) }}">Kelas Industri Digital Marketing</a>
+								<a class="dropdown-item {{ strpos(Request::url(), '/program-training-of-trainer') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-training-of-trainer']) }}">Training Of Trainer</a>
+								<a class="dropdown-item {{ strpos(Request::url(), 'program-uji-kompetensi-keahlian-digital-marketing-ukk-smk') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => '/program-uji-kompetensi-keahlian-digital-marketing-ukk-smk']) }}">Uji Kompetensi Keahlian Digital Marketing (UKK SMK)</a>
+								<a class="dropdown-item {{ strpos(Request::url(), '/program-beasiswa') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-beasiswa']) }}">Beasiswa</a>
+							</div>
+							<div class="col-lg-5">
+								<h6 class="dropdown-header">Program Kursus Reguler</h6>
+								<hr class="dropdown-divider">
+								<a class="dropdown-item" href="">Digital Marketing</a>
+								<a class="dropdown-item" href="">Graphic Design</a>
+								<a class="dropdown-item" href="">Komputer Perkantoran</a>
+								<a class="dropdown-item" href="">Web Designer</a>
+								<a class="dropdown-item" href="">Web Developer</a>
+								<a class="dropdown-item" href="">Video Editor</a>
+								<a class="dropdown-item" href="">Fotografi</a>
+								<a class="dropdown-item" href="">Multimedia</a>
+								<a class="dropdown-item" href="">Game Developer</a>
+								<a class="dropdown-item" href="">Social Media Specialist</a>
+								<a class="dropdown-item" href="">Mobile Programmer</a> 	
+							</div>
+						</div>
 					</div>
 				</li>
 				<li class="nav-item dropdown {{ strpos(Request::url(), '/program-') ? 'active' : '' }}">
@@ -41,18 +62,12 @@
 					  Program&nbsp;Profesi
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-{{-- 					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-digital-marketing-reguler']) }}">Pelatihan Digital Marketing Reguler</a>
-					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-paket-pelatihan-dan-sertifikasi-digital-marketing']) }}">Paket Pelatihan dan Sertifikasi Digital Marketing</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-pkdm-program-kerjasama') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-pkdm-program-kerjasama']) }}">Pelatihan PKDM (Program Kerjasama)</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-praktek-kerja-industri-prakerin-online') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-praktek-kerja-industri-prakerin-online']) }}">Praktek Kerja Industri (PRAKERIN Online)</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-kelas-industri-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-kelas-industri-digital-marketing']) }}">Kelas Industri Digital Marketing</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-training-of-trainer') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-training-of-trainer']) }}">Training Of Trainer</a>
-					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-uji-kompetensi-keahlian-digital-marketing-ukk-smk') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => '/program-uji-kompetensi-keahlian-digital-marketing-ukk-smk']) }}">Uji Kompetensi Keahlian Digital Marketing (UKK SMK)</a>
-					  <a class="dropdown-item {{ strpos(Request::url(), '/program-beasiswa') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-beasiswa']) }}">Beasiswa</a> --}}
+					  <a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-pelatihan-digital-marketing-reguler']) }}">Digital Technopreneur</a>
+					  <a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="{{ route('site.halaman.detail', ['permalink' => 'program-paket-pelatihan-dan-sertifikasi-digital-marketing']) }}">Digital Marketer</a>
 					</div>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'afiliasi']))) ? 'active' : '' }}">
-					<a class="nav-link" href="{{ route('site.halaman.detail', ['permalink' => 'afiliasi']) }}">Program&nbsp;Afiliasi</a>
+					<a class="nav-link" href="{{ route('site.halaman.detail', ['permalink' => 'afiliasi']) }}">Afiliasi</a>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.artikel.index'))) ? 'active' : '' }}">
 					<a class="nav-link" href="/artikel{{ Session::get('ref') != null ? '?ref='.Session::get('ref') : '' }}">Artikel</a>

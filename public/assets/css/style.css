@@ -254,6 +254,8 @@ fill: #FFF;
 }
 [v-cloak] { display: none; }
 .img-header{max-width: 400px;}
+.dropdown-item{white-space: nowrap;}
+.dropdown-mega{width: 750px;}
 @media (max-width: 991.98px){
 	h1{font-size: 40px;}
     .icon-box-item .ib-icon {width: 76px; margin: 0 auto;}
@@ -267,6 +269,7 @@ fill: #FFF;
 	.overlay-banner,
 	.banner-video{height: 180px;}
 }
+
 @media (min-width: 768px) {
 	.d-md-box{display: -webkit-box!important}
 }
@@ -281,3 +284,4 @@ fill: #FFF;
     75% {transform: scale(1);}
     100% {transform: scale(1);}
 }
+
