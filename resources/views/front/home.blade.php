@@ -37,7 +37,7 @@
 <section class="why-section spad">
   <div class="container">
     <div>
-      <div class="title mb-3 text-center">
+      <div class="title mb-4 text-center">
         <h1>Program Kursus Reguler</h1>
       </div>
       <div class="owl-carousel owl-theme" id="programs1">
@@ -45,7 +45,7 @@
           <div class="card border-0 shadow-sm mb-3">
             <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
-              <p class="fw-bold m-0 text-truncate d-block">{{ $data->program_title }}</p>
+              <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
@@ -55,7 +55,7 @@
       <div class="text-center">
         <a class="btn btn-primary" href="/program/kategori/reguler">Lihat Semua</a>
       </div>
-      <div class="title mb-3 text-center mt-5">
+      <div class="title mb-4 text-center mt-5">
         <h1>Program Kursus Corporate</h1>
       </div>
       <div class="owl-carousel owl-theme" id="programs2">
@@ -63,7 +63,7 @@
           <div class="card border-0 shadow-sm mb-3">
             <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
-              <p class="fw-bold m-0 text-truncate d-block">{{ $data->program_title }}</p>
+              <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
@@ -73,7 +73,7 @@
       <div class="text-center">
         <a class="btn btn-primary" href="/program/kategori/corporate">Lihat Semua</a>
       </div>
-      <div class="title mb-3 text-center mt-5">
+      <div class="title mb-4 text-center mt-5">
         <h1>Program Profesi 1 Tahun</h1>
       </div>
       <div class="owl-carousel owl-theme" id="programs3">
@@ -81,7 +81,7 @@
           <div class="card border-0 shadow-sm mb-3">
             <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
-              <p class="fw-bold m-0 text-truncate d-block">{{ $data->program_title }}</p>
+              <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
@@ -346,41 +346,3 @@ $(document).ready(function() {
 </style>
 
 @endsection
-
-
-
-
-
-
-
-<!-- 
-  
-navbar
------------------------
-beranda
-profil
-cabang
-program kursus 
-  -> reguler 11
-  -> corporate 8
-program profesi
-  -> program 1 tahun
-    -> digital techno preneur (jaminan usaha)
-  -> program 1 tahun
-    -> digital marketer (jaminan kerja)
-program afiliasi
-artikel
-
-body
-----------------------------------------
-(remove) materi yang diajarkan
-
-(add) program kursus
-      -> reguler (11)
-      -> corporate (8)
-(add) program profesi
-      -> program 1 tahun (2)
-
-(replace) mentor
-
- -->

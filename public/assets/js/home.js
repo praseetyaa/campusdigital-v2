@@ -82,11 +82,10 @@ $(document).ready(function(){
     $('#programs3').owlCarousel({
       items:4,
       nav:true,
-      loop:false,
-      center:false,
+      loop:true,
       margin:20,
       lazyLoad: true,
-      URLhashListener:true,
+      URLhashListener:false,
       autoplayHoverPause:true,
       startPosition: 'URLHash',
       responsiveClass:true,

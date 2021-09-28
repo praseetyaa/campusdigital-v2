@@ -256,6 +256,10 @@ fill: #FFF;
 .img-header{max-width: 400px;}
 .dropdown-item{white-space: nowrap;}
 .dropdown-mega{width: 750px;}
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 991.98px){
 	h1{font-size: 40px;}
     .icon-box-item .ib-icon {width: 76px; margin: 0 auto;}
