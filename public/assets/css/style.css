@@ -263,7 +263,7 @@ fill: #FFF;
   display: flex;
   align-items: center;
 }
-.logoCdProfile{width: 300px; margin-bottom: 2rem;}
+.logoCdProfile{width: 300px;}
 @media (max-width: 991.98px){
     .icon-box-item .ib-icon {width: 76px; margin: 0 auto;}
     .icon-box-item:hover .ib-icon{color: #340369; background-color: transparent;}
