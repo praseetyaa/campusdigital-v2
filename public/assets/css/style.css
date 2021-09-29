@@ -168,7 +168,7 @@ a {text-decoration: none;}
 .dropdown-item.active, .dropdown-item:active {text-decoration: none; color: #fff; background: #46157a}
 .dropdown-menu{border: unset; box-shadow: var(--shadow); border-radius: .5rem;}
 .dropdown-item{padding: .75rem 1.5rem;}
-.owl-carousel .owl-item img{margin: auto; width: 80%}
+.owl-carousel .owl-item img{margin: auto; width: 50%}
 .sticky-sidebar{position: sticky; top: 6em; height: fit-content}
 .package .list-group-item{background: unset; border: unset;}
 /*----------------------------------------------------------*/
