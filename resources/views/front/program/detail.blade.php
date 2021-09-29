@@ -18,7 +18,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-7 order-2 order-lg-1">
         <div class="card rounded-2 border-0">
           <div class="card-body">
             <h1 class="mb-3">{{ $program->program_title }}</h1>
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-5 order-1 order-lg-2">
         <div class="sticky-sidebar">
           <div>
             <img class="rounded-1 img-fluid" src="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}">
