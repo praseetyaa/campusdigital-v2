@@ -76,6 +76,7 @@ a {text-decoration: none;}
 .map iframe{height: 200px;}
 .bg-theme-2{background-color: var(--secondary);}
 .cta-section{text-align: center; padding: 100px 0 78px;}
+.cta-section img{width: 400px;}
 .spad{padding-top: 102px; padding-bottom: 102px;}
 .info-text{padding-top: 30px;}
 
@@ -280,6 +281,9 @@ fill: #FFF;
 @media (max-width: 767.98px) {
 	.overlay-banner,
 	.banner-video{height: 180px;}
+}
+@media (max-width: 575.98px) {
+	.cta-section img{width: 100%}
 }
 @keyframes fab{
     0% {transform: scale(1);}

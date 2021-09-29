@@ -40,16 +40,19 @@
       <div class="title mb-4 text-center">
         <h1>Program Kursus Reguler</h1>
       </div>
-      <div class="owl-carousel owl-theme" id="programs1">
+      {{-- <div class="owl-carousel owl-theme" id="programs1"> --}}
+      <div class="row">
         @foreach($program_reguler as $data)
+        <div class="col-md-6 col-lg-3">
           <div class="card border-0 shadow-sm mb-3">
-            <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
+            <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
+        </div>
         @endforeach
       </div>
       <div class="text-center">
@@ -58,16 +61,19 @@
       <div class="title mb-4 text-center mt-5">
         <h1>Program Kursus Corporate</h1>
       </div>
-      <div class="owl-carousel owl-theme" id="programs2">
+      {{-- <div class="owl-carousel owl-theme" id="programs2"> --}}
+      <div class="row">
         @foreach($program_corporate as $data)
+        <div class="col-md-6 col-lg-3">
           <div class="card border-0 shadow-sm mb-3">
-            <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
+            <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
+        </div>
         @endforeach
       </div>
       <div class="text-center">
@@ -76,16 +82,19 @@
       <div class="title mb-4 text-center mt-5">
         <h1>Program Profesi 1 Tahun</h1>
       </div>
-      <div class="owl-carousel owl-theme" id="programs3">
+      {{-- <div class="owl-carousel owl-theme" id="programs3"> --}}
+      <div class="row justify-content-center">
         @foreach($program_profesi as $data)
+        <div class="col-md-6 col-lg-3">
           <div class="card border-0 shadow-sm mb-3">
-            <img data-src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
+            <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
               <p class="fw-bold text-truncate d-block">{{ $data->program_title }}</p>
               <p class="text-truncate-3 d-none d-md-box">{{ substr(strip_tags(html_entity_decode($data->konten)),0,100).'...' }} </p>
               <a href="/program/{{ $data->program_permalink }}" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
+        </div>
         @endforeach
       </div>
       <div class="text-center">
@@ -294,7 +303,7 @@
 <section class="cta-section set-bg">
   <div class="container d-block d-lg-flex">
     <div class="me-0 me-lg-4 mb-3 mb-lg-0 text-center text-lg-start">
-      <img src="{{asset('assets/images/illustration/5127311.png')}}" alt="img" width="400">
+      <img src="{{asset('assets/images/illustration/5127311.png')}}" alt="img">
     </div>
     <div class="text-center text-lg-start">
       <h2  >Hubungi Kami</h2>

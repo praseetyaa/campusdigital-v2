@@ -25,13 +25,13 @@ class HomeController extends Controller
         $slider = Slider::where('status_slider','=',1)->orderBy('order_slider','asc')->get();
 
         // Data program kursus reguler
-        $program_reguler = Program::join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('kategori_program.slug','=','reguler')->orderBy('program_at','asc')->limit(5)->get();
+        $program_reguler = Program::join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('kategori_program.slug','=','reguler')->orderBy('program_at','asc')->limit(4)->get();
 
         // Data program kursus corporate
-        $program_corporate = Program::join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('kategori_program.slug','=','corporate')->orderBy('program_at','asc')->limit(5)->get();
+        $program_corporate = Program::join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('kategori_program.slug','=','corporate')->orderBy('program_at','asc')->limit(4)->get();
 
         // Data program profesi
-        $program_profesi = Program::join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('kategori_program.slug','=','profesi')->orderBy('program_at','asc')->limit(5)->get();
+        $program_profesi = Program::join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('kategori_program.slug','=','profesi')->orderBy('program_at','asc')->limit(4)->get();
 
         // Data mentor
         $mentor = Mentor::orderBy('order_mentor','asc')->get();
