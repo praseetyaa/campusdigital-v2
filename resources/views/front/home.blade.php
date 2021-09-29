@@ -7,8 +7,8 @@
       <div class="col-lg-6">
         <div class="">
           <div class="text-center text-lg-start">
-          	<h1 style="font-size: 5rem">Let's Join Us!</h1>
-		  	    <h2 style="font-size: 2.5rem" class="mb-3"><span style="color: var(--primary);">Digital</span> Technology<br>& Business Class</h2>
+          	<h1>Let's Join Us!</h1>
+		  	    <h2 class="mb-3"><span style="color: var(--primary);">Digital</span> Technology<br>& Business Class</h2>
           </div>
           <div class="text-center text-lg-start">
       			<p class="mb-3">Mari bergabung bersama kami untuk<br>mendapatkan ilmunya!</p>
@@ -43,7 +43,7 @@
       {{-- <div class="owl-carousel owl-theme" id="programs1"> --}}
       <div class="row">
         @foreach($program_reguler as $data)
-        <div class="col-md-6 col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="card border-0 shadow-sm mb-3">
             <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
@@ -64,7 +64,7 @@
       {{-- <div class="owl-carousel owl-theme" id="programs2"> --}}
       <div class="row">
         @foreach($program_corporate as $data)
-        <div class="col-md-6 col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="card border-0 shadow-sm mb-3">
             <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
@@ -85,7 +85,7 @@
       {{-- <div class="owl-carousel owl-theme" id="programs3"> --}}
       <div class="row justify-content-center">
         @foreach($program_profesi as $data)
-        <div class="col-md-6 col-lg-3">
+        <div class="col-6 col-lg-3">
           <div class="card border-0 shadow-sm mb-3">
             <img src="{{ image('assets/images/program/'.$data->program_gambar, 'program') }}" class="card-img-top w-100 owl-lazy">
             <div class="card-body">
