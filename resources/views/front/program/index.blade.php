@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-        <h1>Program Kursus {{ $kategori }}</h1>
+        <h1>Program {{ $kategori }}</h1>
         <h4 class="fw-normal">Daftar program pelatihan <span class="text-lowercase">{{ $kategori }}</span><br>yang tersedia untuk Anda</h4>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">

@@ -15,20 +15,30 @@
 				<li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}">
 					<a class="nav-link" href="{{ route('site.home') }}">Beranda</a>
 				</li>
-				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'tentang-kami']))) ? 'active' : '' }}">
-					<a class="nav-link" href="{{ route('site.halaman.detail', ['permalink' => 'tentang-kami']) }}">Profil</a>
+				<li class="nav-item dropdown {{ strpos(Request::url(), '/sejarah') || strpos(Request::url(), '/visi-misi') || strpos(Request::url(), '/budaya-kerja') ||strpos(Request::url(), '/fasilitas-keunggulan') ||strpos(Request::url(), '/kontak-kami') ? 'active' : '' }}">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Tentang Kami
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item {{ strpos(Request::url(), '/sejarah') ? 'active' : '' }}" href="/sejarah">Sejarah</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/visi-misi') ? 'active' : '' }}" href="/visi-misi">Visi & Misi</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/budaya-kerja') ? 'active' : '' }}" href="/budaya-kerja">Budaya Kerja</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/fasilitas-keunggulan') ? 'active' : '' }}" href="/fasilitas-keunggulan">Fasilitas & Keunggulan</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/kontak-kami') ? 'active' : '' }}" href="/kontak-kami">Kontak Kami</a>
+					</div>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.cabang.index'))) ? 'active' : '' }}">
 					<a class="nav-link" href="{{ route('site.cabang.index') }}">Cabang</a>
 				</li>
-				<li class="nav-item dropdown {{ strpos(Request::url(), '/program-') ? 'active' : '' }}">
+				<li class="nav-item dropdown {{ strpos(Request::url(), '/program/kategori/reguler') || strpos(Request::url(), '/program/kategori/corporate') || strpos(Request::url(), '/program/kategori/profesi') ||strpos(Request::url(), '/program/kategori/sertifikasi') ? 'active' : '' }}">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					  Program
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="/program/kategori/reguler">Reguler</a>
-						<a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="/program/kategori/corporate">Corporate</a>
-						<a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="/program/kategori/profesi">Profesi</a>
+						<a class="dropdown-item {{ strpos(Request::url(), '/program/kategori/reguler') ? 'active' : '' }}" href="/program/kategori/reguler">Reguler</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/program/kategori/corporate') ? 'active' : '' }}" href="/program/kategori/corporate">Corporate</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/program/kategori/profesi') ? 'active' : '' }}" href="/program/kategori/profesi">Profesi</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/program/kategori/sertifikasi') ? 'active' : '' }}" href="/program/kategori/sertifikasi">Sertifikasi</a>
 					</div>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'afiliasi']))) ? 'active' : '' }}">
@@ -47,7 +57,6 @@
 		          <a class="btn btn-primary fw-bold rounded-15 btn-block mb-3 mb-lg-0 px-4" href="{{ route('auth.register', ['ref' => $_GET['ref']]) }}">Daftar</a>
 		        </li>
 				@else
-
 				<li class="nav-item dropdown">
 					<a class="nav-link account dropdown-toggle d-flex align-items-center p-0 pb-2 pb-lg-0" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  <img src="{{ Auth::user()->foto != '' ? asset('assets/images/users/'.Auth::user()->foto) : asset('assets/images/default/user.jpg') }}" alt="user" class="rounded-circle pt-lg-1 me-2" width="31">
@@ -67,7 +76,6 @@
 					</ul>
 				</li>
 				@endif
-
 			</ul>
 			<button class="btn btn-theme-1 rounded-2 ms-2 d-none">
 				<a class="content-btn-nav" href="{{ route('auth.login') }}">Masuk</a>
@@ -76,4 +84,10 @@
 			</button>
 		</div>
 	</div>
-</nav>
+</nav>\
+
+
+sejarah
+fasilitas & keunggulan
+kontak
+sertifikasi BNSP
