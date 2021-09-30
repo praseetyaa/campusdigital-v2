@@ -4,47 +4,51 @@
 
 @section('content')
 
-<section class="page-top-section pb-0">
+<section class="page-top-section page-profile pb-0">
   <div class="container">
-      <div class="section_kelebihan mb-5">
+      <div class="section-header">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+            <h1>Fasilitas & Keunggulan</h1>
+            <h4 class="fw-normal">Fasilitas & Keunggulan Campus Digital</h4>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">
+            <img class="h-auto mb-3 mb-lg-0 img-header" src="{{ asset('assets/images/illustration/5237.png') }}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="section-mengapa mb-5">
         <div class="heading text-center mb-4">
-          <h1>Kelebihan Campus Digital</h1>
+          <h1>Mengapa Kami?</h1>
         </div>
         <div class="row">
           <div class="col-lg-6">
-            <li>Instruktur yang tersertifikasi</li>
-            <li>Video Pembelajaran yang aplikatif</li>
-            <li>Peluang berkarir di Perusahaan mitra</li>
-            <li>Pengelola dan instruktur tersertifikasi</li>
-            <li>Modul Pembelajaran selalu up to date</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Instruktur yang tersertifikasi</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Video Pembelajaran yang aplikatif</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Peluang berkarir di Perusahaan mitra</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Pengelola dan instruktur tersertifikasi</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Modul Pembelajaran selalu up to date</li>
           </div>
           <div class="col-lg-6">
-            <li>Lokasi yang strategis dan mudah dijangkau</li>
-            <li>Kerjasama dengan instansi pemerintah maupun swasta</li>
-            <li>Peserta berkesempatan mendapatkan sertifikasi kompetensi</li>
-            <li>Waktu belajar yang fleksibel bisa belajar kapan dan dimana saja</li>
-            <li>Program affiliate yang memberi potensi penghasilan langsung  peserta</li>
-            <li>Mentor dan instruktur merupakan praktisi bisnis dan teknologi digital tersertifikasi</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Lokasi yang strategis dan mudah dijangkau</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Kerjasama dengan instansi pemerintah maupun swasta</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Peserta berkesempatan mendapatkan sertifikasi kompetensi</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Waktu belajar yang fleksibel bisa belajar kapan dan dimana saja</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Program affiliate yang memberi potensi penghasilan langsung  peserta</li>
+            <li class="list-unstyled"><i class="fas fa-check bg-primary-s text-primary p-1 mb-2 rounded"></i> Mentor dan instruktur merupakan praktisi bisnis dan teknologi digital tersertifikasi</li>
           </div>
         </div>
       </div>
-      <div class="section_fasilitas mb-5">
-        <div class="text-center">
+      <div class="section-fasilitas mb-5">
+        <div class="text-center mb-5">
           <h1>Fasilitas dan Sarana</h1>
         </div>
-        <ol>
-          <li>Musholla</li>
-          <li>LED Proyektor</li>
-          <li>Komputer dan Internet</li>
-          <li>Ruangan yang nyaman dan ber-AC</li>
-          <li>Materi e-book dan video pembelajaran</li>
-        </ol>
-      </div>
-      <div class="section_why d-flex align-items-center bg-light py-3 px-4 rounded-1">
-        <img src="https://image.flaticon.com/icons/svg/5375/5375522.svg" width="80" class="bg-white rounded-circle p-1 me-3" alt="">
-        <div>
-          <h1>Mengapa Kami?</h1>
-          <p>Dengan memiliki mentor yang ahli di bidangnya, lulusan Campus Digital kami harap akan menjadi tenaga kerja baru di bidang teknologi digital marketing atau menjadi wirausaha yang memiliki marketing online yang handal.</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-3 col-6 text-center"><p><i class="text-primary fas fa-mosque"></i></p><p><p>Musholla<p></p></div>
+          <div class="col-lg-2 col-md-3 col-6 text-center"><p><i class="text-primary fas fa-eye"></i></p><p><p>LED Proyektor<p></p></div>
+          <div class="col-lg-2 col-md-3 col-6 text-center"><p><i class="text-primary fas fa-desktop"></i></p><p><p>Komputer dan Internet<p></p></div>
+          <div class="col-lg-2 col-md-3 col-6 text-center"><p><i class="text-primary fas fa-fan"></i></p><p><p>Ruangan yang nyaman dan ber-AC<p></p></div>
+          <div class="col-lg-2 col-md-3 col-6 text-center"><p><i class="text-primary fas fa-book"></i></p><p><p>Materi e-book dan video pembelajaran<p></p></div>
         </div>
       </div>
   </div>

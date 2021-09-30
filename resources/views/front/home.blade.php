@@ -26,7 +26,7 @@
           <div class="overflow-hidden">
             <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
               <div class="banner-video" style="background-image: url({{asset('assets/images/background/banner-600.gif')}})">
-                <div class="overlay-banner text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
+                <div class="overlay-banner text-center"><i class="fab fa-youtube overlay-galery-content"></i></div>
               </div>
             </a>
           </div>
@@ -266,7 +266,7 @@
               <div class="overflow-hidden">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=k-QpsCmXNX4">
                   <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/testimoni1.gif')}})">
-                    <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
+                    <div class="overlay-galery text-center"><i class="fab fa-youtube overlay-galery-content"></i></div>
                   </div>
                 </a>
               </div>
@@ -276,7 +276,7 @@
               <div class="overflow-hidden">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=9or8bE9KxPc">
                   <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/testimoni2.gif')}})">
-                    <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
+                    <div class="overlay-galery text-center"><i class="fab fa-youtube overlay-galery-content"></i></div>
                   </div>
                 </a>
               </div>
@@ -286,7 +286,7 @@
               <div class="overflow-hidden">
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=AfGz0Z9HGfU">
                   <div style="height: 200px; background-position: center; background-size: cover; background-image: url({{asset('assets/images/background/banner-320.gif')}})">
-                    <div class="overlay-galery text-center"><i class="fa fa-youtube-play overlay-galery-content"></i></div>
+                    <div class="overlay-galery text-center"><i class="fab fa-youtube overlay-galery-content"></i></div>
                   </div>
                 </a>
               </div>
@@ -310,7 +310,7 @@
     <div class="text-center text-lg-start">
       <h2  >Hubungi Kami</h2>
       <p >Customer Service Kami Siap Membantu Anda untuk Mendapatkan Informasi Lebih Lanjut Mengenai Program-Program Campus Digital</p>
-      <a href="#" onClick="window.open('https://api.whatsapp.com/send?phone={{ setting('site.whatsapp') }}&text=Halo Campus Digital, saya butuh informasi tentang layanan Campus Digital...', '_blank')" class="btn btn-lg btn-success px-4"><i class="fa fa-whatsapp me-2" style="font-size: 20px;"></i> Hubungi Kami via WhatsApp</a>
+      <a href="#" onClick="window.open('https://api.whatsapp.com/send?phone={{ setting('site.whatsapp') }}&text=Halo Campus Digital, saya butuh informasi tentang layanan Campus Digital...', '_blank')" class="btn btn-lg btn-success px-4"><i class="fab fa-whatsapp me-2" style="font-size: 20px;"></i> Hubungi Kami via WhatsApp</a>
     </div>
   </div>
 </section>

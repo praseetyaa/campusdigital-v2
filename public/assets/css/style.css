@@ -139,7 +139,14 @@ a {text-decoration: none;}
 .btn-primary:active:focus,
 .show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .25rem var(--primary-s);}
 .btn-primary.disabled,.btn-primary:disabled{color:var(--primary);background-color:var(--bs-white);border-color:var(--primary-s)}
-
+.bg-primary{background-color: var(--primary)!important;}
+.bg-primary-s{background-color: var(--primary-s)!important;}
+.bg-secondary{background-color: var(--secondary)!important;}
+.bg-secondary-s{background-color: var(--primary-s)!important;}
+.text-primary{color: var(--primary)!important;}
+.text-primary-s{color: var(--primary-s)!important;}
+.text-secondary{color: var(--secondary)!important;}
+.text-secondary-s{color: var(--secondary-s)!important;}
 
 
 /* style own */
@@ -150,6 +157,7 @@ a {text-decoration: none;}
 .rounded-4{border-radius: 4em!important}
 .rounded-5{border-radius: 5em!important}
 
+
 /*.navbar{border-bottom: 3px solid #fdd100}*/
 .navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .show>.nav-link {color: #46157a;}
 .feature-section .owl-item{margin-top: 1em; margin-bottom: 1em; padding: 2em 0 1em 0;}
@@ -159,15 +167,13 @@ a {text-decoration: none;}
 
 .btn-link-primary:hover{color: #46157a; text-decoration: none;}
 
-/*beasiswa*/
-.page-top-section {
-    height: auto;
-    padding: 3em 0em;
-    margin-top: 5em;
-}
+/*profile*/
+.page-top-section {padding: 3em 0em; margin-top: 5em;}
+.page-profile{min-height: calc(100vh - 22rem);}
 .account.dropdown-toggle:after{display: none;}
-.dropdown-item.active, .dropdown-item:active {text-decoration: none; color: #fff; background: #46157a}
-.dropdown-menu{border: unset; box-shadow: var(--shadow); border-radius: .5rem;}
+.dropdown-item:hover, .dropdown-item:focus{border-radius: .5rem;}
+.dropdown-item.active, .dropdown-item:active {text-decoration: none; color: #fff; background: #46157a; border-radius: .5rem;}
+.dropdown-menu{border: unset; box-shadow: 0px 10px 70px rgb(0 0 0 / 15%); border-radius: .5rem; padding-left: .5rem; padding-right: .5rem; animation: dropdown .2s ease-in;}
 .dropdown-item{padding: .75rem 1.5rem;}
 .owl-carousel .owl-item img{margin: auto; width: 50%}
 .sticky-sidebar{position: sticky; top: 6em; height: fit-content}
@@ -265,6 +271,14 @@ fill: #FFF;
   align-items: center;
 }
 .logoCdProfile{width: 300px;}
+.section-fasilitas i{font-size: 3rem;}
+.logo-visi{width:  200px}
+
+@keyframes dropdown{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
 @media (max-width: 991.98px){
     .icon-box-item .ib-icon {width: 76px; margin: 0 auto;}
     .icon-box-item:hover .ib-icon{color: #340369; background-color: transparent;}

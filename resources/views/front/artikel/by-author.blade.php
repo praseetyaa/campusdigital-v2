@@ -32,8 +32,8 @@
           </div>
           <div class="card-footer bg-white d-flex justify-content-between align-items-center">
             <div>
-              <p class="m-0"><small class="text-muted"><i class="fa fa-clock-o me-1"></i>{{ generate_time_elapsed($data->blog_at) }}</small></p>
-              <p class="m-0"><small class="text-muted"><i class="fa fa-user me-1"></i><a class="text-link" href="{{ $data->blog_kontributor != 0 ? route('site.artikel.by-contributor', ['username' => $data->slug]) : route('site.artikel.by-author', ['username' => $data->username]) }}">{{ $data->blog_kontributor != '' ? $data->kontributor : $data->nama_user }}</a></small></p>
+              <p class="m-0"><small class="text-muted"><i class="fas fa-clock me-1"></i>{{ generate_time_elapsed($data->blog_at) }}</small></p>
+              <p class="m-0"><small class="text-muted"><i class="fas fa-user me-1"></i><a class="text-link" href="{{ $data->blog_kontributor != 0 ? route('site.artikel.by-contributor', ['username' => $data->slug]) : route('site.artikel.by-author', ['username' => $data->username]) }}">{{ $data->blog_kontributor != '' ? $data->kontributor : $data->nama_user }}</a></small></p>
             </div>
           </div>
         </div>

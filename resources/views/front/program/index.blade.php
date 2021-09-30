@@ -12,7 +12,7 @@
         <h4 class="fw-normal">Daftar program pelatihan <span class="text-lowercase">{{ $kategori }}</span><br>yang tersedia untuk Anda</h4>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 mb-3 mb-lg-0 text-center">
-        <img class="h-auto img-header" src="{{asset('assets/images/illustration/min/8778.png')}}" alt="banner">
+        <img class="h-auto mb-3 mb-lg-0 img-header" src="{{asset('assets/images/illustration/min/8778.png')}}" alt="banner">
       </div>
     </div>
   </div>

@@ -84,10 +84,4 @@
 			</button>
 		</div>
 	</div>
-</nav>\
-
-
-sejarah
-fasilitas & keunggulan
-kontak
-sertifikasi BNSP
+</nav>
