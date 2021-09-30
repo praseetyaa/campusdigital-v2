@@ -23,20 +23,12 @@
 				</li>
 				<li class="nav-item dropdown {{ strpos(Request::url(), '/program-') ? 'active' : '' }}">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Program&nbsp;Kursus
+					  Program
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item {{ strpos(Request::url(), '/program-pelatihan-digital-marketing-reguler') ? 'active' : '' }}" href="/program/kategori/reguler">Reguler</a>
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="/program/kategori/corporate">Corporate</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown {{ strpos(Request::url(), '/program-') ? 'active' : '' }}">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					  Program&nbsp;Profesi
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="/program/digital-technopreneur">Digital Technopreneur</a>
-						<a class="dropdown-item" href="/program/digital-marketer">Digital Marketer</a>
+						<a class="dropdown-item text-wrap {{ strpos(Request::url(), 'program-paket-pelatihan-dan-sertifikasi-digital-marketing') ? 'active' : '' }}" href="/program/kategori/profesi">Profesi</a>
 					</div>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.halaman.detail', ['permalink' => 'afiliasi']))) ? 'active' : '' }}">

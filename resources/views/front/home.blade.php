@@ -248,16 +248,15 @@
   </div>
 </section>
 
-<section class="feature-section spad pb-0">
+<section class="feature-section spad py-5">
   <div class="container">
     <div class="text-center">
       <h2 >Testimoni</h2>
       <p >Apa yang mereka katakan tentang kami?</p>
-      <div class="bg-feature">
-        <span style="position: absolute; start: 0em; font-size: 18rem; color: rgba(0,0,0,.2);">❝</span>
-        <span style="position: absolute; right: 0em; font-size: 18rem; color: rgba(0,0,0,.2);">❞</span>
-      </div>
-    </div>
+      <div class="bg-feature position-relative" style="height: 300px">
+        <span class="qts-left">❝</span>
+        <span class="qts-right">❞</span>
+
     <div class="feature-item">
       <div class="row">
         <div class="col-lg-12">
@@ -297,12 +296,15 @@
         </div>
       </div>
     </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="cta-section set-bg">
-  <div class="container d-block d-lg-flex">
-    <div class="me-0 me-lg-4 mb-3 mb-lg-0 text-center text-lg-start">
+<section class="cta-section set-bg bg-light">
+  <div class="container d-block d-lg-flex align-items-center">
+    <div class="me-0 me-lg-5 mb-3 mb-lg-0 text-center text-lg-start">
       <img src="{{asset('assets/images/illustration/5127311.png')}}" alt="img">
     </div>
     <div class="text-center text-lg-start">

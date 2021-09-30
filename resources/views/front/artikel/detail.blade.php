@@ -29,7 +29,7 @@
         <div class="rounded-2 bg-light py-2 px-4 mb-3">
           <nav class="site-breadcrumb" aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a class="sb-item" href="{{ route('site.home') }}">Home</a></li>
+              <li class="breadcrumb-item"><a class="sb-item" href="{{ route('site.home') }}">Beranda</a></li>
               <li class="breadcrumb-item active" aria-current="page">Artikel</li>
             </ol>
           </nav>
