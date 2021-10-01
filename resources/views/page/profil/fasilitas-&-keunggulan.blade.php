@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="section-mengapa mb-5">
-        <div class="heading text-center mb-4">
+        <div class="heading mb-4">
           <h1>Mengapa Kami?</h1>
         </div>
         <div class="row">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="section-fasilitas mb-5">
+      <div class="section-fasilitas bg-light rounded-1 p-4 mb-5">
         <div class="text-center mb-5">
           <h1>Fasilitas dan Sarana</h1>
         </div>
