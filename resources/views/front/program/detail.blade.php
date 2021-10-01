@@ -4,6 +4,7 @@
 
 @section('content')
 
+<div id="program">
 <section class="page-top-section pb-0">
 	<div class="container">
 		<nav aria-label="breadcrumb">
@@ -38,6 +39,7 @@
     </div>
   </div>
 </section>
+</div>
 
 @endsection
 
@@ -46,6 +48,7 @@
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 <style type="text/css">
   /* Quill */
+  #program{min-height: calc(100vh - 20rem);}
   .ql-editor {padding: 0}
   .ql-editor h2 {margin-bottom: 1rem!important; font-weight: 600!important;}
   .ql-editor h3 {margin-bottom: 1rem!important; font-weight: 600!important;}
