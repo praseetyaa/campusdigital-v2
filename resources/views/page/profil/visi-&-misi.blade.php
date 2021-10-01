@@ -18,8 +18,8 @@
       </div>
     </div>
     <div class="section_visi mb-5">
-      <div class="row">
-        <div class="col-lg-6 d-lg-flex align-items-stretch mb-4 mb-lg-0">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 d-lg-flex align-items-stretch mb-4 mb-lg-0">
           <div class="card text-center rounded-1 border-0 shadow-sm">
             <div class="p-4 rounded-1" style="background-color: #fff6f7;"><img class="logo-visi" src="https://image.flaticon.com/icons/svg/4506/4506061.svg" alt=""></div>
             <div class="card-body">
@@ -28,7 +28,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 d-lg-flex align-items-stretch mb-4 mb-lg-0">
+        <div class="col-lg-4 d-lg-flex align-items-stretch mb-4 mb-lg-0">
           <div class="card text-center rounded-1 border-0 shadow-sm">
             <div class="p-4 rounded-1" style="background-color: #d6f3e6"><img class="logo-visi" src="https://image.flaticon.com/icons/svg/5549/5549149.svg" alt=""></div>
             <div class="card-body">

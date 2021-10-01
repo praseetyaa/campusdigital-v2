@@ -4,6 +4,7 @@
 
 @section('content')
 
+<div id="program">
 <section class="page-top-section set-bg">
   <div class="container">
     <div class="row align-items-center">
@@ -39,6 +40,7 @@
     </div>
   </div>
 </section>
+</div>
 
 @endsection
 
@@ -49,6 +51,7 @@
 @section('css-extra')
 
 <style type="text/css">
+#program{min-height: calc(100vh - 22rem);}
 .info-text {padding-top: 0;}
 .info-text p {margin-bottom: 1rem!important;}
 p{line-height: 1.5}
