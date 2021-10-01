@@ -24,7 +24,7 @@
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/visi-misi') ? 'active' : '' }}" href="/visi-misi">Visi & Misi</a>
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/budaya-kerja') ? 'active' : '' }}" href="/budaya-kerja">Budaya Kerja</a>
 						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/fasilitas-keunggulan') ? 'active' : '' }}" href="/fasilitas-keunggulan">Fasilitas & Keunggulan</a>
-						<a class="dropdown-item text-wrap {{ strpos(Request::url(), '/kontak-kami') ? 'active' : '' }}" href="/kontak-kami">Kontak Kami</a>
+						{{-- <a class="dropdown-item text-wrap {{ strpos(Request::url(), '/kontak-kami') ? 'active' : '' }}" href="/kontak-kami">Kontak Kami</a> --}}
 					</div>
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.cabang.index'))) ? 'active' : '' }}">
@@ -46,6 +46,16 @@
 				</li>
 				<li class="nav-item {{ is_int(strpos(Request::url(), route('site.artikel.index'))) ? 'active' : '' }}">
 					<a class="nav-link" href="/artikel{{ Session::get('ref') != null ? '?ref='.Session::get('ref') : '' }}">Artikel</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Hubungi Kami
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Investasi Pendidikan</a>
+						<a class="dropdown-item" href="#">Informasi Pendaftaran</a>
+						<a class="dropdown-item" href="#">Pendaftaran Online</a>
+					</div>
 				</li>
 			</ul>
 			<ul class="navbar-nav mt-2 mt-lg-0">
