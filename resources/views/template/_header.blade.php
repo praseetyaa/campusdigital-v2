@@ -52,9 +52,8 @@
 					  Hubungi Kami
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Investasi Pendidikan</a>
-						<a class="dropdown-item" href="#">Informasi Pendaftaran</a>
-						<a class="dropdown-item" href="#">Pendaftaran Online</a>
+						<a class="dropdown-item" href="/investasi-pendidikan">Investasi Pendidikan</a>
+						<a class="dropdown-item" href="/informasi-pendaftaran">Informasi Pendaftaran</a>
 					</div>
 				</li>
 			</ul>
