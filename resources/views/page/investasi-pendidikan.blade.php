@@ -149,12 +149,12 @@
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Investasi Pendidikan</td>
+                <td>Digital Technopreneur</td>
                 <td>Rp. 15.000.000</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td>Informasi Pendaftaran</td>
+                <td>Digital Marketer</td>
                 <td>Rp. 15.000.000</td>
               </tr>
             </tbody>
