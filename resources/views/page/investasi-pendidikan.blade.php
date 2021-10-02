@@ -138,6 +138,27 @@
               </tr>
             </tbody>
           </table>
+          <table class="table table-striped" id="profesi">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Program Profesi</th>
+                <th scope="col">Besaran Biaya</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Investasi Pendidikan</td>
+                <td>Rp. 15.000.000</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Informasi Pendaftaran</td>
+                <td>Rp. 15.000.000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>  
       </div>
     </div>
