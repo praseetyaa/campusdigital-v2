@@ -31,7 +31,7 @@
             <p>4. Melampirkan foto copy KK 1 (satu) lembar</p>
             <p>5. Pas foto 3 x 4 berwarna : 3 lembar</p>
             <p>6. Mengisi formulir pendaftaran</p>
-            <p>7. Membayar uang pendaftaran sebesar Rp 200.000,-</p>
+            <p>7. Membayar uang pendaftaran sebesar Rp 79.000,-</p>
           <p class="fw-bold">NB. Bagi yang belum LULUS, ijazah bisa menyusul dengan melampirkan foto copy Raport</p>
           <p class="fw-bold">Cara Pendaftaran:</p>
           <p>1. Calon Peserta Didik bisa datang langsung ke LPP Campus Digital, melalui Guru BK, atau daftar via Online</p>
