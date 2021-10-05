@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section class="page-top-section page-profile">
+<section class="page-top-section page-profile" id="price-list">
   <div class="container">
     <div class="header-one">
       <div class="section_header">
@@ -21,141 +21,20 @@
       <div class="bg-light p-4 rounded-1">
         <div class="section-invest">
           <p>Di bawah ini adalah rincian biaya pendidikan yang harus dibayarkan agar dapat bergabung dengan Lembaga Pendidikan Profesi Campus Digital diantaranya sebagai berikut :</p>
-          <table class="table table-striped" id="reguler">
+          <table class="table table-striped" id="reguler" v-for="program in programs" :key="program.idProgram">
             <thead>
               <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Program Reguler</th>
-                <th scope="col">Besaran Biaya</th>
+                <th class="bg-primary-s text-primary" style="border-radius: .5rem 0 0 0;" scope="col">No.</th>
+                <th class="bg-primary-s text-primary">@{{ program.titleName }}</th>
+                <th class="bg-primary-s text-primary" style="border-radius: 0 .5rem 0 0;">@{{ program.titlePrice }}</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Digital Marketing</td>
-                <td>Rp. 1.500.000</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Graphic Design</td>
-                <td>Rp. 1.950.000</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Komputer Perkantoran</td>
-                <td>Rp. 1.350.000</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Web Designer</td>
-                <td>Rp. 1.500.000</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Web Developer</td>
-                <td>Rp. 1.800.000</td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>Video Editor</td>
-                <td>Rp. 1.350.000</td>
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                <td>Fotografi</td>
-                <td>Rp. 900.000</td>
-              </tr>
-              <tr>
-                <th scope="row">8</th>
-                <td>Multimedia</td>
-                <td>Rp. 1.200.000</td>
-              </tr>
-              <tr>
-                <th scope="row">9</th>
-                <td>Game Developer</td>
-                <td>Rp. 5.000.000</td>
-              </tr>
-              <tr>
-                <th scope="row">10</th>
-                <td>Social Media Specialist</td>
-                <td>Rp. 1.500.00</td>
-              </tr>
-              <tr>
-                <th scope="row">11</th>
-                <td>Mobile Programmer</td>
-                <td>Rp. 5.000.000</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="table table-striped" id="corporate">
-            <thead>
-              <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Program Corporate</th>
-                <th scope="col">Besaran Biaya</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Digital Marketing</td>
-                <td>Negotiable</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Graphic Design</td>
-                <td>Negotiable</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Komputer Perkantoran</td>
-                <td>Negotiable</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Web Designer</td>
-                <td>Negotiable</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Web Developer</td>
-                <td>Negotiable</td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>Video Editor</td>
-                <td>Sesuai Skema Kompetensi Teknis yang di Ujikan</td>
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                <td>Fotografi</td>
-                <td>Sesuai Skema Kompetensi Teknis yang di Ujikan</td>
-              </tr>
-              <tr>
-                <th scope="row">8</th>
-                <td>Multimedia</td>
-                <td>Sesuai Skema Kompetensi Teknis yang di Ujikan</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="table table-striped" id="profesi">
-            <thead>
-              <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Program Profesi</th>
-                <th scope="col">Besaran Biaya</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Digital Technopreneur</td>
-                <td>Rp. 15.000.000</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Digital Marketer</td>
-                <td>Rp. 15.000.000</td>
+              <tr v-for="content in program.contents" :key="program.idContent">
+                <th v-if="content.idContent < 100" scope="row">@{{ content.idContent }}</th>
+                <td v-if="content.idContent > 100" class="fw-bold bg-primary-s text-primary" colspan="3">@{{ content.contentName }}</td>
+                <td v-if="content.idContent < 100" >@{{ content.contentName }}</td>
+                <td v-if="content.idContent < 100" width="500">Rp. @{{ content.contentPrice }}</td>
               </tr>
             </tbody>
           </table>
@@ -165,4 +44,9 @@
   </div>
 </section>
 
+@endsection
+
+@section('js-extra')
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script type="text/javascript" src="{{asset('assets/js/investasi-pendidikan.js')}}"></script>
 @endsection
