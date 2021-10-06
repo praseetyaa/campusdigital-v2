@@ -105,7 +105,6 @@ var one = new Vue({
           { idContent: '52', contentName: 'Junior Cyber Security', contentPrice: '600.000'},
           { idContent: '106', contentName: 'Fiber Optic'},
           { idContent: '53', contentName: 'Teknisi Instalasi & Aktivasi Fiber Optik', contentPrice: '1.250.000'},
-
         ]
       },
     ]
