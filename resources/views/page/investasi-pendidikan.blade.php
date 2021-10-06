@@ -21,7 +21,7 @@
       <div class="bg-light p-4 rounded-1">
         <div class="section-invest">
           <p>Di bawah ini adalah rincian biaya pendidikan yang harus dibayarkan agar dapat bergabung dengan Lembaga Pendidikan Profesi Campus Digital diantaranya sebagai berikut :</p>
-          <table class="table table-striped" id="reguler" v-for="program in programs" :key="program.idProgram">
+          <table v-cloak class="table table-striped" id="reguler" v-for="program in programs" :key="program.idProgram">
             <thead>
               <tr>
                 <th class="bg-primary-s text-primary" style="border-radius: .5rem 0 0 0;" scope="col">No.</th>

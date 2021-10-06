@@ -23,6 +23,7 @@
 html, body {}
 html{scroll-behavior: smooth;}
 a {text-decoration: none;}
+[v-cloak] { display: none; }
 .btn-link-primary {color: #46157a;}
 .btn-link-primary:hover {color: #46157a; text-decoration: underline;}
 .btn-link-secondary {color: #fdd100;}
