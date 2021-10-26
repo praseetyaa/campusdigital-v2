@@ -68,7 +68,7 @@
 				@else
 				<li class="nav-item dropdown">
 					<a class="nav-link account dropdown-toggle d-flex align-items-center p-0 pb-2 pb-lg-0" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  <img src="{{ Auth::user()->foto != '' ? asset('assets/images/users/'.Auth::user()->foto) : asset('assets/images/default/user.jpg') }}" alt="user" class="rounded-circle pt-lg-1 me-2" width="31">
+					  <img src="{{ Auth::user()->foto != '' ? asset('assets/images/user/'.Auth::user()->foto) : asset('assets/images/default/user.jpg') }}" alt="user" class="rounded-circle pt-lg-1 me-2" width="31">
 					  <span class="d-lg-none">{{ Auth::user()->nama_user }}</span>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">
