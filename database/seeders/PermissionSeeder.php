@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Ajifatur\FaturCMS\Models\Permission;
 
@@ -33,12 +35,6 @@ class PermissionSeeder extends Seeder
             ['key' => 'PackageController::me', 'name' => 'Menampilkan My Package'],
             ['key' => 'PackageController::updateMe', 'name' => 'Mengupdate My Package'],
 
-            // Subscriber
-            ['key' => 'SubscriberController::index', 'name' => 'Menampilkan Data Subscriber'],
-            ['key' => 'SubscriberController::create', 'name' => 'Menambah Subscriber'],
-            ['key' => 'SubscriberController::edit', 'name' => 'Mengupdate Subscriber'],
-            ['key' => 'SubscriberController::delete', 'name' => 'Menghapus Subscriber'],
-
             // Artisan
             ['key' => 'ArtisanController::index', 'name' => 'Menampilkan Data Command Artisan'],
 
@@ -57,6 +53,13 @@ class PermissionSeeder extends Seeder
             ['key' => 'UserController::profile', 'name' => 'Menampilkan Profil User'],
             ['key' => 'UserController::editProfile', 'name' => 'Mengupdate Profil User'],
             ['key' => 'UserController::export', 'name' => 'Mengekspor Data User'],
+
+            // Kategori User
+            ['key' => 'KategoriUserController::index', 'name' => 'Menampilkan Data Kategori User'],
+            ['key' => 'KategoriUserController::create', 'name' => 'Menambah Kategori User'],
+            ['key' => 'KategoriUserController::detail', 'name' => 'Menampilkan Detail Kategori User'],
+            ['key' => 'KategoriUserController::edit', 'name' => 'Mengupdate Kategori User'],
+            ['key' => 'KategoriUserController::delete', 'name' => 'Menghapus Kategori User'],
 
             // Kelompok User
             ['key' => 'KelompokController::index', 'name' => 'Menampilkan Data Kelompok User'],
@@ -95,6 +98,12 @@ class PermissionSeeder extends Seeder
             ['key' => 'RekeningController::edit', 'name' => 'Mengupdate Rekening'],
             ['key' => 'RekeningController::delete', 'name' => 'Menghapus Rekening'],
 
+            // Platform
+            ['key' => 'PlatformController::index', 'name' => 'Menampilkan Data Platform'],
+            ['key' => 'PlatformController::create', 'name' => 'Menambah Platform'],
+            ['key' => 'PlatformController::edit', 'name' => 'Mengupdate Platform'],
+            ['key' => 'PlatformController::delete', 'name' => 'Menghapus Platform'],
+
             // Default Rekening
             ['key' => 'DefaultRekeningController::index', 'name' => 'Menampilkan Data Default Rekening'],
             ['key' => 'DefaultRekeningController::create', 'name' => 'Menambah Default Rekening'],
@@ -111,6 +120,9 @@ class PermissionSeeder extends Seeder
             ['key' => 'EmailController::create', 'name' => 'Menambah Email'],
             ['key' => 'EmailController::detail', 'name' => 'Menampilkan Detail Email'],
             ['key' => 'EmailController::delete', 'name' => 'Menghapus Email'],
+
+            // Report
+            ['key' => 'ReportController::index', 'name' => 'Menampilkan Report'],
 
             // File Manager
             ['key' => 'FileController::index', 'name' => 'Menampilkan File Manager'],
@@ -258,6 +270,7 @@ class PermissionSeeder extends Seeder
             ['key' => 'SertifikatController::indexParticipant', 'name' => 'Menampilkan Data Sertifikat Peserta'],
             ['key' => 'SertifikatController::detailTrainer', 'name' => 'Menampilkan Detail Sertifikat Trainer'],
             ['key' => 'SertifikatController::detailParticipant', 'name' => 'Menampilkan Detail Sertifikat Peserta'],
+            ['key' => 'SertifikatController::delete', 'name' => 'Menghapus Sertifikat Peserta'],
 
             // Tandatangan Digital
             ['key' => 'SignatureController::index', 'name' => 'Menampilkan Data Tandatangan Digital'],
@@ -272,6 +285,14 @@ class PermissionSeeder extends Seeder
 
         foreach($array as $key=>$data){
             Permission::updateOrCreate(['key_permission' => $data['key']], ['nama_permission' => $data['name'], 'order_permission' => ($key+1)]);
+        }
+
+        // Unused
+        $unused = ['SubscriberController::index', 'SubscriberController::create', 'SubscriberController::edit', 'SubscriberController::delete'];
+
+        foreach($unused as $data){
+            $permission = Permission::where('key_permission','=',$data)->first();
+            if($permission) $permission->delete();
         }
     }
 }
