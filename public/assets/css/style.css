@@ -316,3 +316,7 @@ fill: #FFF;
     100% {transform: scale(1);}
 }
 
+.btn-priority-1{background-color: var(--primary);}
+.btn-priority-2{background-color: var(--primary-s);}
+.btn-non-priority1{background-color: var(--secondary);}
+.btn-non-priority2{background-color: var(--secondary-s);}
