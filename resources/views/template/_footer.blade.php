@@ -3,7 +3,7 @@
 		<div class="row text-center mb-3">
 			<div class="col-12">
 				<div class="footer-widget text-white">
-					<a href="/"><img class="mb-3" src="{{ asset('assets/images/logo/logo-light.png')}}" height="60" alt="logo-campusdigital"></a>
+					<a href="/"><img class="mb-3" src="{{ asset('assets/images/logo/logo-light-n.png')}}" height="60" alt="logo-campusdigital"></a>
 					<div class="mb-2" ><i class="fa fa-map-marker me-2" style="font-size: 22px;"><a class="text-white" href="https://goo.gl/maps/Eg8uiNSjPMgpjbGp6" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Buka Dengan Google Maps"></i>{{ setting('site.address') }}</a></div>
 					<div class="mb-2 d-flex align-items-center justify-content-center">
 						<div class="mb-0 me-3"><i class="fas fa-envelope me-2" style="font-size: 22px;" ></i><a class="text-white" href="mailto:{{ setting('site.email') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Email">{{ setting('site.email') }}</a></div>
