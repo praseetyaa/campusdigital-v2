@@ -26,6 +26,27 @@
             <div class="ql-snow">
               <div class="ql-editor">{!! html_entity_decode($program->konten) !!}</div>
             </div>
+            <br>
+            <form action="">
+              @csrf
+              <div class="mb-3">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" name="nama_lengkap" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Nama Panggilan</label>
+                <input type="text" name="nama_panggilan" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" name="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">No HP / WhatsApp</label>
+                <input type="text" name="nomor_hp" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
