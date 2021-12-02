@@ -31,9 +31,9 @@
       </div>
       <div class="col-lg-5 order-1 order-lg-2">
         <div class="sticky-sidebar">
-          <div>
+          <a class="popup-image" href="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}">
             <img class="rounded-1 img-fluid" src="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}">
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
 @endsection
 
 @section('css-extra')
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 <style type="text/css">
   /* Quill */
@@ -64,5 +64,18 @@
     .card-img-top{border-radius: 1em 1em 0 0}
   }
 </style>
+
+@section('js-extra')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{ asset('assets/js/home.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.popup-image').magnificPopup({
+    type: 'image'
+  });
+});
+</script>
+@endsection
 
 @endsection
