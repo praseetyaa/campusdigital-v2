@@ -26,6 +26,43 @@
             <div class="ql-snow">
               <div class="ql-editor">{!! html_entity_decode($program->konten) !!}</div>
             </div>
+            <br>
+            <form id="form-registration" method="post" action="{{ route('site.program.register', ['permalink' => $program->program_permalink]) }}">
+              @csrf
+              @if(Session::get('message'))
+              <div class="alert alert-success">{{ Session::get('message') }}</div>
+              @endif
+              <input type="hidden" name="id_program" value="{{ $program->id_program }}">
+              <div class="mb-3">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" name="nama_lengkap" class="form-control {{ $errors->has('nama_lengkap') ? 'border-danger' : '' }}" value="{{ old('nama_lengkap') }}">
+                @if($errors->has('nama_lengkap'))
+                <div class="text-danger">{{ $errors->first('nama_lengkap') }}</div>
+                @endif
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Nama Panggilan</label>
+                <input type="text" name="nama_panggilan" class="form-control {{ $errors->has('nama_panggilan') ? 'border-danger' : '' }}" value="{{ old('nama_panggilan') }}">
+                @if($errors->has('nama_panggilan'))
+                <div class="text-danger">{{ $errors->first('nama_panggilan') }}</div>
+                @endif
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" name="email" class="form-control {{ $errors->has('email') ? 'border-danger' : '' }}" value="{{ old('email') }}">
+                @if($errors->has('email'))
+                <div class="text-danger">{{ $errors->first('email') }}</div>
+                @endif
+              </div>
+              <div class="mb-3">
+                <label class="form-label">No HP / WhatsApp</label>
+                <input type="text" name="nomor_hp" class="form-control {{ $errors->has('nomor_hp') ? 'border-danger' : '' }}" value="{{ old('nomor_hp') }}">
+                @if($errors->has('nomor_hp'))
+                <div class="text-danger">{{ $errors->first('nomor_hp') }}</div>
+                @endif
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </div>
@@ -40,6 +77,16 @@
   </div>
 </section>
 </div>
+
+@endsection
+
+@section('js-extra')
+
+@if(count($errors) > 0 || Session::get('message'))
+<script>
+  $("html, body").animate({ scrollTop: $("#form-registration").prop("scrollHeight")}, 500);
+</script>
+@endif
 
 @endsection
 
