@@ -22,6 +22,7 @@ Route::get('/', 'HomeController@index')->name('site.home');
 // Program
 Route::get('/program/kategori/{category}', 'ProgramController@index')->name('site.program.index');
 Route::get('/program/{permalink}', 'ProgramController@detail')->name('site.program.detail');
+Route::post('/program/{permalink}/register', 'ProgramController@register')->name('site.program.register');
 
 // Artikel
 Route::get('/artikel', 'ArtikelController@index')->name('site.artikel.index');
