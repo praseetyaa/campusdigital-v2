@@ -21,7 +21,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-4 d-lg-flex align-items-stretch mb-4 mb-lg-0">
           <div class="card text-center rounded-1 border-0 shadow-sm">
-            <div class="p-4 rounded-1" style="background-color: #fff6f7;"><img class="logo-visi" src="https://image.flaticon.com/icons/svg/4506/4506061.svg" alt=""></div>
+            <div class="p-4 rounded-1" style="background-color: #fff6f7;"><img class="logo-visi" src="{{ asset('assets/images/icon/dart.png') }}" alt="icon"></div>
             <div class="card-body">
               <h1>Visi</h1>
               <p>Menjadi perusahaan yang unggul dan terpercaya dalam pelayanan jasa Pendidikan dan Pelatihan di bidang Teknologi Digital dan Bisnis</p>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-lg-4 d-lg-flex align-items-stretch mb-4 mb-lg-0">
           <div class="card text-center rounded-1 border-0 shadow-sm">
-            <div class="p-4 rounded-1" style="background-color: #d6f3e6"><img class="logo-visi" src="https://image.flaticon.com/icons/svg/5549/5549149.svg" alt=""></div>
+            <div class="p-4 rounded-1" style="background-color: #d6f3e6"><img class="logo-visi" src="{{ asset('assets/images/icon/guidance.png') }}" alt="icon"></div>
             <div class="card-body">
               <h1>Misi</h1>
               <ul class="text-start">
