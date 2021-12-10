@@ -19,18 +19,6 @@
             </ol>
           </nav>
         </div>
-{{--         <div class="col-lg-4 order-1 order-lg-2 stick sticky-top px-0 px-md-3 d-none" style="height:1px">
-          <div class="sticky-sidebar">
-            <div class="card rounded-1 border-0 shadow-sm mb-3 mb-lg-0">
-              <a class="popup-image" href="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Klik untuk memperbesar">
-                <img class="card-img-top" src="{{ image('assets/images/program/'.$program->program_gambar, 'program') }}" title="{{ $program->program_title }}">
-              </a>
-              <div class="card-body py-4">
-                <button class="btn btn-primary w-100 register-link">Daftar Sekarang</button>
-              </div>
-            </div>
-          </div>
-        </div> --}}
       </div>
     </div>
   </div>
@@ -122,7 +110,6 @@
   .ql-editor h2 {margin-bottom: 1rem!important; font-weight: 600!important;}
   .ql-editor h3 {margin-bottom: 1rem!important; font-weight: 600!important;}
   .ql-editor ol {padding-left: 30px!important;}
-  .ql-editor ol li {font-size: 14px!important; color: #74757f!important; padding-left: 5px!important;}
   .ql-editor ol {margin-bottom: 1rem!important;}
   .ql-editor p {margin-bottom: 1rem!important;}
   .card-img-top{border-radius: 0;}
