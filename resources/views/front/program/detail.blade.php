@@ -106,10 +106,10 @@
 <style type="text/css">
   /* Quill */
   #program{min-height: calc(100vh - 20rem);}
-  .ql-editor {padding: 0}
+  .ql-editor {padding: 0; text-align: justify;}
   .ql-editor h2 {margin-bottom: 1rem!important; font-weight: 600!important;}
   .ql-editor h3 {margin-bottom: 1rem!important; font-weight: 600!important;}
-  .ql-editor ol {padding-left: 30px!important;}
+  .ql-editor ol {padding-left: 15px!important;}
   .ql-editor ol {margin-bottom: 1rem!important;}
   .ql-editor p {margin-bottom: 1rem!important;}
   .card-img-top{border-radius: 0;}
