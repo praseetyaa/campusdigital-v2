@@ -171,6 +171,7 @@ a {text-decoration: none;}
 
 /*profile*/
 .page-top-section {padding: 3em 0em; margin-top: 5em;}
+.page-program{margin-top: 2.25rem;}
 .page-profile{min-height: calc(100vh - 22rem);}
 .account.dropdown-toggle:after{display: none;}
 .dropdown-item:hover, .dropdown-item:focus{border-radius: .5rem;}
@@ -178,7 +179,14 @@ a {text-decoration: none;}
 .dropdown-menu{border: unset; box-shadow: 0px 10px 70px rgb(0 0 0 / 15%); border-radius: .5rem; padding-left: .5rem; padding-right: .5rem; animation: dropdown .2s ease-in;}
 .dropdown-item{padding: .75rem 1.5rem;}
 .owl-carousel .owl-item img{margin: auto; width: 50%}
-.sticky-sidebar{position: sticky; top: 6em; height: fit-content}
+.stick{top: -13rem;}
+.top{top: 7rem;}
+.stick,
+.top,
+.stick.position-relative,
+.stick.sticky-top{transition: .25s ease;}
+.sticky-top{z-index: 998;}
+.sticky-sidebar{height: fit-content}
 .package .list-group-item{background: unset; border: unset;}
 /*----------------------------------------------------------*/
 .custom-shape-divider-bottom-1619236286 {bottom: 0;  left: 0;  width: 100%;  overflow: hidden;  line-height: 0;  transform: rotate(180deg);}
@@ -287,21 +295,27 @@ fill: #FFF;
     .ib-text{text-align: center}
     .owl-carousel .owl-item img{margin: auto; width: 60%}
     .account.dropdown-toggle:after{display: inline-block;}
-    .sticky-sidebar{position: unset; top: unset; height: unset;}
+	.stick{top: 0rem}
+	.sticky-top{position: unset!important; height: unset!important}
+	.sticky-sidebar{position: unset; top: unset; height: unset;}
 	.img-header{max-width: 100%;}
 	.navbar .navbar-brand img{height: 40px;}
 	.overlay-banner,
 	.banner-video{height: 180px;}
+	.page-program{margin-top: 1.25rem;}
 }
 
 @media (min-width: 768px) {
 	.d-md-box{display: -webkit-box!important}
+	.stick{margin-top: 3rem}
 }
 @media (max-width: 767.98px) {
 	.overlay-banner,
 	.banner-video{height: 180px;}
 	.hero-section h1{font-size: 2em;}
 	.hero-section h2{font-size: 1.5em;}
+	.stick .card,
+	.stick .card img{border-radius: 0rem!important;}
 }
 @media (max-width: 575.98px) {
 	.cta-section img{width: 100%}
