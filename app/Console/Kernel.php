@@ -25,6 +25,18 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+		
+        $schedule->command('backup:run')->dailyAt('1:00');
+
+        $schedule->call(function() {
+            $files = Storage::disk('backups')->files('\\');
+            foreach($files as $key=>$file) {
+                if($key === count($files)-1) {
+                    $path = Storage::disk('backups')->get($file);
+                    Storage::disk('google')->put($file, $path);
+                }
+            }
+        })->dailyAt('1:30');
     }
 
     /**
