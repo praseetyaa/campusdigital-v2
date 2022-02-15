@@ -284,6 +284,8 @@ fill: #FFF;
 .section-fasilitas i{font-size: 3rem;}
 .logo-visi{width:  80px}
 
+.mitra-lg img{width: 100%; max-width: 100px; margin-bottom: 1rem;}
+
 @keyframes dropdown{
 	from{opacity: 0;}
 	to{opacity: 1;}

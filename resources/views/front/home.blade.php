@@ -233,13 +233,22 @@
       </div>
       <div class="col-12">
         <div class="feature-item">
-          <div >
+          <div class="d-block d-md-none">
             <div class="owl-carousel owl-theme" id="mitra">
       			  @foreach($mitra as $data)
       				<div data-bs-toggle="tooltip" data-placement="bottom" title="{{ $data->nama_mitra }}">
         				<img src="{{ asset('assets/images/mitra/'.$data->logo_mitra) }}" alt="Mitra Campusdigital">
       				</div>
       			  @endforeach
+            </div>
+          </div>
+          <div class="mitra-lg container py-5 d-none d-md-block">
+            <div class="row text-center">
+              @foreach($mitra as $data)
+              <div class="col-2" data-bs-toggle="tooltip" data-placement="bottom" title="{{ $data->nama_mitra }}">
+                <img src="{{ asset('assets/images/mitra/'.$data->logo_mitra) }}" alt="Mitra Campusdigital">
+              </div>
+              @endforeach
             </div>
           </div>
         </div>
