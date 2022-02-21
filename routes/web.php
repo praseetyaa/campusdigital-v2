@@ -19,26 +19,6 @@ use Illuminate\Support\Facades\Route;
 // Home
 Route::get('/', 'HomeController@index')->name('site.home');
 
-// Route::get('/test', function() {
-// 	$folder_id = "1svY2zBTqyGLqYk5tOo4LoKuLvPCi0LpC";
-// 	\Storage::extend('google', function($app, $config) use($folder_id) {
-// 		$client = new \Google_Client();
-// 		$client->setClientId($config['clientId']);
-// 		$client->setClientSecret($config['clientSecret']);
-// 		$client->refreshToken($config['refreshToken']);
-// 		$service = new \Google_Service_Drive($client);
-// 		$adapter = new \Hypweb\Flysystem\GoogleDrive\GoogleDriveAdapter($service, $folder_id);
-// 		return new \League\Flysystem\Filesystem($adapter);
-// 	});
-	
-// 	$files = \Storage::disk('google')->files('\\');
-// 	foreach($files as $file){
-// 		echo '<img src="https://drive.google.com/uc?id='.$file.'">';
-// 		echo '<br/>';
-// 	}
-// 	return;
-// });
-
 // Program
 Route::get('/program/kategori/{category}', 'ProgramController@index')->name('site.program.index');
 Route::get('/program/{permalink}', 'ProgramController@detail')->name('site.program.detail');
