@@ -31,6 +31,9 @@ Route::get('/artikel/kategori/{permalink}', 'ArtikelController@byCategory')->nam
 Route::get('/artikel/author/{username}', 'ArtikelController@byAuthor')->name('site.artikel.by-author');
 Route::get('/artikel/contributor/{username}', 'ArtikelController@byContributor')->name('site.artikel.by-contributor');
 
+// Pencarian
+Route::get('/search', 'ArtikelController@search')->name('site.artikel.search');
+
 // Cabang
 Route::get('/cabang', 'CabangController@index')->name('site.cabang.index');
 

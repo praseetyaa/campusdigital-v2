@@ -161,4 +161,29 @@ class ArtikelController extends Controller
             'artikel' => $artikel,
         ]);
     }
+
+    /**
+     * Search Article
+     *
+     * string $permalink
+     * @return \Illuminate\Http\Response
+     */
+    public function search(Request $request)
+    {
+
+        // Keyword dan kategori
+        $q = $request->query('q');
+
+        // Referral
+        referral($request->query('ref'), 'site.artikel.search', ['q='.$q]);
+
+        // Result Article
+        $artikel = Blog::join('users','blog.author','=','users.id_user')->join('kontributor','blog.blog_kontributor','=','kontributor.id_kontributor')->orderBy('blog_at','desc')->where('blog_title','like','%'.$q.'%')->orWhere('konten','like','%'.$q.'%')->orWhere('blog_kategori','like','%'.$q.'%')->paginate(12);
+
+        // View
+        return view('front.artikel.search', [
+            'artikel' => $artikel,
+        ]);
+    }
+
 }

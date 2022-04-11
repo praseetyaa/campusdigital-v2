@@ -22,7 +22,7 @@
   <div class="container">
     <div class="row">
       @foreach($artikel as $data)
-      <div class="col-lg-3 col-md-6 mb-3">
+      <div class="col-lg-3 col-md-6 mb-3 d-md-flex align-baseline">
         <div class="card border-0 shadow-sm">
           <a href="{{ route('site.artikel.detail', ['permalink' => $data->blog_permalink ]) }}">
           <img class="card-img-top" src="{{ image('assets/images/blog/'.$data->blog_gambar, 'blog') }}" alt="Card image cap">

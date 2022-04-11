@@ -19,7 +19,7 @@
           <hr>
           <div style="overflow: auto;">
             @foreach($blog_tags as $tag)
-            <span class="badge badge-primary">{{ substr($tag->tag,0,1) == '#' ? $tag->tag : '#'.$tag->tag }}</span>
+            <span class="badge bg-primary-s text-primary">{{ substr($tag->tag,0,1) == '#' ? $tag->tag : '#'.$tag->tag }}</span>
             @endforeach
           </div>
         </div>
@@ -38,7 +38,7 @@
         <article>
           <h2 class="mb-lg-3">{{ $blog->blog_title }}</h2>
           <p class="d-block d-lg-none"><small>{{ generate_time_elapsed($blog->blog_at) }} - By {{ $blog->blog_kontributor != 0 ? $blog->kontributor : $blog->nama_user }}</small></p>
-    			<img src="{{ image('assets/images/blog/'.$blog->blog_gambar, 'blog') }}" class="img-fluid rounded">
+    			<div class="text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="img-fluid rounded" style="background:url({{ image('assets/images/blog/'.$blog->blog_gambar, 'blog') }}); width: 100%; height: 360px; background-repeat: no-repeat;     background-size: cover; background-position:center;"></div>
           <div class="ql-snow mt-2"><div class="ql-editor">{!! html_entity_decode($blog->konten) !!}</div></div>
         </article>
       </div>
